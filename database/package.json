@@ -2,6 +2,7 @@
   "name": "database",
   "version": "1.0.0",
   "dependencies": {
-    "axios": "^0.5.4"
+    "axios": "^0.5.4",
+    "csv": "^0.4.5"
   }
 }
