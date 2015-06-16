@@ -5,12 +5,17 @@ d3.json('data.json', function(_, data) {
 });
 
 function dataViz(data) {
-  var items = d3.select('.graph').selectAll('.point').data(data.movies);
+  var items = d3.select('.graph').selectAll('.movie').data(data.movies, function(d){
+    return d.id;
+  });
 
   items.enter().append('circle')
-    .attr('class', 'point')
+    .attr('class', 'movie')
     .attr('r', function(d){
-      return d.length / 10;
+      return (d.length || 5) / 10;
+    })
+    .attr('data-id', function(d){
+      return d.id;
     })
     .attr('cx', function(_, i){
       return i * 30 + 10;
@@ -19,3 +24,4 @@ function dataViz(data) {
 
   items.exit().remove();
 }
+
