@@ -25,12 +25,23 @@ var movies = [];
 var events = [];
 
 function transformData(){
+  for(var i=1; i<dataMovies.length; i++){
+    var m = dataMovies[i];
+
+    var movie = {};
+    movie.id = parseInt(m[0]);
+
+    if(movie.id >= 0) {
+      movies.push(movie);
+    }
+  }
+
   saveData();
 }
 
 function saveData() {
-  fs.writeFileSync('./data/movies.json', JSON.stringify(movies));
-  fs.writeFileSync('./data/events.json', JSON.stringify(events));
+  fs.writeFileSync('./data/movies.json', JSON.stringify(movies, null, 2));
+  fs.writeFileSync('./data/events.json', JSON.stringify(events, null, 2));
   console.log('done!');
 }
 
