@@ -2,12 +2,12 @@
 
 d3.csv("data/films.csv",function(error,data) {
     dataViz(data);
-
-
 });
 
 
+
 function dataViz(incomingData) {
+/*
     d3.select("body").selectAll("div.films")
         .data(incomingData)
         .enter()
@@ -16,10 +16,11 @@ function dataViz(incomingData) {
         .html(function (d, i) {
             return d.Film;
         });
+*/
 
     var movieArray = [];
     incomingData.map(function(d){
-        movieArray.push([d.Film])
+        movieArray.push(d.Film)
     });
 
 
@@ -29,13 +30,14 @@ function dataViz(incomingData) {
                 params: {
                     t: movieArray[i]
                 }
-            }).then(function (response) {
-                console.log(response.data)
+            }).then(function(response) {
+                var dataAPI = response.data;
+                var dataAPIRuntime  = dataAPI.Runtime;
+                console.log(dataAPIRuntime);
             });
-        }
+        };
+
     };
+
     getInfo();
 }
-
-
-
