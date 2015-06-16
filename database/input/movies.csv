@@ -1,0 +1,135 @@
+Film ID,Film,Fict./Doc.,Lang/Kurz,Land,Start,End,Regiesseur
+00001,Asphalt,Fict.,Lang,Deutschland,,01.01.1928,Joe May
+00002,L’atalante,Fict.,Lang,Frankreich,,01.01.1934,Jean Vigo
+00003,Gilda,Fict.,Lang,USA,,01.01.1946,Charles Vidor
+00004,The Postman Always Rings Twice,Fict.,Lang,USA,,01.01.1946,Tay Garnett
+00005,Ossessione,Fict.,Lang,Italien,,01.01.1943,Luchino Visconti
+00006,Die Zeit mit Monika,Fict.,Lang,Schweden,,01.01.1953,Ingmar Bergman
+00007,Vivre sa vie,Fict.,Lang,Frankreich,,01.01.1963,Jean-Luc Godard
+00008,Die Liebe einer Blondine,Fict.,Lang,Tschechoslowakei,,01.01.1965,Milos Forman
+00009,Die Frau in den Dünen,Fict.,Lang,Japan,,01.01.1962,Hiroshi Teshigahara
+00010,Hécate,Fict.,Lang,Schweiz,,01.01.1982,Daniel Schmid
+00011,Moulin Rouge!,Fict.,Lang,USA/Australien,,01.01.2001,Baz Luhrman
+00012,Well Done,Doc.,Lang,Schweiz,,01.01.1994,Thomas Imbach
+00013,Ghetto,Doc.,Lang,Schweiz,,01.01.1997,Thomas Imbach
+00014,Happy Too,Doc.,Lang,Schweiz,,01.01.2002,Thomas Imbach
+00015,Day is Done,Doc.,Lang,Schweiz,,01.01.2011,Thomas Imbach
+00017,Balagan,Doc.,Lang,Schweiz,,01.01.1993,Andres Veiel
+00018,Die Spielwütigen,Doc.,Lang,Schweiz,,01.01.2004,Andres Veiel
+00019,La Bonne Conduite,Doc.,Lang,Schweiz,,01.01.1905,Jean-Stéphane Bron
+00020,Mais im Bundeshus,Doc.,Lang,Schweiz,,01.01.2003,Jean-Stéphane Bron
+00021,Cleveland vs. Wallstreet,Doc.,Lang,Schweiz,,01.01.2006,Jean-Stéphane Bron
+00022,L’éxperience Blocher,Doc.,Lang,Schweiz,,01.01.2013,Jean-Stéphane Bron
+00023,,,,,,,
+00024,Letzte Spuren,Fict.,Kurz,Schweiz,,01.01.2013,"Norbert Kottmann, Oliver Rogers"
+00025,Die Demokratie ist los!,Doc.,Kurz,Schweiz,,01.01.1969,Thomas Isler
+00026,Universität in Raumnot,Doc.,Kurz,Schweiz,,01.01.1969,Thomas Isler
+,,,,,,,
+00027,,,,,,,
+00028,Gutes Recht,Fict.,Kurz,Schweiz,,01.01.2014,Anita Blumer
+00029,«Inszenierte Städte = Villes mises en scène,,,Schweiz,,01.01.1994,"Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti"
+00030,First Strike,,,Schweiz,,01.01.2013,Feinheit GmbH
+00031,"As I Was Moving Ahead, Occasionally I Saw Brief Glimpses of Beauty",Doc.,Lang,USA,,01.01.2000,Jonas Mekas
+00032,Eniaios,Fict.,Lang,USA,01.01.1948,01.01.1990,Gregory Markopoulos
+00033,Magellan,Fict.,Lang,USA,01.01.1971,01.01.1980,Hollis Frampton
+00034,Parvaneh,Fict.,Kurz,Schweiz,,01.01.2012,Talkhon Hamzavi
+00035,Rondo,Doc.,Kurz,Schweiz,,01.01.1968,Markus Imhoof
+00036,Mündel Walter,Doc.,Kurz,Schweiz,,01.01.2014,Aron Marty
+00037,Forbidden Planet,Fict.,Lang,USA,,01.01.1956,Fred M. Wilcox
+00038,Close Encounters with the Third Kid,Fict.,Lang,USA,,01.01.1977,Steven Spielberg
+00039,Abyss,Fict.,Lang,USA,,01.01.1989,James Cameron
+00040,Contact,Fict.,Lang,USA,,01.01.1997,Robert Zemeckis
+00041,District 9,Fict.,Lang,USA,,01.01.2007,Neill Blomkamp
+00042,The Graduate,Fict.,Lang,USA,,01.01.1967,Mike Nichols
+00043,Eskimo Limon,Fict.,Lang,Deutschland,,01.01.1978,Boaz Davidson
+00044,The Breakfast Club,Fict.,Lang,USA,,01.01.1985,John Hughes
+00045,"Mon Père, ce Héros",Fict.,Lang,Frankreich,,01.01.1991,Gérard Lauzier
+00046,Juno,Fict.,Lang,USA,,01.01.2007,Jason Reitman
+00047,Psycho,Fict.,Lang,USA,,01.01.1960,Alfred Hitchcock
+00048,Le Locataire,Fict.,Lang,USA,,01.01.1976,Roman Polanski
+00049,Blow Out,Fict.,Lang,USA,,01.01.1981,Brian de Palma
+00050,The Game,Fict.,Lang,USA,,01.01.1997,David Fincher
+00051,Oldboy,Fict.,Lang,Südkorea,,01.01.2003,Park Chan-Wook
+00052,Zaungespräche,Doc. ,Kurz,Schweiz,,01.01.2014,Lisa Gerig
+00053,Rivalen,,Kurz,Schweiz,,01.01.2014,Moris Freiburghaus
+00054,Wandelzeit,Doc. ,Kurz,Schweiz,,01.01.2014,Jan-Eric Mack
+00055,The Adventures of Tintin,Fict.,Lang,USA,,01.01.2011,Steven Spielberg
+,,,,,,,
+00056,Love Steaks,Fict.,Lang,Deutschland,,01.01.2013,Jakob Lass
+00057,,,,,,,
+00058,Beat-Man,Doc. ,Kurz,Schweiz,,0.01.2014,"Lisa Gertsch, Gianni Keller"
+00059,Wir sind alle Schottwiler,Doc.,Kurz,Schweiz,,01.01.2014,Marco Arrigoni
+00060,Grand Hotel,Fict.,Lang,USA,,01.01.1932,Edmund Goulding
+00061,Mistery Train,Fict.,Lang,USA,,01.01.1989,Jim Jarmusch
+00062,L’amore in città,Fict.,Lang,Italien,,01.01.1953,Michelangelo Antonioni et.al
+00063,Roma,Fict.,Lang,Italien,,01.01.1972,Frederico Fellini
+00064,Traffic,Fict.,Lang,USA,,01.01.2000,Steven Soderbergh
+00065,Adaption,Fict.,Lang,USA,,01.01.2002,Spike Jonze
+00066,Chasing Ice,Doc.,Lang,USA,,01.01.2012,Jeff Orlowski
+00067,More Than Honey,Doc.,Lang,Schweiz,,01.01.2012,Markus Imhoof
+00068,Food Inc.,Doc.,Lang,USA,,01.01.2008,Robert Kenner
+00069,End of the Line,Doc.,Lang,GB,,01.01.2009,Rupert Murray
+00070,Gasland,Doc.,Lang,USA,,01.01.2010,Josh Fox
+00071,Kurt und der Sessellift,Doc.,Lang,Schweiz,,01.01.2012,Thais Odermatt
+00072,Le Dimanche en Famille,Doc.,Lang,Schweiz,,01.01.2013,Annie Gisler
+00073,Das kurze Leben des J.A. Gutierrez,Doc.,Lang,Schweiz,,01.01.2006,Heidi Specogna
+00074,Venus Boyz,Doc.,Lang,Schweiz,,01.01.2002,Gabriel Baur
+00075,Mit dem Bauch durch die Wand ,Doc.,Lang,Schweiz,,01.01.2011,Anka Schmid
+00076,Bödälä – Dance the Rhythm ,Doc.,Lang,Schweiz,,01.01.2010,Gitta Gsell
+00077,Goodnight Nobody,Doc.,Lang,Schweiz,,01.01.2010,Jacqueline Zünd
+00078,Harry-Dean Stanton: Partly Fiction ,Doc.,Lang,Schweiz,,01.01.2012,Sophie Huber
+00079,Virgin Tales,Doc.,Lang,Schweiz,,01.01.2012,Mirjam von Arx
+00080,Forbidden Voices,Doc.,Lang,Schweiz,,01.01.2012,Barbara Miller
+00081,Life in Progress,Doc.,Lang,Schweiz,,01.01.2015,Irene Loebell
+00082,,,,,,,
+00083,Plug & Play,Fict.,Kurz,Schweiz,,01.01.2015,"Michael Frei, Mario von Rickenbach"
+00084,Game in Concert,,,,,,
+00085,,,,,,,
+00086,«Die Gstettensaga: The Rise of Echsenfriedl»,Doc.,Lang,Österreich,,01.01.2014,Günther Friesinger
+00087,Wir sind morgen,,,,,,
+00088,The Camera: Je or La Camera: I,,Lang,USA,,01.01.1977,Babette Mangolte
+00089,BlowBack,,,,,,
+00090,Struggle in Jerash,Doc.,Lang,Jordanien,01.01.1957,01.01.2010,"Wassif Sheik Yassin, Eileen Simpson and Ben White"
+00091,,,,,,,
+00100,,,Kurz,,,,
+00101,,,,,,,
+00102,Tekkonkinkreet,Fict.,Lang,Japan,,01.01.2006,Michael Arias
+00103,Spirited Away,Fict.,Lang,Japan,,01.01.2001,Hayao Miyazaki
+00104,Akira,Fict.,Lang,Japan,,01.01.1988,Katsuhiro Ôtomo
+00105,Summer Wars,Fict.,Lang,Japan,,01.01.2009,"Mamoru Hosoda,"
+00106,Grave of the Fireflies,Fict.,Lang,Japan,,01.01.1988,Isao Takahata
+00107,Le mépris,Fict.,Lang,Frankreich,,01.01.1963,Jean-Luc Godard
+00108,Living in Oblivion,Fict.,Lang,USA,,01.01.1995,Tom DiCillo
+00109,Hollywood Ending,Fict.,Lang,USA,,01.01.2002,Woody Allen
+00110,También la lluvia,Fict.,Lang,Spanien,,01.01.2010,Icíar Bollaín
+00111,Where the Condors Fly,Doc.,Lang,"Schweiz, Deutschland, Chile",,01.01.2012,Carlos Klein
+00112,Antichrist,Fict.,Lang,Dänemark,,01.01.2009,Lars von Trier
+00113,C‘est arrivé près de chez vous,Fict.,Lang,Belgien,,01.01.1992,Rémy Belvaux
+00114,Ken Park,Fict.,Lang,Niederlande,,01.01.2002,Larry Clark
+00115,Ex Drummer,Fict.,Lang,Belgien,,01.01.2007,Koen Mortier
+00116,Irréversibel,Fict.,Lang,Frankreich,,01.01.2002,Gaspar Noé
+00117,Fantômas,Fict.,Lang,Frankreich,,01.01.1913,Louis Feuillade
+00118,Kaktéus,Fict.,Kurz,Schweiz,,01.01.2014,Matthias Sahli
+00119,Wir sind alle Schottwiler,Doc.,Kurz,Schweiz,,01.01.2015,Marco Arrigoni
+00120,Aquarium,Fict.,Kurz,Schweiz,,01.01.2015,Cosima Frei
+00121,Kleine Helden,Fict.,Kurz,Schweiz,,01.01.2014,Fabienne Andreoli
+00122,Ticket To Ride,Fict.,Kurz,Schweiz,,01.01.2014,Manuela Rüegg
+00123,Destiny,Fict.,Kurz,Schweiz,,01.01.2015,Wendy Pillonel
+00124,Albert Ruppert,Fict.,Kurz,Schweiz,,01.01.2014,Pablo Callisaya
+00125,Der Fotograf,,Kurz,Schweiz,,01.01.2015,Kim Allamand
+00126,De Letscht Fall,,Kurz,Schweiz,,01.01.2015,Luca Ribler
+00127,Was bleibt,,Kurz,Schweiz,,01.01.2014,Oliver Rogers
+00128,Paläontologie,,Kurz,Schweiz,,01.01.2015,Pablo Callisaya
+00129,Mäge,,Kurz,Schweiz,,01.01.2015,Lisa Brühlmann
+00130,Die guten Schweizers,,Kurz,Schweiz,,01.01.2014,Marco Arrigoni
+00131,Zimmer ohne Aussicht,,Kurz,Schweiz,,01.01.2014,Johannes Bachmann
+00132,Jing,,Kurz,Schweiz,,01.01.2015,Jan-Eric Mack
+00133,Parasit,,Kurz,Schweiz,,01.01.2014,Diego Hauenstein
+00134,Invincible,,Kurz,Schweiz,,01.01.2015,Anna Furrer
+00135,Driven,,Kurz,Schweiz,,01.01.2015,Johannes Bachmann
+00136,Chum guet hei,,Kurz,Schweiz,,01.01.2015,Natascha Vavrina
+00137,Teufel,,Kurz,Schweiz,,01.01.2015,Yasmin Joerg
+00138,Everyday Rebellion,Doc.,Lang,Schweiz,,01.01.2013,"Arash T. Riahi, Arman T. Riahi"
+00139,Fort McMoney - Vote Rogers Mayor,Doc.,Lang,Schweiz,,01.01.2015,David Dufresne
+00140,Nachtdialoger,Fict.,Kurz,Schweiz,,,Moritz Willenegger
+00141,Inland,Fict.,Kurz,Schweiz,,,Piet Baumgartner
