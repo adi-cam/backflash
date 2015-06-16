@@ -1,6 +1,10 @@
 //= require './data'
 //= require_self
 
+
+
+
+
 function updateList(){
   var items = d3.select('.list').selectAll('.movie').data(DATA);
 
@@ -33,3 +37,5 @@ $(function(){
   updateList();
   updateGraph();
 });
+
+
