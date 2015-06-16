@@ -1,1 +1,538 @@
-[]
+[
+  {
+    "id": "A016",
+    "title": "Diskussion mit Thomas Imbach",
+    "type": "Diskussion",
+    "date": "30.10.2014",
+    "series": "Fokus Dok",
+    "topic": "Autorenpositionen"
+  },
+  {
+    "id": "A018",
+    "title": "Special Guest: Andres Veiel",
+    "type": "Screening mit Special Guest",
+    "date": "13.11.2014",
+    "series": "Fokus Dok",
+    "topic": "Autorenpositionen"
+  },
+  {
+    "id": "A023",
+    "title": "Diskussion mit Jean-Stéphane Bron",
+    "type": "Diskussion",
+    "date": "18.12.2014",
+    "series": "Fokus Dok",
+    "topic": "Autorenpositionen"
+  },
+  {
+    "id": "A024",
+    "title": "Birdly ",
+    "type": "Screening & Vortrag",
+    "date": "29.09.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A025",
+    "title": "Cinema of Happiness",
+    "type": "Screening & Vortrag",
+    "date": "06.10.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A026",
+    "title": "Rosanna Zünd: «Letzte Spuren» (Kottmann) und weitere Kurzfilme",
+    "type": "Screening & Vortrag",
+    "date": "13.10.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A027",
+    "title": "Filme aus dem Hochschularchiv",
+    "type": "Screening & Vortrag",
+    "date": "20.10.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A027",
+    "title": "Filme aus dem Hochschularchiv",
+    "type": "Screening & Vortrag",
+    "date": "20.10.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A028",
+    "title": "Scope TV",
+    "type": "Vortrag",
+    "date": "27.10.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A029",
+    "title": "Body-Centered Exergames",
+    "type": "Screening & Vortrag",
+    "date": "03.11.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A030",
+    "title": "Roman Lerch: Gutes Recht (A. Blumer)",
+    "type": "Screening & Vortrag",
+    "date": "10.11.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A031",
+    "title": "Filme aus dem Hochschularchiv «Urbanistisches Theater rund um Paris - und anderswo = théâtre urbanistique autour de Paris - et ailleurs»",
+    "type": "Screening & Vortrag",
+    "date": "17.11.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A032",
+    "title": "«Nuke the World!»– Wenn Spielspass plötzlich ernst wird",
+    "type": "Screening & Vortrag",
+    "date": "24.11.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A033",
+    "title": "Film As Monument",
+    "type": "Screening & Vortrag",
+    "date": "01.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A033",
+    "title": "Film As Monument",
+    "type": "Screening & Vortrag",
+    "date": "01.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A033",
+    "title": "Film As Monument",
+    "type": "Screening & Vortrag",
+    "date": "01.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A034",
+    "title": "Dominik Blumer: Parvaneh (Hamzavi)",
+    "type": "Screening & Vortrag",
+    "date": "08.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A035",
+    "title": "Filme aus dem Hochschularchiv",
+    "type": "Screening & Vortrag",
+    "date": "15.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A035",
+    "title": "Filme aus dem Hochschularchiv",
+    "type": "Screening & Vortrag",
+    "date": "15.12.2014",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "A051",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "19.09.2014",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "A051",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "19.09.2014",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "A051",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "19.09.2014",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "A052",
+    "title": "Expedition ins Uncanny Valley",
+    "type": "Kolloquium",
+    "date": "31.10.2014",
+    "series": "Special",
+    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+  },
+  {
+    "id": "A052",
+    "title": "Expedition ins Uncanny Valley",
+    "type": "Kolloquium",
+    "date": "01.11.2014",
+    "series": "Special",
+    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+  },
+  {
+    "id": "A053",
+    "title": "Jakob Lass: Freiheit und Struktur –  zur Improvisation bei Love Steaks",
+    "type": "Screening & Vortrag",
+    "date": "22.11.2014",
+    "series": "Special",
+    "topic": "Meet the Talent – Kino Xenix"
+  },
+  {
+    "id": "A054",
+    "title": "Marcel Derek Ramsay – Der Editor als Autor",
+    "type": "Screening mit Special Guest",
+    "date": "14.11.2014",
+    "series": "Special",
+    "topic": "Editor's Chat"
+  },
+  {
+    "id": "A055",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "19.12. 2014",
+    "series": "Special",
+    "topic": "Ticket To Ride "
+  },
+  {
+    "id": "A055",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "19.12. 2014",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "B012",
+    "title": "Special Guest: Alexandra Schneider",
+    "type": "Screening mit Special Guest",
+    "date": "05.03.2015",
+    "series": "Fokus Dok",
+    "topic": "The World According to Her –Dokumentarfilme Schweizer Autorinnen 2002 – 2014"
+  },
+  {
+    "id": "B013",
+    "title": "Special Guest: Alexandra Schneider",
+    "type": "Screening mit Special Guest",
+    "date": "05.03.2015",
+    "series": "Fokus Dok",
+    "topic": "The World According to Her –Dokumentarfilme Schweizer Autorinnen 2002 – 2014"
+  },
+  {
+    "id": "B022",
+    "title": "Special Guest: Irene Loebell",
+    "type": "Screening mit Special Guest",
+    "date": "21.05.2015",
+    "series": "Fokus Dok",
+    "topic": "The World According to Her –Dokumentarfilme Schweizer Autorinnen 2002 – 2014"
+  },
+  {
+    "id": "B023",
+    "title": "Pulling Rabbits Out of Hats – The Filmmaker as Trickster",
+    "type": "Screening & Vortrag",
+    "date": "16.02.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B024",
+    "title": "«Plug & Play» – Vom Animationsfilm zum Game",
+    "type": "Screening & Vortrag",
+    "date": "23.02.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B025",
+    "title": "Game in Concert",
+    "type": "Screening & Vortrag",
+    "date": "02.03.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B026",
+    "title": "Music for the Eyes – Abstract Film from Animation to Computer Technology",
+    "type": "Screening & Vortrag",
+    "date": "09.03.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B027",
+    "title": "CONTEXT HACKING – How to Mess with Art, Media, Law and the Market",
+    "type": "Screening & Vortrag",
+    "date": "16.03.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B028",
+    "title": "«Wir sind morgen»",
+    "type": "Screening & Vortrag",
+    "date": "23.03.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B029",
+    "title": "Vorstellung der Cinenova Working Group",
+    "type": "Screening & Vortrag",
+    "date": "30.03.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B031",
+    "title": "«BlowBack» - Ein interaktives Hörspiel",
+    "type": "Screening & Vortrag",
+    "date": "27.04.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B033",
+    "title": "Musikalische Restauration im Stummfilm",
+    "type": "Screening & Vortrag",
+    "date": "11.05.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B034",
+    "title": "Star Gazer – The Films of Andy Warhol",
+    "type": "Screening & Vortrag",
+    "date": "18.05.2015",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B035",
+    "title": "Crappy Cars: Videogames im öffentlichen Raum",
+    "type": "Screening & Vortrag",
+    "date": "01.06.2016",
+    "series": "Kein Kino",
+    "topic": "Clash of Perspectives"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B052",
+    "title": "Filmsnacks",
+    "type": "Screening",
+    "date": "15.05.2015",
+    "series": "Klub Kuleshov",
+    "topic": "Filmsnacks"
+  },
+  {
+    "id": "B053",
+    "title": "You are leaving the linear Sector!",
+    "type": "Tagung",
+    "date": "07.05.2015",
+    "series": "Special",
+    "topic": "Zürcher Dokumentarfilmtagung"
+  },
+  {
+    "id": "B053",
+    "title": "You are leaving the linear Sector!",
+    "type": "Tagung",
+    "date": "08.05.2015",
+    "series": "Special",
+    "topic": "Zürcher Dokumentarfilmtagung"
+  },
+  {
+    "id": "B054",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "13.03. 2015",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "B054",
+    "title": "Ticket to Ride",
+    "type": "Screening",
+    "date": "13.03. 2015",
+    "series": "Special",
+    "topic": "Ticket To Ride"
+  },
+  {
+    "id": "B055",
+    "title": "Die Unerträglichkeit der Bewegung",
+    "type": "Kolloquium",
+    "date": "06.06.2015",
+    "series": "Special",
+    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+  }
+]

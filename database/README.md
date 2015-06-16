@@ -3,21 +3,22 @@
 ## Entity Model
 
 - Movie
-    - id
-    - title
+    * id
+    * title
     - genre [documentary, thriller, sci-fi, drama, comedy, romance, animation]
     - length (minutes)
-    - country [ch, de, au, ...]
-    - director
+    * year
+    * country
+    * director
     - event_id
 
-- Event
-    - id
-    - title
-    - type [screening, lecture, discussion, guided_screening]
-    - date
-    - series
-    - topic
+* Event
+    * id
+    * title
+    * type [screening, lecture, discussion, guided_screening]
+    * date
+    * series
+    * topic
 
 ## Input Data
 
