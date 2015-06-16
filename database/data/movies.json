@@ -4,35 +4,40 @@
     "title": "Asphalt",
     "country": "Deutschland",
     "year": "01.01.1928",
-    "director": "Joe May"
+    "director": "Joe May",
+    "length": 90
   },
   {
     "id": 2,
     "title": "L’atalante",
     "country": "Frankreich",
     "year": "01.01.1934",
-    "director": "Jean Vigo"
+    "director": "Jean Vigo",
+    "length": 89
   },
   {
     "id": 3,
     "title": "Gilda",
     "country": "USA",
     "year": "01.01.1946",
-    "director": "Charles Vidor"
+    "director": "Charles Vidor",
+    "length": 110
   },
   {
     "id": 4,
     "title": "The Postman Always Rings Twice",
     "country": "USA",
     "year": "01.01.1946",
-    "director": "Tay Garnett"
+    "director": "Tay Garnett",
+    "length": 122
   },
   {
     "id": 5,
     "title": "Ossessione",
     "country": "Italien",
     "year": "01.01.1943",
-    "director": "Luchino Visconti"
+    "director": "Luchino Visconti",
+    "length": 140
   },
   {
     "id": 6,
@@ -46,7 +51,8 @@
     "title": "Vivre sa vie",
     "country": "Frankreich",
     "year": "01.01.1963",
-    "director": "Jean-Luc Godard"
+    "director": "Jean-Luc Godard",
+    "length": 85
   },
   {
     "id": 8,
@@ -67,49 +73,56 @@
     "title": "Hécate",
     "country": "Schweiz",
     "year": "01.01.1982",
-    "director": "Daniel Schmid"
+    "director": "Daniel Schmid",
+    "length": 105
   },
   {
     "id": 11,
     "title": "Moulin Rouge!",
     "country": "USA/Australien",
     "year": "01.01.2001",
-    "director": "Baz Luhrman"
+    "director": "Baz Luhrman",
+    "length": 127
   },
   {
     "id": 12,
     "title": "Well Done",
     "country": "Schweiz",
     "year": "01.01.1994",
-    "director": "Thomas Imbach"
+    "director": "Thomas Imbach",
+    "length": 75
   },
   {
     "id": 13,
     "title": "Ghetto",
     "country": "Schweiz",
     "year": "01.01.1997",
-    "director": "Thomas Imbach"
+    "director": "Thomas Imbach",
+    "length": 110
   },
   {
     "id": 14,
     "title": "Happy Too",
     "country": "Schweiz",
     "year": "01.01.2002",
-    "director": "Thomas Imbach"
+    "director": "Thomas Imbach",
+    "length": 60
   },
   {
     "id": 15,
     "title": "Day is Done",
     "country": "Schweiz",
     "year": "01.01.2011",
-    "director": "Thomas Imbach"
+    "director": "Thomas Imbach",
+    "length": 111
   },
   {
     "id": 17,
     "title": "Balagan",
     "country": "Schweiz",
     "year": "01.01.1993",
-    "director": "Andres Veiel"
+    "director": "Andres Veiel",
+    "length": 90
   },
   {
     "id": 18,
@@ -123,7 +136,8 @@
     "title": "La Bonne Conduite",
     "country": "Schweiz",
     "year": "01.01.1905",
-    "director": "Jean-Stéphane Bron"
+    "director": "Jean-Stéphane Bron",
+    "length": 54
   },
   {
     "id": 20,
@@ -144,7 +158,8 @@
     "title": "L’éxperience Blocher",
     "country": "Schweiz",
     "year": "01.01.2013",
-    "director": "Jean-Stéphane Bron"
+    "director": "Jean-Stéphane Bron",
+    "length": 100
   },
   {
     "id": 24,
@@ -172,7 +187,8 @@
     "title": "Gutes Recht",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Anita Blumer"
+    "director": "Anita Blumer",
+    "length": 17
   },
   {
     "id": 29,
@@ -186,14 +202,16 @@
     "title": "First Strike",
     "country": "Schweiz",
     "year": "01.01.2013",
-    "director": "Feinheit GmbH"
+    "director": "Feinheit GmbH",
+    "length": 90
   },
   {
     "id": 31,
     "title": "As I Was Moving Ahead, Occasionally I Saw Brief Glimpses of Beauty",
     "country": "USA",
     "year": "01.01.2000",
-    "director": "Jonas Mekas"
+    "director": "Jonas Mekas",
+    "length": 320
   },
   {
     "id": 32,
@@ -207,21 +225,24 @@
     "title": "Magellan",
     "country": "USA",
     "year": "01.01.1980",
-    "director": "Hollis Frampton"
+    "director": "Hollis Frampton",
+    "length": 18
   },
   {
     "id": 34,
     "title": "Parvaneh",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Talkhon Hamzavi"
+    "director": "Talkhon Hamzavi",
+    "length": 25
   },
   {
     "id": 35,
     "title": "Rondo",
     "country": "Schweiz",
     "year": "01.01.1968",
-    "director": "Markus Imhoof"
+    "director": "Markus Imhoof",
+    "length": 95
   },
   {
     "id": 36,
@@ -235,7 +256,8 @@
     "title": "Forbidden Planet",
     "country": "USA",
     "year": "01.01.1956",
-    "director": "Fred M. Wilcox"
+    "director": "Fred M. Wilcox",
+    "length": 98
   },
   {
     "id": 38,
@@ -249,28 +271,32 @@
     "title": "Abyss",
     "country": "USA",
     "year": "01.01.1989",
-    "director": "James Cameron"
+    "director": "James Cameron",
+    "length": 43
   },
   {
     "id": 40,
     "title": "Contact",
     "country": "USA",
     "year": "01.01.1997",
-    "director": "Robert Zemeckis"
+    "director": "Robert Zemeckis",
+    "length": 150
   },
   {
     "id": 41,
     "title": "District 9",
     "country": "USA",
     "year": "01.01.2007",
-    "director": "Neill Blomkamp"
+    "director": "Neill Blomkamp",
+    "length": 112
   },
   {
     "id": 42,
     "title": "The Graduate",
     "country": "USA",
     "year": "01.01.1967",
-    "director": "Mike Nichols"
+    "director": "Mike Nichols",
+    "length": 106
   },
   {
     "id": 43,
@@ -284,56 +310,64 @@
     "title": "The Breakfast Club",
     "country": "USA",
     "year": "01.01.1985",
-    "director": "John Hughes"
+    "director": "John Hughes",
+    "length": 97
   },
   {
     "id": 45,
     "title": "Mon Père, ce Héros",
     "country": "Frankreich",
     "year": "01.01.1991",
-    "director": "Gérard Lauzier"
+    "director": "Gérard Lauzier",
+    "length": 105
   },
   {
     "id": 46,
     "title": "Juno",
     "country": "USA",
     "year": "01.01.2007",
-    "director": "Jason Reitman"
+    "director": "Jason Reitman",
+    "length": 96
   },
   {
     "id": 47,
     "title": "Psycho",
     "country": "USA",
     "year": "01.01.1960",
-    "director": "Alfred Hitchcock"
+    "director": "Alfred Hitchcock",
+    "length": 109
   },
   {
     "id": 48,
     "title": "Le Locataire",
     "country": "USA",
     "year": "01.01.1976",
-    "director": "Roman Polanski"
+    "director": "Roman Polanski",
+    "length": 25
   },
   {
     "id": 49,
     "title": "Blow Out",
     "country": "USA",
     "year": "01.01.1981",
-    "director": "Brian de Palma"
+    "director": "Brian de Palma",
+    "length": 107
   },
   {
     "id": 50,
     "title": "The Game",
     "country": "USA",
     "year": "01.01.1997",
-    "director": "David Fincher"
+    "director": "David Fincher",
+    "length": 129
   },
   {
     "id": 51,
     "title": "Oldboy",
     "country": "Südkorea",
     "year": "01.01.2003",
-    "director": "Park Chan-Wook"
+    "director": "Park Chan-Wook",
+    "length": 120
   },
   {
     "id": 52,
@@ -347,7 +381,8 @@
     "title": "Rivalen",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Moris Freiburghaus"
+    "director": "Moris Freiburghaus",
+    "length": null
   },
   {
     "id": 54,
@@ -361,14 +396,16 @@
     "title": "The Adventures of Tintin",
     "country": "USA",
     "year": "01.01.2011",
-    "director": "Steven Spielberg"
+    "director": "Steven Spielberg",
+    "length": 107
   },
   {
     "id": 56,
     "title": "Love Steaks",
     "country": "Deutschland",
     "year": "01.01.2013",
-    "director": "Jakob Lass"
+    "director": "Jakob Lass",
+    "length": 89
   },
   {
     "id": 58,
@@ -389,7 +426,8 @@
     "title": "Grand Hotel",
     "country": "USA",
     "year": "01.01.1932",
-    "director": "Edmund Goulding"
+    "director": "Edmund Goulding",
+    "length": 112
   },
   {
     "id": 61,
@@ -410,63 +448,72 @@
     "title": "Roma",
     "country": "Italien",
     "year": "01.01.1972",
-    "director": "Frederico Fellini"
+    "director": "Frederico Fellini",
+    "length": 128
   },
   {
     "id": 64,
     "title": "Traffic",
     "country": "USA",
     "year": "01.01.2000",
-    "director": "Steven Soderbergh"
+    "director": "Steven Soderbergh",
+    "length": 147
   },
   {
     "id": 65,
     "title": "Adaption",
     "country": "USA",
     "year": "01.01.2002",
-    "director": "Spike Jonze"
+    "director": "Spike Jonze",
+    "length": null
   },
   {
     "id": 66,
     "title": "Chasing Ice",
     "country": "USA",
     "year": "01.01.2012",
-    "director": "Jeff Orlowski"
+    "director": "Jeff Orlowski",
+    "length": 75
   },
   {
     "id": 67,
     "title": "More Than Honey",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Markus Imhoof"
+    "director": "Markus Imhoof",
+    "length": 95
   },
   {
     "id": 68,
     "title": "Food Inc.",
     "country": "USA",
     "year": "01.01.2008",
-    "director": "Robert Kenner"
+    "director": "Robert Kenner",
+    "length": 94
   },
   {
     "id": 69,
     "title": "End of the Line",
     "country": "GB",
     "year": "01.01.2009",
-    "director": "Rupert Murray"
+    "director": "Rupert Murray",
+    "length": 95
   },
   {
     "id": 70,
     "title": "Gasland",
     "country": "USA",
     "year": "01.01.2010",
-    "director": "Josh Fox"
+    "director": "Josh Fox",
+    "length": 107
   },
   {
     "id": 71,
     "title": "Kurt und der Sessellift",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Thais Odermatt"
+    "director": "Thais Odermatt",
+    "length": 20
   },
   {
     "id": 72,
@@ -487,7 +534,8 @@
     "title": "Venus Boyz",
     "country": "Schweiz",
     "year": "01.01.2002",
-    "director": "Gabriel Baur"
+    "director": "Gabriel Baur",
+    "length": 102
   },
   {
     "id": 75,
@@ -501,63 +549,72 @@
     "title": "Bödälä – Dance the Rhythm ",
     "country": "Schweiz",
     "year": "01.01.2010",
-    "director": "Gitta Gsell"
+    "director": "Gitta Gsell",
+    "length": 78
   },
   {
     "id": 77,
     "title": "Goodnight Nobody",
     "country": "Schweiz",
     "year": "01.01.2010",
-    "director": "Jacqueline Zünd"
+    "director": "Jacqueline Zünd",
+    "length": 76
   },
   {
     "id": 78,
     "title": "Harry-Dean Stanton: Partly Fiction ",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Sophie Huber"
+    "director": "Sophie Huber",
+    "length": 77
   },
   {
     "id": 79,
     "title": "Virgin Tales",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Mirjam von Arx"
+    "director": "Mirjam von Arx",
+    "length": 87
   },
   {
     "id": 80,
     "title": "Forbidden Voices",
     "country": "Schweiz",
     "year": "01.01.2012",
-    "director": "Barbara Miller"
+    "director": "Barbara Miller",
+    "length": 95
   },
   {
     "id": 81,
     "title": "Life in Progress",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Irene Loebell"
+    "director": "Irene Loebell",
+    "length": 99
   },
   {
     "id": 83,
     "title": "Plug & Play",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Michael Frei, Mario von Rickenbach"
+    "director": "Michael Frei, Mario von Rickenbach",
+    "length": 6
   },
   {
     "id": 86,
     "title": "«Die Gstettensaga: The Rise of Echsenfriedl»",
     "country": "Österreich",
     "year": "01.01.2014",
-    "director": "Günther Friesinger"
+    "director": "Günther Friesinger",
+    "length": 72
   },
   {
     "id": 88,
     "title": "The Camera: Je or La Camera: I",
     "country": "USA",
     "year": "01.01.1977",
-    "director": "Babette Mangolte"
+    "director": "Babette Mangolte",
+    "length": 88
   },
   {
     "id": 90,
@@ -571,56 +628,64 @@
     "title": "Tekkonkinkreet",
     "country": "Japan",
     "year": "01.01.2006",
-    "director": "Michael Arias"
+    "director": "Michael Arias",
+    "length": 111
   },
   {
     "id": 103,
     "title": "Spirited Away",
     "country": "Japan",
     "year": "01.01.2001",
-    "director": "Hayao Miyazaki"
+    "director": "Hayao Miyazaki",
+    "length": 125
   },
   {
     "id": 104,
     "title": "Akira",
     "country": "Japan",
     "year": "01.01.1988",
-    "director": "Katsuhiro Ôtomo"
+    "director": "Katsuhiro Ôtomo",
+    "length": 124
   },
   {
     "id": 105,
     "title": "Summer Wars",
     "country": "Japan",
     "year": "01.01.2009",
-    "director": "Mamoru Hosoda,"
+    "director": "Mamoru Hosoda,",
+    "length": 114
   },
   {
     "id": 106,
     "title": "Grave of the Fireflies",
     "country": "Japan",
     "year": "01.01.1988",
-    "director": "Isao Takahata"
+    "director": "Isao Takahata",
+    "length": 89
   },
   {
     "id": 107,
     "title": "Le mépris",
     "country": "Frankreich",
     "year": "01.01.1963",
-    "director": "Jean-Luc Godard"
+    "director": "Jean-Luc Godard",
+    "length": 95
   },
   {
     "id": 108,
     "title": "Living in Oblivion",
     "country": "USA",
     "year": "01.01.1995",
-    "director": "Tom DiCillo"
+    "director": "Tom DiCillo",
+    "length": 90
   },
   {
     "id": 109,
     "title": "Hollywood Ending",
     "country": "USA",
     "year": "01.01.2002",
-    "director": "Woody Allen"
+    "director": "Woody Allen",
+    "length": 112
   },
   {
     "id": 110,
@@ -634,14 +699,16 @@
     "title": "Where the Condors Fly",
     "country": "Schweiz, Deutschland, Chile",
     "year": "01.01.2012",
-    "director": "Carlos Klein"
+    "director": "Carlos Klein",
+    "length": 1
   },
   {
     "id": 112,
     "title": "Antichrist",
     "country": "Dänemark",
     "year": "01.01.2009",
-    "director": "Lars von Trier"
+    "director": "Lars von Trier",
+    "length": 108
   },
   {
     "id": 113,
@@ -655,14 +722,16 @@
     "title": "Ken Park",
     "country": "Niederlande",
     "year": "01.01.2002",
-    "director": "Larry Clark"
+    "director": "Larry Clark",
+    "length": 93
   },
   {
     "id": 115,
     "title": "Ex Drummer",
     "country": "Belgien",
     "year": "01.01.2007",
-    "director": "Koen Mortier"
+    "director": "Koen Mortier",
+    "length": 100
   },
   {
     "id": 116,
@@ -676,7 +745,8 @@
     "title": "Fantômas",
     "country": "Frankreich",
     "year": "01.01.1913",
-    "director": "Louis Feuillade"
+    "director": "Louis Feuillade",
+    "length": 86
   },
   {
     "id": 118,
@@ -697,7 +767,8 @@
     "title": "Aquarium",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Cosima Frei"
+    "director": "Cosima Frei",
+    "length": 17
   },
   {
     "id": 121,
@@ -711,14 +782,16 @@
     "title": "Ticket To Ride",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Manuela Rüegg"
+    "director": "Manuela Rüegg",
+    "length": 71
   },
   {
     "id": 123,
     "title": "Destiny",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Wendy Pillonel"
+    "director": "Wendy Pillonel",
+    "length": 103
   },
   {
     "id": 124,
@@ -732,7 +805,8 @@
     "title": "Der Fotograf",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Kim Allamand"
+    "director": "Kim Allamand",
+    "length": null
   },
   {
     "id": 126,
@@ -746,7 +820,8 @@
     "title": "Was bleibt",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Oliver Rogers"
+    "director": "Oliver Rogers",
+    "length": 16
   },
   {
     "id": 128,
@@ -760,7 +835,8 @@
     "title": "Mäge",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Lisa Brühlmann"
+    "director": "Lisa Brühlmann",
+    "length": null
   },
   {
     "id": 130,
@@ -781,28 +857,32 @@
     "title": "Jing",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Jan-Eric Mack"
+    "director": "Jan-Eric Mack",
+    "length": 87
   },
   {
     "id": 133,
     "title": "Parasit",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Diego Hauenstein"
+    "director": "Diego Hauenstein",
+    "length": 8
   },
   {
     "id": 134,
     "title": "Invincible",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Anna Furrer"
+    "director": "Anna Furrer",
+    "length": 105
   },
   {
     "id": 135,
     "title": "Driven",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Johannes Bachmann"
+    "director": "Johannes Bachmann",
+    "length": 116
   },
   {
     "id": 136,
@@ -816,14 +896,16 @@
     "title": "Teufel",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Yasmin Joerg"
+    "director": "Yasmin Joerg",
+    "length": 99
   },
   {
     "id": 138,
     "title": "Everyday Rebellion",
     "country": "Schweiz",
     "year": "01.01.2013",
-    "director": "Arash T. Riahi, Arman T. Riahi"
+    "director": "Arash T. Riahi, Arman T. Riahi",
+    "length": 118
   },
   {
     "id": 139,
@@ -844,6 +926,7 @@
     "title": "Inland",
     "country": "Schweiz",
     "year": "",
-    "director": "Piet Baumgartner"
+    "director": "Piet Baumgartner",
+    "length": 6
   }
 ]

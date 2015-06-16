@@ -34,6 +34,7 @@ function transformData(){
     movie.country = m[4];
     movie.year = m[6];
     movie.director = m[7];
+    // movie.length = m[?];
 
     if(movie.id >= 0 && movie.director) { // TODO: lower filters
       movies.push(movie);
