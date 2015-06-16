@@ -1,0 +1,6 @@
+<%=
+  JSON.generate(
+    movies: JSON.parse(File.read('./database/data/movies.json')),
+    events: JSON.parse(File.read('./database/data/events.json'))
+  )
+%>
