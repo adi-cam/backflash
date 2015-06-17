@@ -2,931 +2,1153 @@
   {
     "id": 1,
     "title": "Asphalt",
+    "genre": "drama_romance",
     "country": "Deutschland",
     "year": "01.01.1928",
     "director": "Joe May",
-    "length": 90
+    "length": ""
   },
   {
     "id": 2,
     "title": "L’atalante",
+    "genre": "drama_romance",
     "country": "Frankreich",
     "year": "01.01.1934",
     "director": "Jean Vigo",
-    "length": 89
+    "length": ""
   },
   {
     "id": 3,
     "title": "Gilda",
+    "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.1946",
     "director": "Charles Vidor",
-    "length": 110
+    "length": ""
   },
   {
     "id": 4,
     "title": "The Postman Always Rings Twice",
+    "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.1946",
     "director": "Tay Garnett",
-    "length": 122
+    "length": ""
   },
   {
     "id": 5,
     "title": "Ossessione",
+    "genre": "drama_romance",
     "country": "Italien",
     "year": "01.01.1943",
     "director": "Luchino Visconti",
-    "length": 140
+    "length": ""
   },
   {
     "id": 6,
     "title": "Die Zeit mit Monika",
+    "genre": "drama_romance",
     "country": "Schweden",
     "year": "01.01.1953",
-    "director": "Ingmar Bergman"
+    "director": "Ingmar Bergman",
+    "length": ""
   },
   {
     "id": 7,
     "title": "Vivre sa vie",
+    "genre": "drama_romance",
     "country": "Frankreich",
     "year": "01.01.1963",
     "director": "Jean-Luc Godard",
-    "length": 85
+    "length": ""
   },
   {
     "id": 8,
     "title": "Die Liebe einer Blondine",
+    "genre": "drama_romance",
     "country": "Tschechoslowakei",
     "year": "01.01.1965",
-    "director": "Milos Forman"
+    "director": "Milos Forman",
+    "length": ""
   },
   {
     "id": 9,
     "title": "Die Frau in den Dünen",
+    "genre": "drama_romance",
     "country": "Japan",
     "year": "01.01.1962",
-    "director": "Hiroshi Teshigahara"
+    "director": "Hiroshi Teshigahara",
+    "length": ""
   },
   {
     "id": 10,
     "title": "Hécate",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.1982",
     "director": "Daniel Schmid",
-    "length": 105
+    "length": ""
   },
   {
     "id": 11,
     "title": "Moulin Rouge!",
-    "country": "USA/Australien",
+    "genre": "drama_romance",
+    "country": "USA",
     "year": "01.01.2001",
     "director": "Baz Luhrman",
-    "length": 127
+    "length": ""
   },
   {
     "id": 12,
     "title": "Well Done",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1994",
     "director": "Thomas Imbach",
-    "length": 75
+    "length": ""
   },
   {
     "id": 13,
     "title": "Ghetto",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1997",
     "director": "Thomas Imbach",
-    "length": 110
+    "length": ""
   },
   {
     "id": 14,
     "title": "Happy Too",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2002",
     "director": "Thomas Imbach",
-    "length": 60
+    "length": ""
   },
   {
     "id": 15,
     "title": "Day is Done",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2011",
     "director": "Thomas Imbach",
-    "length": 111
+    "length": ""
   },
   {
     "id": 17,
     "title": "Balagan",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1993",
     "director": "Andres Veiel",
-    "length": 90
+    "length": ""
   },
   {
     "id": 18,
     "title": "Die Spielwütigen",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2004",
-    "director": "Andres Veiel"
+    "director": "Andres Veiel",
+    "length": ""
   },
   {
     "id": 19,
     "title": "La Bonne Conduite",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1905",
     "director": "Jean-Stéphane Bron",
-    "length": 54
+    "length": ""
   },
   {
     "id": 20,
     "title": "Mais im Bundeshus",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2003",
-    "director": "Jean-Stéphane Bron"
+    "director": "Jean-Stéphane Bron",
+    "length": ""
   },
   {
     "id": 21,
     "title": "Cleveland vs. Wallstreet",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2006",
-    "director": "Jean-Stéphane Bron"
+    "director": "Jean-Stéphane Bron",
+    "length": ""
   },
   {
     "id": 22,
     "title": "L’éxperience Blocher",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Jean-Stéphane Bron",
-    "length": 100
+    "length": ""
+  },
+  {
+    "id": 23,
+    "title": "",
+    "genre": "x",
+    "country": "x",
+    "year": "x",
+    "director": "x",
+    "length": ""
   },
   {
     "id": 24,
     "title": "Letzte Spuren",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2013",
-    "director": "Norbert Kottmann, Oliver Rogers"
+    "director": "Norbert Kottmann, Oliver Rogers",
+    "length": ""
   },
   {
     "id": 25,
     "title": "Die Demokratie ist los!",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1969",
-    "director": "Thomas Isler"
+    "director": "Thomas Isler",
+    "length": ""
   },
   {
     "id": 26,
     "title": "Universität in Raumnot",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1969",
-    "director": "Thomas Isler"
+    "director": "Thomas Isler",
+    "length": ""
   },
   {
     "id": 28,
     "title": "Gutes Recht",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Anita Blumer",
-    "length": 17
+    "length": ""
   },
   {
     "id": 29,
     "title": "«Inszenierte Städte = Villes mises en scène",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1994",
-    "director": "Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti"
+    "director": "Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti",
+    "length": ""
   },
   {
     "id": 30,
     "title": "First Strike",
+    "genre": "game_music_theatre",
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Feinheit GmbH",
-    "length": 90
+    "length": ""
   },
   {
     "id": 31,
     "title": "As I Was Moving Ahead, Occasionally I Saw Brief Glimpses of Beauty",
+    "genre": "experimental",
     "country": "USA",
     "year": "01.01.2000",
     "director": "Jonas Mekas",
-    "length": 320
+    "length": ""
   },
   {
     "id": 32,
     "title": "Eniaios",
+    "genre": "experimental",
     "country": "USA",
     "year": "01.01.1990",
-    "director": "Gregory Markopoulos"
+    "director": "Gregory Markopoulos",
+    "length": ""
   },
   {
     "id": 33,
     "title": "Magellan",
+    "genre": "experimental",
     "country": "USA",
     "year": "01.01.1980",
     "director": "Hollis Frampton",
-    "length": 18
+    "length": ""
   },
   {
     "id": 34,
     "title": "Parvaneh",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Talkhon Hamzavi",
-    "length": 25
+    "length": ""
   },
   {
     "id": 35,
     "title": "Rondo",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.1968",
     "director": "Markus Imhoof",
-    "length": 95
+    "length": ""
   },
   {
     "id": 36,
     "title": "Mündel Walter",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Aron Marty"
+    "director": "Aron Marty",
+    "length": ""
   },
   {
     "id": 37,
     "title": "Forbidden Planet",
+    "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.1956",
     "director": "Fred M. Wilcox",
-    "length": 98
+    "length": ""
   },
   {
     "id": 38,
     "title": "Close Encounters with the Third Kid",
+    "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.1977",
-    "director": "Steven Spielberg"
+    "director": "Steven Spielberg",
+    "length": ""
   },
   {
     "id": 39,
     "title": "Abyss",
+    "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.1989",
     "director": "James Cameron",
-    "length": 43
+    "length": ""
   },
   {
     "id": 40,
     "title": "Contact",
+    "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.1997",
     "director": "Robert Zemeckis",
-    "length": 150
+    "length": ""
   },
   {
     "id": 41,
     "title": "District 9",
+    "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.2007",
     "director": "Neill Blomkamp",
-    "length": 112
+    "length": ""
   },
   {
     "id": 42,
     "title": "The Graduate",
+    "genre": "comedy",
     "country": "USA",
     "year": "01.01.1967",
     "director": "Mike Nichols",
-    "length": 106
+    "length": ""
   },
   {
     "id": 43,
     "title": "Eskimo Limon",
+    "genre": "drama_romance",
     "country": "Deutschland",
     "year": "01.01.1978",
-    "director": "Boaz Davidson"
+    "director": "Boaz Davidson",
+    "length": ""
   },
   {
     "id": 44,
     "title": "The Breakfast Club",
+    "genre": "comedy",
     "country": "USA",
     "year": "01.01.1985",
     "director": "John Hughes",
-    "length": 97
+    "length": ""
   },
   {
     "id": 45,
     "title": "Mon Père, ce Héros",
+    "genre": "comedy",
     "country": "Frankreich",
     "year": "01.01.1991",
     "director": "Gérard Lauzier",
-    "length": 105
+    "length": ""
   },
   {
     "id": 46,
     "title": "Juno",
+    "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.2007",
     "director": "Jason Reitman",
-    "length": 96
+    "length": ""
   },
   {
     "id": 47,
     "title": "Psycho",
+    "genre": "thriller_horror",
     "country": "USA",
     "year": "01.01.1960",
     "director": "Alfred Hitchcock",
-    "length": 109
+    "length": ""
   },
   {
     "id": 48,
     "title": "Le Locataire",
+    "genre": "thriller_horror",
     "country": "USA",
     "year": "01.01.1976",
     "director": "Roman Polanski",
-    "length": 25
+    "length": ""
   },
   {
     "id": 49,
     "title": "Blow Out",
+    "genre": "thriller_horror",
     "country": "USA",
     "year": "01.01.1981",
     "director": "Brian de Palma",
-    "length": 107
+    "length": ""
   },
   {
     "id": 50,
     "title": "The Game",
+    "genre": "thriller_horror",
     "country": "USA",
     "year": "01.01.1997",
     "director": "David Fincher",
-    "length": 129
+    "length": ""
   },
   {
     "id": 51,
     "title": "Oldboy",
+    "genre": "thriller_horror",
     "country": "Südkorea",
     "year": "01.01.2003",
     "director": "Park Chan-Wook",
-    "length": 120
+    "length": ""
   },
   {
     "id": 52,
     "title": "Zaungespräche",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Lisa Gerig"
+    "director": "Lisa Gerig",
+    "length": ""
   },
   {
     "id": 53,
     "title": "Rivalen",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Moris Freiburghaus",
-    "length": null
+    "length": ""
   },
   {
     "id": 54,
     "title": "Wandelzeit",
+    "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2014",
-    "director": "Jan-Eric Mack"
+    "year": "01.01.2015",
+    "director": "Jan-Eric Mack",
+    "length": ""
   },
   {
     "id": 55,
     "title": "The Adventures of Tintin",
+    "genre": "animation",
     "country": "USA",
     "year": "01.01.2011",
     "director": "Steven Spielberg",
-    "length": 107
+    "length": ""
   },
   {
     "id": 56,
     "title": "Love Steaks",
+    "genre": "drama_romance",
     "country": "Deutschland",
     "year": "01.01.2013",
     "director": "Jakob Lass",
-    "length": 89
+    "length": ""
   },
   {
     "id": 58,
     "title": "Beat-Man",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "0.01.2014",
-    "director": "Lisa Gertsch, Gianni Keller"
+    "director": "Lisa Gertsch, Gianni Keller",
+    "length": ""
   },
   {
     "id": 59,
     "title": "Wir sind alle Schottwiler",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Marco Arrigoni"
+    "director": "Marco Arrigoni",
+    "length": ""
   },
   {
     "id": 60,
     "title": "Grand Hotel",
+    "genre": "documentary ",
     "country": "USA",
     "year": "01.01.1932",
     "director": "Edmund Goulding",
-    "length": 112
+    "length": ""
   },
   {
     "id": 61,
     "title": "Mistery Train",
+    "genre": "documentary",
     "country": "USA",
     "year": "01.01.1989",
-    "director": "Jim Jarmusch"
+    "director": "Jim Jarmusch",
+    "length": ""
   },
   {
     "id": 62,
     "title": "L’amore in città",
+    "genre": "drama_romance",
     "country": "Italien",
     "year": "01.01.1953",
-    "director": "Michelangelo Antonioni et.al"
+    "director": "Michelangelo Antonioni et.al",
+    "length": ""
   },
   {
     "id": 63,
     "title": "Roma",
+    "genre": "drama_romance",
     "country": "Italien",
     "year": "01.01.1972",
     "director": "Frederico Fellini",
-    "length": 128
+    "length": ""
   },
   {
     "id": 64,
     "title": "Traffic",
+    "genre": "thriller_horror",
     "country": "USA",
     "year": "01.01.2000",
     "director": "Steven Soderbergh",
-    "length": 147
+    "length": ""
   },
   {
     "id": 65,
     "title": "Adaption",
+    "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.2002",
     "director": "Spike Jonze",
-    "length": null
+    "length": ""
   },
   {
     "id": 66,
     "title": "Chasing Ice",
+    "genre": "documentary",
     "country": "USA",
     "year": "01.01.2012",
     "director": "Jeff Orlowski",
-    "length": 75
+    "length": ""
   },
   {
     "id": 67,
     "title": "More Than Honey",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Markus Imhoof",
-    "length": 95
+    "length": ""
   },
   {
     "id": 68,
     "title": "Food Inc.",
+    "genre": "documentary",
     "country": "USA",
     "year": "01.01.2008",
     "director": "Robert Kenner",
-    "length": 94
+    "length": ""
   },
   {
     "id": 69,
     "title": "End of the Line",
+    "genre": "documentary",
     "country": "GB",
     "year": "01.01.2009",
     "director": "Rupert Murray",
-    "length": 95
+    "length": ""
   },
   {
     "id": 70,
     "title": "Gasland",
+    "genre": "documentary",
     "country": "USA",
     "year": "01.01.2010",
     "director": "Josh Fox",
-    "length": 107
+    "length": ""
   },
   {
     "id": 71,
     "title": "Kurt und der Sessellift",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Thais Odermatt",
-    "length": 20
+    "length": ""
   },
   {
     "id": 72,
     "title": "Le Dimanche en Famille",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2013",
-    "director": "Annie Gisler"
+    "director": "Annie Gisler",
+    "length": ""
   },
   {
     "id": 73,
     "title": "Das kurze Leben des J.A. Gutierrez",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2006",
-    "director": "Heidi Specogna"
+    "director": "Heidi Specogna",
+    "length": ""
   },
   {
     "id": 74,
     "title": "Venus Boyz",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2002",
     "director": "Gabriel Baur",
-    "length": 102
+    "length": ""
   },
   {
     "id": 75,
     "title": "Mit dem Bauch durch die Wand ",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2011",
-    "director": "Anka Schmid"
+    "director": "Anka Schmid",
+    "length": ""
   },
   {
     "id": 76,
     "title": "Bödälä – Dance the Rhythm ",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2010",
     "director": "Gitta Gsell",
-    "length": 78
+    "length": ""
   },
   {
     "id": 77,
     "title": "Goodnight Nobody",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2010",
     "director": "Jacqueline Zünd",
-    "length": 76
+    "length": ""
   },
   {
     "id": 78,
     "title": "Harry-Dean Stanton: Partly Fiction ",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Sophie Huber",
-    "length": 77
+    "length": ""
   },
   {
     "id": 79,
     "title": "Virgin Tales",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Mirjam von Arx",
-    "length": 87
+    "length": ""
   },
   {
     "id": 80,
     "title": "Forbidden Voices",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Barbara Miller",
-    "length": 95
+    "length": ""
   },
   {
     "id": 81,
     "title": "Life in Progress",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Irene Loebell",
-    "length": 99
+    "length": ""
+  },
+  {
+    "id": 82,
+    "title": "x",
+    "genre": "x",
+    "country": "x",
+    "year": "x",
+    "director": "x",
+    "length": ""
   },
   {
     "id": 83,
     "title": "Plug & Play",
+    "genre": "animation",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Michael Frei, Mario von Rickenbach",
-    "length": 6
+    "length": ""
+  },
+  {
+    "id": 84,
+    "title": "x",
+    "genre": "x",
+    "country": "x",
+    "year": "x",
+    "director": "x",
+    "length": ""
   },
   {
     "id": 86,
     "title": "«Die Gstettensaga: The Rise of Echsenfriedl»",
+    "genre": "sci-fi_fantasy",
     "country": "Österreich",
     "year": "01.01.2014",
     "director": "Günther Friesinger",
-    "length": 72
+    "length": ""
+  },
+  {
+    "id": 87,
+    "title": "Wir sind morgen",
+    "genre": "game_music_theatre",
+    "country": "Schweiz",
+    "year": "01.01.2015",
+    "director": "Simon Dietersdorf",
+    "length": "90"
   },
   {
     "id": 88,
     "title": "The Camera: Je or La Camera: I",
+    "genre": "documentary",
     "country": "USA",
     "year": "01.01.1977",
     "director": "Babette Mangolte",
-    "length": 88
+    "length": ""
+  },
+  {
+    "id": 89,
+    "title": "BlowBack",
+    "genre": "game_music_theatre",
+    "country": "Deutschland",
+    "year": "01.01.12015",
+    "director": "Elodie Pascal",
+    "length": "90"
   },
   {
     "id": 90,
     "title": "Struggle in Jerash",
-    "country": "Jordanien",
-    "year": "01.01.2010",
-    "director": "Wassif Sheik Yassin, Eileen Simpson and Ben White"
+    "genre": "documentary",
+    "country": "Jordan",
+    "year": "01.01.2008",
+    "director": "Eileen Simpson and Ben White",
+    "length": ""
+  },
+  {
+    "id": 91,
+    "title": "x",
+    "genre": "x",
+    "country": "x",
+    "year": "x",
+    "director": "x",
+    "length": ""
+  },
+  {
+    "id": 100,
+    "title": "x",
+    "genre": "x",
+    "country": "x",
+    "year": "x",
+    "director": "x",
+    "length": ""
   },
   {
     "id": 102,
     "title": "Tekkonkinkreet",
+    "genre": "animation",
     "country": "Japan",
     "year": "01.01.2006",
     "director": "Michael Arias",
-    "length": 111
+    "length": ""
   },
   {
     "id": 103,
     "title": "Spirited Away",
+    "genre": "animation",
     "country": "Japan",
     "year": "01.01.2001",
     "director": "Hayao Miyazaki",
-    "length": 125
+    "length": ""
   },
   {
     "id": 104,
     "title": "Akira",
+    "genre": "animation",
     "country": "Japan",
     "year": "01.01.1988",
     "director": "Katsuhiro Ôtomo",
-    "length": 124
+    "length": ""
   },
   {
     "id": 105,
     "title": "Summer Wars",
+    "genre": "animation",
     "country": "Japan",
     "year": "01.01.2009",
     "director": "Mamoru Hosoda,",
-    "length": 114
+    "length": ""
   },
   {
     "id": 106,
     "title": "Grave of the Fireflies",
+    "genre": "animation",
     "country": "Japan",
     "year": "01.01.1988",
     "director": "Isao Takahata",
-    "length": 89
+    "length": ""
   },
   {
     "id": 107,
     "title": "Le mépris",
+    "genre": "drama_romance",
     "country": "Frankreich",
     "year": "01.01.1963",
     "director": "Jean-Luc Godard",
-    "length": 95
+    "length": ""
   },
   {
     "id": 108,
     "title": "Living in Oblivion",
+    "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.1995",
     "director": "Tom DiCillo",
-    "length": 90
+    "length": ""
   },
   {
     "id": 109,
     "title": "Hollywood Ending",
+    "genre": "comedy",
     "country": "USA",
     "year": "01.01.2002",
     "director": "Woody Allen",
-    "length": 112
+    "length": ""
   },
   {
     "id": 110,
     "title": "También la lluvia",
+    "genre": "drama_romance",
     "country": "Spanien",
     "year": "01.01.2010",
-    "director": "Icíar Bollaín"
+    "director": "Icíar Bollaín",
+    "length": ""
   },
   {
     "id": 111,
     "title": "Where the Condors Fly",
-    "country": "Schweiz, Deutschland, Chile",
+    "genre": "documentary",
+    "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Carlos Klein",
-    "length": 1
+    "length": ""
   },
   {
     "id": 112,
     "title": "Antichrist",
+    "genre": "drama_romance",
     "country": "Dänemark",
     "year": "01.01.2009",
     "director": "Lars von Trier",
-    "length": 108
+    "length": ""
   },
   {
     "id": 113,
     "title": "C‘est arrivé près de chez vous",
+    "genre": "documentary",
     "country": "Belgien",
     "year": "01.01.1992",
-    "director": "Rémy Belvaux"
+    "director": "Rémy Belvaux",
+    "length": ""
   },
   {
     "id": 114,
     "title": "Ken Park",
+    "genre": "drama_romance",
     "country": "Niederlande",
     "year": "01.01.2002",
     "director": "Larry Clark",
-    "length": 93
+    "length": ""
   },
   {
     "id": 115,
     "title": "Ex Drummer",
+    "genre": "drama_romance",
     "country": "Belgien",
     "year": "01.01.2007",
     "director": "Koen Mortier",
-    "length": 100
+    "length": ""
   },
   {
     "id": 116,
     "title": "Irréversibel",
+    "genre": "drama_romance",
     "country": "Frankreich",
     "year": "01.01.2002",
-    "director": "Gaspar Noé"
+    "director": "Gaspar Noé",
+    "length": ""
   },
   {
     "id": 117,
     "title": "Fantômas",
+    "genre": "drama_romance",
     "country": "Frankreich",
     "year": "01.01.1913",
     "director": "Louis Feuillade",
-    "length": 86
+    "length": ""
   },
   {
     "id": 118,
     "title": "Kaktéus",
+    "genre": "comedy",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Matthias Sahli"
+    "director": "Matthias Sahli",
+    "length": ""
   },
   {
     "id": 119,
     "title": "Wir sind alle Schottwiler",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Marco Arrigoni"
+    "director": "Marco Arrigoni",
+    "length": ""
   },
   {
     "id": 120,
     "title": "Aquarium",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Cosima Frei",
-    "length": 17
+    "length": ""
   },
   {
     "id": 121,
     "title": "Kleine Helden",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Fabienne Andreoli"
+    "director": "Fabienne Andreoli",
+    "length": ""
   },
   {
     "id": 122,
     "title": "Ticket To Ride",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Manuela Rüegg",
-    "length": 71
+    "length": ""
   },
   {
     "id": 123,
     "title": "Destiny",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Wendy Pillonel",
-    "length": 103
+    "length": ""
   },
   {
     "id": 124,
     "title": "Albert Ruppert",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Pablo Callisaya"
+    "director": "Pablo Callisaya",
+    "length": ""
   },
   {
     "id": 125,
     "title": "Der Fotograf",
+    "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": "01.01.2014",
     "director": "Kim Allamand",
-    "length": null
+    "length": "19"
   },
   {
     "id": 126,
     "title": "De Letscht Fall",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Luca Ribler"
+    "director": "Luca Ribler",
+    "length": ""
   },
   {
     "id": 127,
     "title": "Was bleibt",
+    "genre": "x",
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Oliver Rogers",
-    "length": 16
+    "length": ""
   },
   {
     "id": 128,
     "title": "Paläontologie",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Pablo Callisaya"
+    "director": "Pablo Callisaya",
+    "length": "14"
   },
   {
     "id": 129,
     "title": "Mäge",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Lisa Brühlmann",
-    "length": null
+    "length": "21"
   },
   {
     "id": 130,
     "title": "Die guten Schweizers",
+    "genre": "x",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Marco Arrigoni"
+    "director": "Marco Arrigoni",
+    "length": ""
   },
   {
     "id": 131,
     "title": "Zimmer ohne Aussicht",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
-    "director": "Johannes Bachmann"
+    "director": "Johannes Bachmann",
+    "length": "10"
   },
   {
     "id": 132,
     "title": "Jing",
+    "genre": "x",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Jan-Eric Mack",
-    "length": 87
+    "length": ""
   },
   {
     "id": 133,
     "title": "Parasit",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Diego Hauenstein",
-    "length": 8
+    "length": ""
   },
   {
     "id": 134,
     "title": "Invincible",
+    "genre": "x",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Anna Furrer",
-    "length": 105
+    "length": ""
   },
   {
     "id": 135,
     "title": "Driven",
+    "genre": "thriller_horror",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": "01.01.2013",
     "director": "Johannes Bachmann",
-    "length": 116
+    "length": "9"
   },
   {
     "id": 136,
     "title": "Chum guet hei",
+    "genre": "x",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "Natascha Vavrina"
+    "director": "Natascha Vavrina",
+    "length": ""
   },
   {
     "id": 137,
     "title": "Teufel",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Yasmin Joerg",
-    "length": 99
+    "length": "15"
   },
   {
     "id": 138,
     "title": "Everyday Rebellion",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Arash T. Riahi, Arman T. Riahi",
-    "length": 118
+    "length": ""
   },
   {
     "id": 139,
     "title": "Fort McMoney - Vote Rogers Mayor",
+    "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2015",
-    "director": "David Dufresne"
+    "director": "David Dufresne",
+    "length": ""
   },
   {
     "id": 140,
     "title": "Nachtdialoger",
+    "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "",
-    "director": "Moritz Willenegger"
+    "year": "01.01.2015",
+    "director": "Moritz Willenegger",
+    "length": ""
   },
   {
     "id": 141,
     "title": "Inland",
+    "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "",
+    "year": "01.01.2015",
     "director": "Piet Baumgartner",
-    "length": 6
+    "length": ""
   }
 ]

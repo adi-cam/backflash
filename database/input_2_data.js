@@ -4,11 +4,10 @@ var csv = require('csv');
 //load the original csv files
 //take readFileSync to have things happen more simultaneously
 var rawMovies = fs.readFileSync('./input/movies.csv');
-var rawGenres = fs.readFileSync('./input/genres.csv');
 var rawEvents = fs.readFileSync('./input/events.csv');
 
 //variable for the parsed, old data
-var dataMovies, dataGenres, dataEvents;
+var dataMovies, dataEvents;
 
 //parse the raw data
 //nest the functions so that it stays in scope
@@ -16,13 +15,10 @@ var dataMovies, dataGenres, dataEvents;
 function parseRawData() {
   csv.parse(rawMovies, function(_, d1) {
     dataMovies = d1;
-    csv.parse(rawGenres, function(_, d2) {
-      dataGenres = d2;
       csv.parse(rawEvents, function(_, d3) {
         dataEvents = d3;
 
         transformData();
-      });
     });
   });
 }
@@ -39,12 +35,13 @@ function transformData(){
     var m = dataMovies[i];
 
     var movie = {};
-    movie.id = parseInt(m[0]);
-    movie.title = m[1];
+    movie.id = parseInt(m[1]);
+    movie.title = m[2];
+    movie.genre = m[3];
     movie.country = m[4];
-    movie.year = m[6];
-    movie.director = m[7];
-    // movie.length = m[?]; //TODO: Add length to movies that are not in the API
+    movie.year = m[5];
+    movie.director = m[6];
+    movie.length = m[7]; //TODO: Add length to movies that are not in the API
 
     //If there is a movie id and a movie director push the data the movie object
     if(movie.id >= 0 && movie.director) { // TODO: lower filters
@@ -61,11 +58,11 @@ function transformData(){
     event.id = e[0];
     event.title = e[1];
     event.type = e[2];
-    event.date = e[6];
+    event.date = e[5];
     event.series = e[3];
     event.topic = e[4];
 
-    if(event.id && event.title) { // TODO: lower filters
+    if(event.id) { // TODO: lower filters
       events.push(event);
     }
   }
