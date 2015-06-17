@@ -9,12 +9,10 @@ function dataViz(data) {
   var m = data.movies;
   var e = data.events;
 
-
   //format dates
   var date = [];
 
-
-  e.forEach(function(d, i) {
+  e.forEach(function (d, i) {
     var timeFormat = d3.time.format('%d.%m.%Y');
     d.date = timeFormat.parse(d.date);
     date.push(d.date);
@@ -24,11 +22,33 @@ function dataViz(data) {
 
   //get month
   var month = [];
-  e.forEach(function(d, i) {
+  e.forEach(function (d, i) {
     d.date = date[i].getMonth();
-    month.push(d.date+1)
+    month.push(d.date + 1)
   });
   console.log(month);
+
+
+  //consolidate datapoints under eventid
+  var key = e.id;
+  var keyMovies = m.eventid;
+  var group = [];
+
+  if (key==keyMovies) {
+    //group.push(d3.merge([m, e]))
+    var nest = d3.nest()
+        .key(function (d) {
+           return key
+        })
+        .key (function(d){
+          return keyMovies
+        })
+        .entries(data);
+
+    }
+   console.log(nest);
+
+
 
   //create timescale
   var timeScale =  d3.time.scale().domain([date[0], date[date.length-1]]).range([0, 1000]);
