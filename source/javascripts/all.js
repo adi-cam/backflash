@@ -12,17 +12,23 @@ function dataViz(data) {
 
   //format dates
   var date = [];
+
+
   e.forEach(function(d, i) {
     var timeFormat = d3.time.format('%d.%m.%Y');
     d.date = timeFormat.parse(d.date);
     date.push(d.date);
   });
+  console.log(date);
 
-  e.forEach(function(_, i) {
-    var month = date[i].getMonth(date);
-    console.log(month + 1);
+
+  //get month
+  var month = [];
+  e.forEach(function(d, i) {
+    d.date = date[i].getMonth();
+    month.push(d.date+1)
   });
-
+  console.log(month);
 
   //create timescale
   var timeScale =  d3.time.scale().domain([date[0], date[date.length-1]]).range([0, 1000]);
