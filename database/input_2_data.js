@@ -41,7 +41,7 @@ function transformData(){
     movie.country = m[4];
     movie.year = m[5];
     movie.director = m[6];
-    movie.length = m[7];
+    movie.length = parseInt(m[7]);
     movie.eventid = m[0];
 
     //If there is a movie id and a movie director push the data the movie object
