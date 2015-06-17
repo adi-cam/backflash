@@ -41,10 +41,11 @@ function transformData(){
     movie.country = m[4];
     movie.year = m[5];
     movie.director = m[6];
-    movie.length = m[7]; //TODO: Add length to movies that are not in the API
+    movie.length = m[7];
+    movie.eventid = m[0];
 
     //If there is a movie id and a movie director push the data the movie object
-    if(movie.id >= 0 && movie.director) { // TODO: lower filters
+    if(movie.id >= 0) {
       movies.push(movie);
     }
   }
@@ -56,13 +57,16 @@ function transformData(){
 
     var event = {};
     event.id = e[0];
-    event.title = e[1];
     event.type = e[2];
     event.date = e[5];
     event.series = e[3];
     event.topic = e[4];
+    event.title = e[1];
+/*    if (event.title.length <=0 && event.id == dataMovies[j][0]) {
+        event.title = dataMovies[j][2];
+      }*/
 
-    if(event.id) { // TODO: lower filters
+    if(event.id) {
       events.push(event);
     }
   }

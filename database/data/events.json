@@ -1,930 +1,930 @@
 [
   {
     "id": "A001",
-    "title": "",
     "type": "screening",
     "date": "01.10.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A002",
-    "title": "",
     "type": "screening",
     "date": "08.10.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A003",
-    "title": "",
     "type": "screening",
     "date": "15.10.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A004",
-    "title": "",
     "type": "screening",
     "date": "22.10.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A005",
-    "title": "",
     "type": "screening",
     "date": "29.10.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A006",
-    "title": "",
     "type": "screening",
     "date": "05.11.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A007",
-    "title": "",
     "type": "screening",
     "date": "12.11.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A008",
-    "title": "",
     "type": "screening",
     "date": "26.11.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A009",
-    "title": "",
     "type": "screening",
     "date": "03.12.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A010",
-    "title": "",
     "type": "screening",
     "date": "10.12.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A011",
-    "title": "",
     "type": "screening",
     "date": "17.12.2014",
     "series": "Filmgeschichte",
-    "topic": "The Ballad of Sexual Dependency"
+    "topic": "The Ballad of Sexual Dependency",
+    "title": ""
   },
   {
     "id": "A012",
-    "title": "",
     "type": "screening",
     "date": "02.10.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A013",
-    "title": "",
     "type": "screening",
     "date": "09.10.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A014",
-    "title": "",
     "type": "screening",
     "date": "16.10.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A015",
-    "title": "",
     "type": "screening",
     "date": "23.10.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A016",
-    "title": "Diskussion mit Thomas Imbach",
     "type": "discussion",
     "date": "30.10.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": "Diskussion mit Thomas Imbach"
   },
   {
     "id": "A017",
-    "title": "",
     "type": "screening",
     "date": "06.11.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A018",
-    "title": "Special Guest: Andres Veiel",
     "type": "screening_guest",
     "date": "13.11.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": "Special Guest: Andres Veiel"
   },
   {
     "id": "A019",
-    "title": "",
     "type": "screening",
     "date": "20.11.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A020",
-    "title": "",
     "type": "screening",
     "date": "27.11.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A021",
-    "title": "",
     "type": "screening",
     "date": "04.12.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A022",
-    "title": "",
     "type": "screening",
     "date": "11.12.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": ""
   },
   {
     "id": "A023",
-    "title": "Diskussion mit Jean-Stéphane Bron",
     "type": "discussion",
     "date": "18.12.2014",
     "series": "Fokus Dok",
-    "topic": "Autorenpositionen"
+    "topic": "Autorenpositionen",
+    "title": "Diskussion mit Jean-Stéphane Bron"
   },
   {
     "id": "A024",
-    "title": "Birdly ",
     "type": "lecture",
     "date": "29.09.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Birdly "
   },
   {
     "id": "A025",
-    "title": "Cinema of Happiness",
     "type": "screening_lecture",
     "date": "06.10.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Cinema of Happiness"
   },
   {
     "id": "A026",
-    "title": "Rosanna Zünd: «Letzte Spuren» (Kottmann) und weitere Kurzfilme",
     "type": "screening_lecture",
     "date": "13.10.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Rosanna Zünd: «Letzte Spuren» (Kottmann) und weitere Kurzfilme"
   },
   {
     "id": "A027",
-    "title": "Filme aus dem Hochschularchiv",
     "type": "screening_lecture",
     "date": "20.10.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Filme aus dem Hochschularchiv"
   },
   {
     "id": "A027",
-    "title": "Filme aus dem Hochschularchiv",
     "type": "screening_lecture",
     "date": "20.10.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Filme aus dem Hochschularchiv"
   },
   {
     "id": "A028",
-    "title": "Scope TV",
     "type": "lecture",
     "date": "27.10.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Scope TV"
   },
   {
     "id": "A029",
-    "title": "Body-Centered Exergames",
     "type": "lecture",
     "date": "03.11.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Body-Centered Exergames"
   },
   {
     "id": "A030",
-    "title": "Roman Lerch: Gutes Recht (A. Blumer)",
     "type": "screening_lecture",
     "date": "10.11.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Roman Lerch: Gutes Recht (A. Blumer)"
   },
   {
     "id": "A031",
-    "title": "Filme aus dem Hochschularchiv «Urbanistisches Theater rund um Paris - und anderswo = théâtre urbanistique autour de Paris - et ailleurs»",
     "type": "screening_lecture",
     "date": "17.11.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Filme aus dem Hochschularchiv «Urbanistisches Theater rund um Paris - und anderswo = théâtre urbanistique autour de Paris - et ailleurs»"
   },
   {
     "id": "A032",
-    "title": "«Nuke the World!»– Wenn Spielspass plötzlich ernst wird",
     "type": "screening_lecture",
     "date": "24.11.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "«Nuke the World!»– Wenn Spielspass plötzlich ernst wird"
   },
   {
     "id": "A033",
-    "title": "Film As Monument",
     "type": "screening_lecture",
     "date": "01.12.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Film As Monument"
   },
   {
     "id": "A033",
-    "title": "Film As Monument",
     "type": "screening_lecture",
     "date": "01.12.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Film As Monument"
   },
   {
     "id": "A033",
-    "title": "Film As Monument",
     "type": "screening_lecture",
     "date": "01.12.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Film As Monument"
   },
   {
     "id": "A034",
-    "title": "Dominik Blumer: Parvaneh (Hamzavi)",
     "type": "screening_lecture",
     "date": "08.12.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Dominik Blumer: Parvaneh (Hamzavi)"
   },
   {
     "id": "A035",
-    "title": "Filme aus dem Hochschularchiv",
     "type": "screening_lecture",
     "date": "15.12.2014",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Filme aus dem Hochschularchiv"
   },
   {
     "id": "A036",
-    "title": "",
     "type": "screening",
     "date": "23.09.2014",
     "series": "Klub Kuleshov",
-    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert"
+    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert",
+    "title": ""
   },
   {
     "id": "A037",
-    "title": "",
     "type": "screening",
     "date": "30.09.2014",
     "series": "Klub Kuleshov",
-    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert"
+    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert",
+    "title": ""
   },
   {
     "id": "A038",
-    "title": "",
     "type": "screening",
     "date": "07.10.2014",
     "series": "Klub Kuleshov",
-    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert"
+    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert",
+    "title": ""
   },
   {
     "id": "A039",
-    "title": "",
     "type": "screening",
     "date": "14.10.2014",
     "series": "Klub Kuleshov",
-    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert"
+    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert",
+    "title": ""
   },
   {
     "id": "A040",
-    "title": "",
     "type": "screening",
     "date": "21.10.2014",
     "series": "Klub Kuleshov",
-    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert"
+    "topic": "Science Fiction – Fünf Dekaden Aliens Garantiert",
+    "title": ""
   },
   {
     "id": "A041",
-    "title": "",
     "type": "screening",
     "date": "28.10.2014",
     "series": "Klub Kuleshov",
-    "topic": "Coming of Age – Fünf Dekaden und immer noch jung"
+    "topic": "Coming of Age – Fünf Dekaden und immer noch jung",
+    "title": ""
   },
   {
     "id": "A042",
-    "title": "",
     "type": "screening",
     "date": "04.11.2014",
     "series": "Klub Kuleshov",
-    "topic": "Coming of Age – Fünf Dekaden und immer noch jung"
+    "topic": "Coming of Age – Fünf Dekaden und immer noch jung",
+    "title": ""
   },
   {
     "id": "A043",
-    "title": "",
     "type": "screening",
     "date": "07.11.2014",
     "series": "Klub Kuleshov",
-    "topic": "Coming of Age – Fünf Dekaden und immer noch jung"
+    "topic": "Coming of Age – Fünf Dekaden und immer noch jung",
+    "title": ""
   },
   {
     "id": "A044",
-    "title": "",
     "type": "screening",
     "date": "11.11.2014",
     "series": "Klub Kuleshov",
-    "topic": "Coming of Age – Fünf Dekaden und immer noch jung"
+    "topic": "Coming of Age – Fünf Dekaden und immer noch jung",
+    "title": ""
   },
   {
     "id": "A045",
-    "title": "",
     "type": "screening",
     "date": "18.11.2014",
     "series": "Klub Kuleshov",
-    "topic": "Coming of Age – Fünf Dekaden und immer noch jung"
+    "topic": "Coming of Age – Fünf Dekaden und immer noch jung",
+    "title": ""
   },
   {
     "id": "A046",
-    "title": "",
     "type": "screening",
     "date": "25.11.2014",
     "series": "Klub Kuleshov",
-    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung"
+    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung",
+    "title": ""
   },
   {
     "id": "A047",
-    "title": "",
     "type": "screening",
     "date": "02.12.2014",
     "series": "Klub Kuleshov",
-    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung"
+    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung",
+    "title": ""
   },
   {
     "id": "A048",
-    "title": "",
     "type": "screening",
     "date": "09.12.2014",
     "series": "Klub Kuleshov",
-    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung"
+    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung",
+    "title": ""
   },
   {
     "id": "A049",
-    "title": "",
     "type": "screening",
     "date": "16.12.2014",
     "series": "Klub Kuleshov",
-    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung"
+    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung",
+    "title": ""
   },
   {
     "id": "A050",
-    "title": "",
     "type": "screening",
     "date": "19.12.2014",
     "series": "Klub Kuleshov",
-    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung"
+    "topic": "Thriller – Fünf Dekaden Fünfmal Spannung",
+    "title": ""
   },
   {
     "id": "A051",
-    "title": "Ticket to Ride",
     "type": "screening",
     "date": "19.09.2014",
     "series": "Special",
-    "topic": "Ticket To Ride"
+    "topic": "Ticket To Ride",
+    "title": "Ticket to Ride"
   },
   {
     "id": "A052",
-    "title": "Expedition ins Uncanny Valley",
     "type": "congress",
     "date": "31.10.2014",
     "series": "Special",
-    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+    "topic": "Kolloquium des Institute for the Performing Arts and Film",
+    "title": "Expedition ins Uncanny Valley"
   },
   {
     "id": "A052",
-    "title": "Expedition ins Uncanny Valley",
     "type": "congress",
     "date": "01.11.2014",
     "series": "Special",
-    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+    "topic": "Kolloquium des Institute for the Performing Arts and Film",
+    "title": "Expedition ins Uncanny Valley"
   },
   {
     "id": "A053",
-    "title": "Jakob Lass: Freiheit und Struktur –  zur Improvisation bei Love Steaks",
     "type": "screening_lecture",
     "date": "22.11.2014",
     "series": "Special",
-    "topic": "Meet the Talent – Kino Xenix"
+    "topic": "Meet the Talent – Kino Xenix",
+    "title": "Jakob Lass: Freiheit und Struktur –  zur Improvisation bei Love Steaks"
   },
   {
     "id": "A054",
-    "title": "Marcel Derek Ramsay – Der Editor als Autor",
     "type": "discussion",
     "date": "14.11.2014",
     "series": "Special",
-    "topic": "Editor's Chat"
+    "topic": "Editor's Chat",
+    "title": "Marcel Derek Ramsay – Der Editor als Autor"
   },
   {
     "id": "A055",
-    "title": "Ticket to Ride",
     "type": "screening",
     "date": "19.12.2014",
     "series": "Special",
-    "topic": "Ticket To Ride "
+    "topic": "Ticket To Ride ",
+    "title": "Ticket to Ride"
   },
   {
     "id": "B001",
-    "title": "",
     "type": "screening",
     "date": "04.03.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B002",
-    "title": "",
     "type": "screening",
     "date": "11.03.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B003",
-    "title": "",
     "type": "screening",
     "date": "18.03.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B004",
-    "title": "",
     "type": "screening",
     "date": "25.03.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B005",
-    "title": "",
     "type": "screening",
     "date": "01.04.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B006",
-    "title": "",
     "type": "screening",
     "date": "08.04.2015",
     "series": "Filmgeschichte",
-    "topic": "Tell me more!"
+    "topic": "Tell me more!",
+    "title": ""
   },
   {
     "id": "B007",
-    "title": "",
     "type": "screening",
     "date": "15.04.2015",
     "series": "Fokus Dok",
-    "topic": "Activist Filmmaking Done Right?"
+    "topic": "Activist Filmmaking Done Right?",
+    "title": ""
   },
   {
     "id": "B008",
-    "title": "",
     "type": "screening",
     "date": "22.04.2015",
     "series": "Fokus Dok",
-    "topic": "Activist Filmmaking Done Right?"
+    "topic": "Activist Filmmaking Done Right?",
+    "title": ""
   },
   {
     "id": "B009",
-    "title": "",
     "type": "screening",
     "date": "29.04.2015",
     "series": "Fokus Dok",
-    "topic": "Activist Filmmaking Done Right?"
+    "topic": "Activist Filmmaking Done Right?",
+    "title": ""
   },
   {
     "id": "B010",
-    "title": "",
     "type": "screening",
     "date": "13.05.2015",
     "series": "Fokus Dok",
-    "topic": "Activist Filmmaking Done Right?"
+    "topic": "Activist Filmmaking Done Right?",
+    "title": ""
   },
   {
     "id": "B011",
-    "title": "",
     "type": "screening",
     "date": "20.05.2015",
     "series": "Fokus Dok",
-    "topic": "Activist Filmmaking Done Right?"
+    "topic": "Activist Filmmaking Done Right?",
+    "title": ""
   },
   {
     "id": "B012",
-    "title": "Special Guest: Alexandra Schneider",
     "type": "screening_guest",
     "date": "05.03.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": "Special Guest: Alexandra Schneider"
   },
   {
     "id": "B013",
-    "title": "Special Guest: Alexandra Schneider",
     "type": "screening_guest",
     "date": "05.03.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": "Special Guest: Alexandra Schneider"
   },
   {
     "id": "B014",
-    "title": "",
     "type": "screening",
     "date": "12.03.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B015",
-    "title": "",
     "type": "screening",
     "date": "19.03.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B016",
-    "title": "",
     "type": "screening",
     "date": "26.03.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B017",
-    "title": "",
     "type": "screening",
     "date": "02.04.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B018",
-    "title": "",
     "type": "screening",
     "date": "09.04.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B019",
-    "title": "",
     "type": "screening",
     "date": "16.04.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B020",
-    "title": "",
     "type": "screening",
     "date": "23.04.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B021",
-    "title": "",
     "type": "screening",
     "date": "30.04.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": ""
   },
   {
     "id": "B022",
-    "title": "Special Guest: Irene Loebell",
     "type": "screening_guest",
     "date": "21.05.2015",
     "series": "Fokus Dok",
-    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014"
+    "topic": "The World According to Her – Dokumentarfilme Schweizer Autorinnen 2002–2014",
+    "title": "Special Guest: Irene Loebell"
   },
   {
     "id": "B023",
-    "title": "Pulling Rabbits Out of Hats – The Filmmaker as Trickster",
     "type": "screening_lecture",
     "date": "16.02.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Pulling Rabbits Out of Hats – The Filmmaker as Trickster"
   },
   {
     "id": "B024",
-    "title": "«Plug & Play» – Vom Animationsfilm zum Game",
     "type": "screening_lecture",
     "date": "23.02.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "«Plug & Play» – Vom Animationsfilm zum Game"
   },
   {
     "id": "B025",
-    "title": "Game in Concert",
     "type": "lecture",
     "date": "02.03.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Game in Concert"
   },
   {
     "id": "B026",
-    "title": "Music for the Eyes – Abstract Film from Animation to Computer Technology",
     "type": "lecture",
     "date": "09.03.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Music for the Eyes – Abstract Film from Animation to Computer Technology"
   },
   {
     "id": "B027",
-    "title": "CONTEXT HACKING – How to Mess with Art, Media, Law and the Market",
     "type": "screening_lecture",
     "date": "16.03.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "CONTEXT HACKING – How to Mess with Art, Media, Law and the Market"
   },
   {
     "id": "B028",
-    "title": "«Wir sind morgen»",
     "type": "screening_lecture",
     "date": "23.03.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "«Wir sind morgen»"
   },
   {
     "id": "B029",
-    "title": "Vorstellung der Cinenova Working Group",
     "type": "lecture",
     "date": "30.03.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Vorstellung der Cinenova Working Group"
   },
   {
     "id": "B030",
-    "title": "",
     "type": "screening_lecture",
     "date": "20.04.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": ""
   },
   {
     "id": "B031",
-    "title": "«BlowBack» - Ein interaktives Hörspiel",
     "type": "screening_lecture",
     "date": "27.04.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "«BlowBack» - Ein interaktives Hörspiel"
   },
   {
     "id": "B032",
-    "title": "",
     "type": "screening_lecture",
     "date": "04.05.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": ""
   },
   {
     "id": "B033",
-    "title": "Musikalische Restauration im Stummfilm",
     "type": "screening_lecture",
     "date": "11.05.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Musikalische Restauration im Stummfilm"
   },
   {
     "id": "B034",
-    "title": "Star Gazer – The Films of Andy Warhol",
     "type": "screening_lecture",
     "date": "18.05.2015",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Star Gazer – The Films of Andy Warhol"
   },
   {
     "id": "B035",
-    "title": "Crappy Cars: Videogames im öffentlichen Raum",
     "type": "lecture",
     "date": "01.06.2016",
     "series": "Kein Kino",
-    "topic": "Clash of Perspectives"
+    "topic": "Clash of Perspectives",
+    "title": "Crappy Cars: Videogames im öffentlichen Raum"
   },
   {
     "id": "B036",
-    "title": "",
     "type": "screening",
     "date": "17.02.2015",
     "series": "Klub Kuleshov",
-    "topic": "Anime – Fünfmal grosse Augen"
+    "topic": "Anime – Fünfmal grosse Augen",
+    "title": ""
   },
   {
     "id": "B037",
-    "title": "",
     "type": "screening",
     "date": "24.02.2015",
     "series": "Klub Kuleshov",
-    "topic": "Anime – Fünfmal grosse Augen"
+    "topic": "Anime – Fünfmal grosse Augen",
+    "title": ""
   },
   {
     "id": "B038",
-    "title": "",
     "type": "screening",
     "date": "03.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Anime – Fünfmal grosse Augen"
+    "topic": "Anime – Fünfmal grosse Augen",
+    "title": ""
   },
   {
     "id": "B039",
-    "title": "",
     "type": "screening",
     "date": "10.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Anime – Fünfmal grosse Augen"
+    "topic": "Anime – Fünfmal grosse Augen",
+    "title": ""
   },
   {
     "id": "B040",
-    "title": "",
     "type": "screening",
     "date": "17.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Anime – Fünfmal grosse Augen"
+    "topic": "Anime – Fünfmal grosse Augen",
+    "title": ""
   },
   {
     "id": "B041",
-    "title": "",
     "type": "screening",
     "date": "24.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Film im Film – Fünfmal im Film im Film"
+    "topic": "Film im Film – Fünfmal im Film im Film",
+    "title": ""
   },
   {
     "id": "B042",
-    "title": "",
     "type": "screening",
     "date": "31.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Film im Film – Fünfmal im Film im Film"
+    "topic": "Film im Film – Fünfmal im Film im Film",
+    "title": ""
   },
   {
     "id": "B043",
-    "title": "",
     "type": "screening",
     "date": "07.04.2015",
     "series": "Klub Kuleshov",
-    "topic": "Film im Film – Fünfmal im Film im Film"
+    "topic": "Film im Film – Fünfmal im Film im Film",
+    "title": ""
   },
   {
     "id": "B044",
-    "title": "",
     "type": "screening",
     "date": "14.04.2015",
     "series": "Klub Kuleshov",
-    "topic": "Film im Film – Fünfmal im Film im Film"
+    "topic": "Film im Film – Fünfmal im Film im Film",
+    "title": ""
   },
   {
     "id": "B045",
-    "title": "",
     "type": "screening",
     "date": "21.04.2015",
     "series": "Klub Kuleshov",
-    "topic": "Film im Film – Fünfmal im Film im Film"
+    "topic": "Film im Film – Fünfmal im Film im Film",
+    "title": ""
   },
   {
     "id": "B046",
-    "title": "",
     "type": "screening",
     "date": "28.04.2015",
     "series": "Klub Kuleshov",
-    "topic": "Skandal! – Fünfmal FSK18"
+    "topic": "Skandal! – Fünfmal FSK18",
+    "title": ""
   },
   {
     "id": "B047",
-    "title": "",
     "type": "screening",
     "date": "05.05.2015",
     "series": "Klub Kuleshov",
-    "topic": "Skandal! – Fünfmal FSK18"
+    "topic": "Skandal! – Fünfmal FSK18",
+    "title": ""
   },
   {
     "id": "B048",
-    "title": "",
     "type": "screening",
     "date": "12.05.2015",
     "series": "Klub Kuleshov",
-    "topic": "Skandal! – Fünfmal FSK18"
+    "topic": "Skandal! – Fünfmal FSK18",
+    "title": ""
   },
   {
     "id": "B049",
-    "title": "",
     "type": "screening",
     "date": "19.05.2015",
     "series": "Klub Kuleshov",
-    "topic": "Skandal! – Fünfmal FSK18"
+    "topic": "Skandal! – Fünfmal FSK18",
+    "title": ""
   },
   {
     "id": "B050",
-    "title": "",
     "type": "screening",
     "date": "26.05.2015",
     "series": "Klub Kuleshov",
-    "topic": "Skandal! – Fünfmal FSK18"
+    "topic": "Skandal! – Fünfmal FSK18",
+    "title": ""
   },
   {
     "id": "B051",
-    "title": "",
     "type": "screening",
     "date": "13.03.2015",
     "series": "Klub Kuleshov",
-    "topic": "Special"
+    "topic": "Special",
+    "title": ""
   },
   {
     "id": "B052",
-    "title": "Filmsnacks",
     "type": "screening",
     "date": "15.05.2015",
     "series": "Klub Kuleshov",
-    "topic": "Filmsnacks"
+    "topic": "Filmsnacks",
+    "title": "Filmsnacks"
   },
   {
     "id": "B053",
-    "title": "You are leaving the linear Sector!",
     "type": "congress",
     "date": "07.05.2015",
     "series": "Special",
-    "topic": "Zürcher Dokumentarfilmtagung"
+    "topic": "Zürcher Dokumentarfilmtagung",
+    "title": "You are leaving the linear Sector!"
   },
   {
     "id": "B053",
-    "title": "You are leaving the linear Sector!",
     "type": "congress",
     "date": "08.05.2015",
     "series": "Special",
-    "topic": "Zürcher Dokumentarfilmtagung"
+    "topic": "Zürcher Dokumentarfilmtagung",
+    "title": "You are leaving the linear Sector!"
   },
   {
     "id": "B054",
-    "title": "Ticket to Ride",
     "type": "screening",
     "date": "13.03. 2015",
     "series": "Special",
-    "topic": "Ticket To Ride"
+    "topic": "Ticket To Ride",
+    "title": "Ticket to Ride"
   },
   {
     "id": "B054",
-    "title": "Ticket to Ride",
     "type": "screening",
     "date": "13.03. 2015",
     "series": "Special",
-    "topic": "Ticket To Ride"
+    "topic": "Ticket To Ride",
+    "title": "Ticket to Ride"
   },
   {
     "id": "B055",
-    "title": "Die Unerträglichkeit der Bewegung",
     "type": "congress",
     "date": "06.06.2015",
     "series": "Special",
-    "topic": "Kolloquium des Institute for the Performing Arts and Film"
+    "topic": "Kolloquium des Institute for the Performing Arts and Film",
+    "title": "Die Unerträglichkeit der Bewegung"
   }
 ]
