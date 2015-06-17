@@ -48,11 +48,12 @@ function dataViz(data) {
     }
    console.log(nest);
 
-
-
   //create timescale
   var timeScale =  d3.time.scale().domain([date[0], date[date.length-1]]).range([0, 1000]);
   console.log(timeScale(date[6]));
+
+
+  var tenColorScale = d3.scale.category10(['documentary', 'sci.fi_fiction', 'drama_romance']);
 
   var items = d3.select('.graph').selectAll('.movie').data(m, function(d){
     return d.id;
@@ -61,15 +62,16 @@ function dataViz(data) {
   items.enter().append('circle')
     .attr('class', 'movie')
     .attr('r', function(d){
-      return (d.length || 5) / 10;
+      return (d.length || 5) / 5;
     })
     .attr('data-id', function(d){
       return d.id;
     })
       .attr("cx", function(_, i){
-        return i* (timeScale(date[i]));
+        return (i/2)* (timeScale(date[i]));
       })
-      .attr('cy', 200);
+      .attr('cy', 200)
+      .style('fill', function (d) {return tenColorScale(d.genre)});
 
   items.exit().remove();
 }
