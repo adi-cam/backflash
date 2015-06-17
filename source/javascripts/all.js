@@ -5,27 +5,27 @@ d3.json('data.json', function(_, data) {
 });
 
 
-
-
-//d3.time.scale.domain([timeFormat.parse('01.02.2002'), timeFormat.parse('01.02.2002')])
-
 function dataViz(data) {
   var m = data.movies;
   var e = data.events;
 
-  console.log(data);
 
-
+  //format dates
   var date = [];
-
   e.forEach(function(d, i) {
     var timeFormat = d3.time.format('%d.%m.%Y');
     d.date = timeFormat.parse(d.date);
     date.push(d.date);
   });
 
+  e.forEach(function(_, i) {
+    var month = date[i].getMonth(date);
+    console.log(month + 1);
+  });
 
-  var timeScale =  d3.time.scale().domain([date[1], date[20]]);
+
+  //create timescale
+  var timeScale =  d3.time.scale().domain([date[0], date[date.length-1]]).range([0, 1000]);
   console.log(timeScale(date[6]));
 
   var items = d3.select('.graph').selectAll('.movie').data(m, function(d){
@@ -40,10 +40,10 @@ function dataViz(data) {
     .attr('data-id', function(d){
       return d.id;
     })
-    .attr('cx', function(_, i){
-      return i * 30 + 10;
-    })
-    .attr('cy', 200);
+      .attr("cx", function(_, i){
+        return i* (timeScale(date[i]));
+      })
+      .attr('cy', 200);
 
   items.exit().remove();
 }
