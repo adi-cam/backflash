@@ -56,7 +56,7 @@
     "country": "Schweden",
     "year": "01.01.1953",
     "director": "Ingmar Bergman",
-    "length": "",
+    "length": "93",
     "eventid": "A006"
   },
   {
@@ -86,7 +86,7 @@
     "country": "Japan",
     "year": "01.01.1962",
     "director": "Hiroshi Teshigahara",
-    "length": "",
+    "length": "123",
     "eventid": "A009"
   },
   {
@@ -166,7 +166,7 @@
     "country": "Schweiz",
     "year": "01.01.2004",
     "director": "Andres Veiel",
-    "length": "",
+    "length": "108",
     "eventid": "A018"
   },
   {
@@ -181,22 +181,22 @@
   },
   {
     "id": 20,
-    "title": "Mais im Bundeshus",
+    "title": "Mais im Bundeshuus",
     "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2003",
     "director": "Jean-Stéphane Bron",
-    "length": "",
+    "length": "90",
     "eventid": "A020"
   },
   {
     "id": 21,
-    "title": "Cleveland vs. Wallstreet",
+    "title": "Cleveland vs. Wall Street",
     "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2006",
     "director": "Jean-Stéphane Bron",
-    "length": "",
+    "length": "98",
     "eventid": "A021"
   },
   {
@@ -226,7 +226,7 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Norbert Kottmann, Oliver Rogers",
-    "length": "",
+    "length": "7",
     "eventid": "A026"
   },
   {
@@ -236,7 +236,7 @@
     "country": "Schweiz",
     "year": "01.01.1969",
     "director": "Thomas Isler",
-    "length": "",
+    "length": "87",
     "eventid": "A027"
   },
   {
@@ -246,7 +246,7 @@
     "country": "Schweiz",
     "year": "01.01.1969",
     "director": "Thomas Isler",
-    "length": "",
+    "length": "12",
     "eventid": "A027"
   },
   {
@@ -266,7 +266,7 @@
     "country": "Schweiz",
     "year": "01.01.1994",
     "director": "Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti",
-    "length": "",
+    "length": "90",
     "eventid": "A031"
   },
   {
@@ -276,7 +276,7 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Feinheit GmbH",
-    "length": 90,
+    "length": "90",
     "eventid": "A032"
   },
   {
@@ -296,7 +296,7 @@
     "country": "USA",
     "year": "01.01.1990",
     "director": "Gregory Markopoulos",
-    "length": "",
+    "length": "4800",
     "eventid": "A033"
   },
   {
@@ -306,7 +306,7 @@
     "country": "USA",
     "year": "01.01.1980",
     "director": "Hollis Frampton",
-    "length": 18,
+    "length": "480",
     "eventid": "A033"
   },
   {
@@ -336,7 +336,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Aron Marty",
-    "length": "",
+    "length": "16",
     "eventid": "A035"
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "id": 38,
-    "title": "Close Encounters with the Third Kid",
+    "title": "Close Encounters of the Third Kid",
     "genre": "sci-fi_fantasy",
     "country": "USA",
     "year": "01.01.1977",
@@ -406,7 +406,7 @@
     "country": "Deutschland",
     "year": "01.01.1978",
     "director": "Boaz Davidson",
-    "length": "",
+    "length": "95",
     "eventid": "A042"
   },
   {
@@ -456,7 +456,7 @@
     "country": "USA",
     "year": "01.01.1976",
     "director": "Roman Polanski",
-    "length": 25,
+    "length": "126",
     "eventid": "A047"
   },
   {
@@ -496,7 +496,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Lisa Gerig",
-    "length": "",
+    "length": "14",
     "eventid": "A051"
   },
   {
@@ -556,7 +556,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Marco Arrigoni",
-    "length": "",
+    "length": "15",
     "eventid": "A055"
   },
   {
@@ -571,12 +571,12 @@
   },
   {
     "id": 61,
-    "title": "Mistery Train",
+    "title": "Mystery Train",
     "genre": "documentary",
     "country": "USA",
     "year": "01.01.1989",
     "director": "Jim Jarmusch",
-    "length": "",
+    "length": 110,
     "eventid": "B002"
   },
   {
@@ -586,7 +586,7 @@
     "country": "Italien",
     "year": "01.01.1953",
     "director": "Michelangelo Antonioni et.al",
-    "length": "",
+    "length": "105",
     "eventid": "B003"
   },
   {
@@ -611,12 +611,12 @@
   },
   {
     "id": 65,
-    "title": "Adaption",
+    "title": "Adaption.",
     "genre": "drama_romance",
     "country": "USA",
     "year": "01.01.2002",
     "director": "Spike Jonze",
-    "length": null,
+    "length": "114",
     "eventid": "B006"
   },
   {
@@ -686,7 +686,7 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Annie Gisler",
-    "length": "",
+    "length": "26",
     "eventid": "B013"
   },
   {
@@ -696,7 +696,7 @@
     "country": "Schweiz",
     "year": "01.01.2006",
     "director": "Heidi Specogna",
-    "length": "",
+    "length": "89",
     "eventid": "B014"
   },
   {
@@ -711,12 +711,12 @@
   },
   {
     "id": 75,
-    "title": "Mit dem Bauch durch die Wand ",
+    "title": "Mit dem Bauch durch die Wand",
     "genre": "documentary",
     "country": "Schweiz",
     "year": "01.01.2011",
     "director": "Anka Schmid",
-    "length": "",
+    "length": "93",
     "eventid": "B016"
   },
   {
@@ -856,7 +856,7 @@
     "country": "Jordan",
     "year": "01.01.2008",
     "director": "Eileen Simpson and Ben White",
-    "length": "",
+    "length": "62",
     "eventid": "B032"
   },
   {
@@ -966,7 +966,7 @@
     "country": "Spanien",
     "year": "01.01.2010",
     "director": "Icíar Bollaín",
-    "length": "",
+    "length": "103",
     "eventid": "B044"
   },
   {
@@ -976,7 +976,7 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Carlos Klein",
-    "length": 1,
+    "length": "90",
     "eventid": "B045"
   },
   {
@@ -992,11 +992,11 @@
   {
     "id": 113,
     "title": "C‘est arrivé près de chez vous",
-    "genre": "documentary",
+    "genre": "thriller_horror",
     "country": "Belgien",
     "year": "01.01.1992",
     "director": "Rémy Belvaux",
-    "length": "",
+    "length": "95",
     "eventid": "B047"
   },
   {
@@ -1026,7 +1026,7 @@
     "country": "Frankreich",
     "year": "01.01.2002",
     "director": "Gaspar Noé",
-    "length": "",
+    "length": "97",
     "eventid": "B050"
   },
   {
@@ -1046,7 +1046,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Matthias Sahli",
-    "length": "",
+    "length": "10",
     "eventid": "B052"
   },
   {
@@ -1056,7 +1056,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Marco Arrigoni",
-    "length": "",
+    "length": "15",
     "eventid": "B052"
   },
   {
@@ -1066,7 +1066,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Cosima Frei",
-    "length": 17,
+    "length": "16",
     "eventid": "B052"
   },
   {
@@ -1076,7 +1076,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Fabienne Andreoli",
-    "length": "",
+    "length": "9",
     "eventid": "B052"
   },
   {
@@ -1086,7 +1086,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Manuela Rüegg",
-    "length": 71,
+    "length": "12",
     "eventid": "B052"
   },
   {
@@ -1096,7 +1096,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Wendy Pillonel",
-    "length": 103,
+    "length": "16",
     "eventid": "B052"
   },
   {
@@ -1106,7 +1106,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Pablo Callisaya",
-    "length": "",
+    "length": "12",
     "eventid": "B052"
   },
   {
@@ -1126,7 +1126,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Luca Ribler",
-    "length": "",
+    "length": "19",
     "eventid": "B052"
   },
   {
@@ -1196,7 +1196,7 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Diego Hauenstein",
-    "length": 8,
+    "length": "11",
     "eventid": "B052"
   },
   {
@@ -1256,7 +1256,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "David Dufresne",
-    "length": "",
+    "length": "52",
     "eventid": "B053"
   },
   {
