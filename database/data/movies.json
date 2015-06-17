@@ -4,7 +4,7 @@
     "title": "Asphalt",
     "genre": "drama_romance",
     "country": "Deutschland",
-    "year": "01.01.1928",
+    "year": 1928,
     "director": "Joe May",
     "length": 90,
     "eventid": "A001"
@@ -14,7 +14,7 @@
     "title": "L’atalante",
     "genre": "drama_romance",
     "country": "Frankreich",
-    "year": "01.01.1934",
+    "year": 1934,
     "director": "Jean Vigo",
     "length": 89,
     "eventid": "A002"
@@ -24,7 +24,7 @@
     "title": "Gilda",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.1946",
+    "year": 1946,
     "director": "Charles Vidor",
     "length": 110,
     "eventid": "A003"
@@ -34,7 +34,7 @@
     "title": "The Postman Always Rings Twice",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.1946",
+    "year": 1946,
     "director": "Tay Garnett",
     "length": 122,
     "eventid": "A004"
@@ -44,7 +44,7 @@
     "title": "Ossessione",
     "genre": "drama_romance",
     "country": "Italien",
-    "year": "01.01.1943",
+    "year": 1943,
     "director": "Luchino Visconti",
     "length": 140,
     "eventid": "A005"
@@ -54,7 +54,7 @@
     "title": "Die Zeit mit Monika",
     "genre": "drama_romance",
     "country": "Schweden",
-    "year": "01.01.1953",
+    "year": 1953,
     "director": "Ingmar Bergman",
     "length": 93,
     "eventid": "A006"
@@ -64,7 +64,7 @@
     "title": "Vivre sa vie",
     "genre": "drama_romance",
     "country": "Frankreich",
-    "year": "01.01.1963",
+    "year": 1963,
     "director": "Jean-Luc Godard",
     "length": 85,
     "eventid": "A007"
@@ -74,7 +74,7 @@
     "title": "Die Liebe einer Blondine",
     "genre": "drama_romance",
     "country": "Tschechoslowakei",
-    "year": "01.01.1965",
+    "year": 1965,
     "director": "Milos Forman",
     "length": null,
     "eventid": "A008"
@@ -84,7 +84,7 @@
     "title": "Die Frau in den Dünen",
     "genre": "drama_romance",
     "country": "Japan",
-    "year": "01.01.1962",
+    "year": 1962,
     "director": "Hiroshi Teshigahara",
     "length": 123,
     "eventid": "A009"
@@ -94,7 +94,7 @@
     "title": "Hécate",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.1982",
+    "year": 1982,
     "director": "Daniel Schmid",
     "length": 105,
     "eventid": "A010"
@@ -104,7 +104,7 @@
     "title": "Moulin Rouge!",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.2001",
+    "year": 2001,
     "director": "Baz Luhrman",
     "length": 127,
     "eventid": "A011"
@@ -114,7 +114,7 @@
     "title": "Well Done",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1994",
+    "year": 1994,
     "director": "Thomas Imbach",
     "length": 75,
     "eventid": "A012"
@@ -124,7 +124,7 @@
     "title": "Ghetto",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1997",
+    "year": 1997,
     "director": "Thomas Imbach",
     "length": 110,
     "eventid": "A013"
@@ -134,7 +134,7 @@
     "title": "Happy Too",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Thomas Imbach",
     "length": 60,
     "eventid": "A014"
@@ -144,7 +144,7 @@
     "title": "Day is Done",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2011",
+    "year": 2011,
     "director": "Thomas Imbach",
     "length": 111,
     "eventid": "A015"
@@ -154,7 +154,7 @@
     "title": "Balagan",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1993",
+    "year": 1993,
     "director": "Andres Veiel",
     "length": 90,
     "eventid": "A017"
@@ -164,7 +164,7 @@
     "title": "Die Spielwütigen",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2004",
+    "year": 2004,
     "director": "Andres Veiel",
     "length": 108,
     "eventid": "A018"
@@ -174,7 +174,7 @@
     "title": "La Bonne Conduite",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1905",
+    "year": 1905,
     "director": "Jean-Stéphane Bron",
     "length": 54,
     "eventid": "A019"
@@ -184,7 +184,7 @@
     "title": "Mais im Bundeshuus",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2003",
+    "year": 2003,
     "director": "Jean-Stéphane Bron",
     "length": 90,
     "eventid": "A020"
@@ -194,7 +194,7 @@
     "title": "Cleveland vs. Wall Street",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2006",
+    "year": 2006,
     "director": "Jean-Stéphane Bron",
     "length": 98,
     "eventid": "A021"
@@ -204,7 +204,7 @@
     "title": "L’éxperience Blocher",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Jean-Stéphane Bron",
     "length": 100,
     "eventid": "A022"
@@ -214,7 +214,7 @@
     "title": "",
     "genre": "x",
     "country": "x",
-    "year": "x",
+    "year": null,
     "director": "x",
     "length": null,
     "eventid": "A025"
@@ -224,7 +224,7 @@
     "title": "Letzte Spuren",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Norbert Kottmann, Oliver Rogers",
     "length": 7,
     "eventid": "A026"
@@ -234,7 +234,7 @@
     "title": "Die Demokratie ist los!",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1969",
+    "year": 1969,
     "director": "Thomas Isler",
     "length": 87,
     "eventid": "A027"
@@ -244,7 +244,7 @@
     "title": "Universität in Raumnot",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1969",
+    "year": 1969,
     "director": "Thomas Isler",
     "length": 12,
     "eventid": "A027"
@@ -254,7 +254,7 @@
     "title": "Gutes Recht",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Anita Blumer",
     "length": 17,
     "eventid": "A030"
@@ -264,7 +264,7 @@
     "title": "«Inszenierte Städte = Villes mises en scène",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1994",
+    "year": 1994,
     "director": "Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti",
     "length": 90,
     "eventid": "A031"
@@ -274,7 +274,7 @@
     "title": "First Strike",
     "genre": "game_music_theatre",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Feinheit GmbH",
     "length": 90,
     "eventid": "A032"
@@ -284,7 +284,7 @@
     "title": "As I Was Moving Ahead, Occasionally I Saw Brief Glimpses of Beauty",
     "genre": "experimental",
     "country": "USA",
-    "year": "01.01.2000",
+    "year": 2000,
     "director": "Jonas Mekas",
     "length": 320,
     "eventid": "A033"
@@ -294,7 +294,7 @@
     "title": "Eniaios",
     "genre": "experimental",
     "country": "USA",
-    "year": "01.01.1990",
+    "year": 1990,
     "director": "Gregory Markopoulos",
     "length": 4800,
     "eventid": "A033"
@@ -304,7 +304,7 @@
     "title": "Magellan",
     "genre": "experimental",
     "country": "USA",
-    "year": "01.01.1980",
+    "year": 1980,
     "director": "Hollis Frampton",
     "length": 480,
     "eventid": "A033"
@@ -314,7 +314,7 @@
     "title": "Parvaneh",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Talkhon Hamzavi",
     "length": 25,
     "eventid": "A034"
@@ -324,7 +324,7 @@
     "title": "Rondo",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.1968",
+    "year": 1968,
     "director": "Markus Imhoof",
     "length": 95,
     "eventid": "A035"
@@ -334,7 +334,7 @@
     "title": "Mündel Walter",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Aron Marty",
     "length": 16,
     "eventid": "A035"
@@ -344,7 +344,7 @@
     "title": "Forbidden Planet",
     "genre": "sci-fi_fantasy",
     "country": "USA",
-    "year": "01.01.1956",
+    "year": 1956,
     "director": "Fred M. Wilcox",
     "length": 98,
     "eventid": "A036"
@@ -354,7 +354,7 @@
     "title": "Close Encounters of the Third Kid",
     "genre": "sci-fi_fantasy",
     "country": "USA",
-    "year": "01.01.1977",
+    "year": 1977,
     "director": "Steven Spielberg",
     "length": null,
     "eventid": "A037"
@@ -364,7 +364,7 @@
     "title": "Abyss",
     "genre": "sci-fi_fantasy",
     "country": "USA",
-    "year": "01.01.1989",
+    "year": 1989,
     "director": "James Cameron",
     "length": 43,
     "eventid": "A038"
@@ -374,7 +374,7 @@
     "title": "Contact",
     "genre": "sci-fi_fantasy",
     "country": "USA",
-    "year": "01.01.1997",
+    "year": 1997,
     "director": "Robert Zemeckis",
     "length": 150,
     "eventid": "A039"
@@ -384,7 +384,7 @@
     "title": "District 9",
     "genre": "sci-fi_fantasy",
     "country": "USA",
-    "year": "01.01.2007",
+    "year": 2007,
     "director": "Neill Blomkamp",
     "length": 112,
     "eventid": "A040"
@@ -394,7 +394,7 @@
     "title": "The Graduate",
     "genre": "comedy",
     "country": "USA",
-    "year": "01.01.1967",
+    "year": 1967,
     "director": "Mike Nichols",
     "length": 106,
     "eventid": "A041"
@@ -404,7 +404,7 @@
     "title": "Eskimo Limon",
     "genre": "drama_romance",
     "country": "Deutschland",
-    "year": "01.01.1978",
+    "year": 1978,
     "director": "Boaz Davidson",
     "length": 95,
     "eventid": "A042"
@@ -414,7 +414,7 @@
     "title": "The Breakfast Club",
     "genre": "comedy",
     "country": "USA",
-    "year": "01.01.1985",
+    "year": 1985,
     "director": "John Hughes",
     "length": 97,
     "eventid": "A043"
@@ -424,7 +424,7 @@
     "title": "Mon Père, ce Héros",
     "genre": "comedy",
     "country": "Frankreich",
-    "year": "01.01.1991",
+    "year": 1991,
     "director": "Gérard Lauzier",
     "length": 105,
     "eventid": "A044"
@@ -434,7 +434,7 @@
     "title": "Juno",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.2007",
+    "year": 2007,
     "director": "Jason Reitman",
     "length": 96,
     "eventid": "A045"
@@ -444,7 +444,7 @@
     "title": "Psycho",
     "genre": "thriller_horror",
     "country": "USA",
-    "year": "01.01.1960",
+    "year": 1960,
     "director": "Alfred Hitchcock",
     "length": 109,
     "eventid": "A046"
@@ -454,7 +454,7 @@
     "title": "Le Locataire",
     "genre": "thriller_horror",
     "country": "USA",
-    "year": "01.01.1976",
+    "year": 1976,
     "director": "Roman Polanski",
     "length": 126,
     "eventid": "A047"
@@ -464,7 +464,7 @@
     "title": "Blow Out",
     "genre": "thriller_horror",
     "country": "USA",
-    "year": "01.01.1981",
+    "year": 1981,
     "director": "Brian de Palma",
     "length": 107,
     "eventid": "A048"
@@ -474,7 +474,7 @@
     "title": "The Game",
     "genre": "thriller_horror",
     "country": "USA",
-    "year": "01.01.1997",
+    "year": 1997,
     "director": "David Fincher",
     "length": 129,
     "eventid": "A049"
@@ -484,7 +484,7 @@
     "title": "Oldboy",
     "genre": "thriller_horror",
     "country": "Südkorea",
-    "year": "01.01.2003",
+    "year": 2003,
     "director": "Park Chan-Wook",
     "length": 120,
     "eventid": "A050"
@@ -494,7 +494,7 @@
     "title": "Zaungespräche",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Lisa Gerig",
     "length": 14,
     "eventid": "A051"
@@ -504,7 +504,7 @@
     "title": "Rivalen",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Moris Freiburghaus",
     "length": null,
     "eventid": "A051"
@@ -514,7 +514,7 @@
     "title": "Wandelzeit",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Jan-Eric Mack",
     "length": null,
     "eventid": "A051"
@@ -524,7 +524,7 @@
     "title": "The Adventures of Tintin",
     "genre": "animation",
     "country": "USA",
-    "year": "01.01.2011",
+    "year": 2011,
     "director": "Steven Spielberg",
     "length": 107,
     "eventid": "A052"
@@ -534,7 +534,7 @@
     "title": "Love Steaks",
     "genre": "drama_romance",
     "country": "Deutschland",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Jakob Lass",
     "length": 89,
     "eventid": "A053"
@@ -544,7 +544,7 @@
     "title": "Beat-Man",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "0.01.2014",
+    "year": 2014,
     "director": "Lisa Gertsch, Gianni Keller",
     "length": null,
     "eventid": "A055"
@@ -554,7 +554,7 @@
     "title": "Wir sind alle Schottwiler",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Marco Arrigoni",
     "length": 15,
     "eventid": "A055"
@@ -564,7 +564,7 @@
     "title": "Grand Hotel",
     "genre": "documentary ",
     "country": "USA",
-    "year": "01.01.1932",
+    "year": 1932,
     "director": "Edmund Goulding",
     "length": 112,
     "eventid": "B001"
@@ -574,7 +574,7 @@
     "title": "Mystery Train",
     "genre": "documentary",
     "country": "USA",
-    "year": "01.01.1989",
+    "year": 1989,
     "director": "Jim Jarmusch",
     "length": 110,
     "eventid": "B002"
@@ -584,7 +584,7 @@
     "title": "L’amore in città",
     "genre": "drama_romance",
     "country": "Italien",
-    "year": "01.01.1953",
+    "year": 1953,
     "director": "Michelangelo Antonioni et.al",
     "length": 105,
     "eventid": "B003"
@@ -594,7 +594,7 @@
     "title": "Roma",
     "genre": "drama_romance",
     "country": "Italien",
-    "year": "01.01.1972",
+    "year": 1972,
     "director": "Frederico Fellini",
     "length": 128,
     "eventid": "B004"
@@ -604,7 +604,7 @@
     "title": "Traffic",
     "genre": "thriller_horror",
     "country": "USA",
-    "year": "01.01.2000",
+    "year": 2000,
     "director": "Steven Soderbergh",
     "length": 147,
     "eventid": "B005"
@@ -614,7 +614,7 @@
     "title": "Adaption.",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Spike Jonze",
     "length": 114,
     "eventid": "B006"
@@ -624,7 +624,7 @@
     "title": "Chasing Ice",
     "genre": "documentary",
     "country": "USA",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Jeff Orlowski",
     "length": 75,
     "eventid": "B007"
@@ -634,7 +634,7 @@
     "title": "More Than Honey",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Markus Imhoof",
     "length": 95,
     "eventid": "B008"
@@ -644,7 +644,7 @@
     "title": "Food Inc.",
     "genre": "documentary",
     "country": "USA",
-    "year": "01.01.2008",
+    "year": 2008,
     "director": "Robert Kenner",
     "length": 94,
     "eventid": "B009"
@@ -654,7 +654,7 @@
     "title": "End of the Line",
     "genre": "documentary",
     "country": "GB",
-    "year": "01.01.2009",
+    "year": 2009,
     "director": "Rupert Murray",
     "length": 95,
     "eventid": "B010"
@@ -664,7 +664,7 @@
     "title": "Gasland",
     "genre": "documentary",
     "country": "USA",
-    "year": "01.01.2010",
+    "year": 2010,
     "director": "Josh Fox",
     "length": 107,
     "eventid": "B011"
@@ -674,7 +674,7 @@
     "title": "Kurt und der Sessellift",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Thais Odermatt",
     "length": 20,
     "eventid": "B012"
@@ -684,7 +684,7 @@
     "title": "Le Dimanche en Famille",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Annie Gisler",
     "length": 26,
     "eventid": "B013"
@@ -694,7 +694,7 @@
     "title": "Das kurze Leben des J.A. Gutierrez",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2006",
+    "year": 2006,
     "director": "Heidi Specogna",
     "length": 89,
     "eventid": "B014"
@@ -704,7 +704,7 @@
     "title": "Venus Boyz",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Gabriel Baur",
     "length": 102,
     "eventid": "B015"
@@ -714,7 +714,7 @@
     "title": "Mit dem Bauch durch die Wand",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2011",
+    "year": 2011,
     "director": "Anka Schmid",
     "length": 93,
     "eventid": "B016"
@@ -724,7 +724,7 @@
     "title": "Bödälä – Dance the Rhythm ",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2010",
+    "year": 2010,
     "director": "Gitta Gsell",
     "length": 78,
     "eventid": "B017"
@@ -734,7 +734,7 @@
     "title": "Goodnight Nobody",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2010",
+    "year": 2010,
     "director": "Jacqueline Zünd",
     "length": 76,
     "eventid": "B018"
@@ -744,7 +744,7 @@
     "title": "Harry-Dean Stanton: Partly Fiction ",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Sophie Huber",
     "length": 77,
     "eventid": "B019"
@@ -754,7 +754,7 @@
     "title": "Virgin Tales",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Mirjam von Arx",
     "length": 87,
     "eventid": "B020"
@@ -764,7 +764,7 @@
     "title": "Forbidden Voices",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Barbara Miller",
     "length": 95,
     "eventid": "B021"
@@ -774,7 +774,7 @@
     "title": "Life in Progress",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Irene Loebell",
     "length": 99,
     "eventid": "B022"
@@ -784,7 +784,7 @@
     "title": "x",
     "genre": "x",
     "country": "x",
-    "year": "x",
+    "year": null,
     "director": "x",
     "length": null,
     "eventid": "B023"
@@ -794,7 +794,7 @@
     "title": "Plug & Play",
     "genre": "animation",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Michael Frei, Mario von Rickenbach",
     "length": 6,
     "eventid": "B024"
@@ -804,7 +804,7 @@
     "title": "x",
     "genre": "x",
     "country": "x",
-    "year": "x",
+    "year": null,
     "director": "x",
     "length": null,
     "eventid": "B026"
@@ -814,7 +814,7 @@
     "title": "«Die Gstettensaga: The Rise of Echsenfriedl»",
     "genre": "sci-fi_fantasy",
     "country": "Österreich",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Günther Friesinger",
     "length": 72,
     "eventid": "B027"
@@ -824,7 +824,7 @@
     "title": "Wir sind morgen",
     "genre": "game_music_theatre",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Simon Dietersdorf",
     "length": 90,
     "eventid": "B028"
@@ -834,7 +834,7 @@
     "title": "The Camera: Je or La Camera: I",
     "genre": "documentary",
     "country": "USA",
-    "year": "01.01.1977",
+    "year": 1977,
     "director": "Babette Mangolte",
     "length": 88,
     "eventid": "B030"
@@ -844,7 +844,7 @@
     "title": "BlowBack",
     "genre": "game_music_theatre",
     "country": "Deutschland",
-    "year": "01.01.12015",
+    "year": 2015,
     "director": "Elodie Pascal",
     "length": 90,
     "eventid": "B031"
@@ -854,7 +854,7 @@
     "title": "Struggle in Jerash",
     "genre": "documentary",
     "country": "Jordan",
-    "year": "01.01.2008",
+    "year": 2008,
     "director": "Eileen Simpson and Ben White",
     "length": 62,
     "eventid": "B032"
@@ -864,7 +864,7 @@
     "title": "x",
     "genre": "x",
     "country": "x",
-    "year": "x",
+    "year": null,
     "director": "x",
     "length": null,
     "eventid": "B033"
@@ -874,7 +874,7 @@
     "title": "x",
     "genre": "x",
     "country": "x",
-    "year": "x",
+    "year": null,
     "director": "x",
     "length": null,
     "eventid": "B034"
@@ -884,7 +884,7 @@
     "title": "Tekkonkinkreet",
     "genre": "animation",
     "country": "Japan",
-    "year": "01.01.2006",
+    "year": 2006,
     "director": "Michael Arias",
     "length": 111,
     "eventid": "B036"
@@ -894,7 +894,7 @@
     "title": "Spirited Away",
     "genre": "animation",
     "country": "Japan",
-    "year": "01.01.2001",
+    "year": 2001,
     "director": "Hayao Miyazaki",
     "length": 125,
     "eventid": "B037"
@@ -904,7 +904,7 @@
     "title": "Akira",
     "genre": "animation",
     "country": "Japan",
-    "year": "01.01.1988",
+    "year": 1988,
     "director": "Katsuhiro Ôtomo",
     "length": 124,
     "eventid": "B038"
@@ -914,7 +914,7 @@
     "title": "Summer Wars",
     "genre": "animation",
     "country": "Japan",
-    "year": "01.01.2009",
+    "year": 2009,
     "director": "Mamoru Hosoda,",
     "length": 114,
     "eventid": "B039"
@@ -924,7 +924,7 @@
     "title": "Grave of the Fireflies",
     "genre": "animation",
     "country": "Japan",
-    "year": "01.01.1988",
+    "year": 1988,
     "director": "Isao Takahata",
     "length": 89,
     "eventid": "B040"
@@ -934,7 +934,7 @@
     "title": "Le mépris",
     "genre": "drama_romance",
     "country": "Frankreich",
-    "year": "01.01.1963",
+    "year": 1963,
     "director": "Jean-Luc Godard",
     "length": 95,
     "eventid": "B041"
@@ -944,7 +944,7 @@
     "title": "Living in Oblivion",
     "genre": "drama_romance",
     "country": "USA",
-    "year": "01.01.1995",
+    "year": 1995,
     "director": "Tom DiCillo",
     "length": 90,
     "eventid": "B042"
@@ -954,7 +954,7 @@
     "title": "Hollywood Ending",
     "genre": "comedy",
     "country": "USA",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Woody Allen",
     "length": 112,
     "eventid": "B043"
@@ -964,7 +964,7 @@
     "title": "También la lluvia",
     "genre": "drama_romance",
     "country": "Spanien",
-    "year": "01.01.2010",
+    "year": 2010,
     "director": "Icíar Bollaín",
     "length": 103,
     "eventid": "B044"
@@ -974,7 +974,7 @@
     "title": "Where the Condors Fly",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2012",
+    "year": 2012,
     "director": "Carlos Klein",
     "length": 90,
     "eventid": "B045"
@@ -984,7 +984,7 @@
     "title": "Antichrist",
     "genre": "drama_romance",
     "country": "Dänemark",
-    "year": "01.01.2009",
+    "year": 2009,
     "director": "Lars von Trier",
     "length": 108,
     "eventid": "B046"
@@ -994,7 +994,7 @@
     "title": "C‘est arrivé près de chez vous",
     "genre": "thriller_horror",
     "country": "Belgien",
-    "year": "01.01.1992",
+    "year": 1992,
     "director": "Rémy Belvaux",
     "length": 95,
     "eventid": "B047"
@@ -1004,7 +1004,7 @@
     "title": "Ken Park",
     "genre": "drama_romance",
     "country": "Niederlande",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Larry Clark",
     "length": 93,
     "eventid": "B048"
@@ -1014,7 +1014,7 @@
     "title": "Ex Drummer",
     "genre": "drama_romance",
     "country": "Belgien",
-    "year": "01.01.2007",
+    "year": 2007,
     "director": "Koen Mortier",
     "length": 100,
     "eventid": "B049"
@@ -1024,7 +1024,7 @@
     "title": "Irréversibel",
     "genre": "drama_romance",
     "country": "Frankreich",
-    "year": "01.01.2002",
+    "year": 2002,
     "director": "Gaspar Noé",
     "length": 97,
     "eventid": "B050"
@@ -1034,7 +1034,7 @@
     "title": "Fantômas",
     "genre": "drama_romance",
     "country": "Frankreich",
-    "year": "01.01.1913",
+    "year": 1913,
     "director": "Louis Feuillade",
     "length": 86,
     "eventid": "B051"
@@ -1044,7 +1044,7 @@
     "title": "Kaktéus",
     "genre": "comedy",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Matthias Sahli",
     "length": 10,
     "eventid": "B052"
@@ -1054,7 +1054,7 @@
     "title": "Wir sind alle Schottwiler",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Marco Arrigoni",
     "length": 15,
     "eventid": "B052"
@@ -1064,7 +1064,7 @@
     "title": "Aquarium",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Cosima Frei",
     "length": 16,
     "eventid": "B052"
@@ -1074,7 +1074,7 @@
     "title": "Kleine Helden",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Fabienne Andreoli",
     "length": 9,
     "eventid": "B052"
@@ -1084,7 +1084,7 @@
     "title": "Ticket To Ride",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Manuela Rüegg",
     "length": 12,
     "eventid": "B052"
@@ -1094,7 +1094,7 @@
     "title": "Destiny",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Wendy Pillonel",
     "length": 16,
     "eventid": "B052"
@@ -1104,7 +1104,7 @@
     "title": "Albert Ruppert",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Pablo Callisaya",
     "length": 12,
     "eventid": "B052"
@@ -1114,7 +1114,7 @@
     "title": "Der Fotograf",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Kim Allamand",
     "length": 19,
     "eventid": "B052"
@@ -1124,7 +1124,7 @@
     "title": "De Letscht Fall",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Luca Ribler",
     "length": 19,
     "eventid": "B052"
@@ -1134,7 +1134,7 @@
     "title": "Was bleibt",
     "genre": "x",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Oliver Rogers",
     "length": 16,
     "eventid": "B052"
@@ -1144,7 +1144,7 @@
     "title": "Paläontologie",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Pablo Callisaya",
     "length": 14,
     "eventid": "B052"
@@ -1154,7 +1154,7 @@
     "title": "Mäge",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Lisa Brühlmann",
     "length": 21,
     "eventid": "B052"
@@ -1164,7 +1164,7 @@
     "title": "Die guten Schweizers",
     "genre": "x",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Marco Arrigoni",
     "length": null,
     "eventid": "B052"
@@ -1174,7 +1174,7 @@
     "title": "Zimmer ohne Aussicht",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Johannes Bachmann",
     "length": 10,
     "eventid": "B052"
@@ -1184,7 +1184,7 @@
     "title": "Jing",
     "genre": "x",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Jan-Eric Mack",
     "length": 87,
     "eventid": "B052"
@@ -1194,7 +1194,7 @@
     "title": "Parasit",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2014",
+    "year": 2014,
     "director": "Diego Hauenstein",
     "length": 11,
     "eventid": "B052"
@@ -1204,7 +1204,7 @@
     "title": "Invincible",
     "genre": "x",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Anna Furrer",
     "length": 105,
     "eventid": "B052"
@@ -1214,7 +1214,7 @@
     "title": "Driven",
     "genre": "thriller_horror",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Johannes Bachmann",
     "length": 9,
     "eventid": "B052"
@@ -1224,7 +1224,7 @@
     "title": "Chum guet hei",
     "genre": "x",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Natascha Vavrina",
     "length": null,
     "eventid": "B052"
@@ -1234,7 +1234,7 @@
     "title": "Teufel",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Yasmin Joerg",
     "length": 15,
     "eventid": "B052"
@@ -1244,7 +1244,7 @@
     "title": "Everyday Rebellion",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2013",
+    "year": 2013,
     "director": "Arash T. Riahi, Arman T. Riahi",
     "length": 118,
     "eventid": "B053"
@@ -1254,7 +1254,7 @@
     "title": "Fort McMoney - Vote Rogers Mayor",
     "genre": "documentary",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "David Dufresne",
     "length": 52,
     "eventid": "B053"
@@ -1264,7 +1264,7 @@
     "title": "Nachtdialoger",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Moritz Willenegger",
     "length": null,
     "eventid": "B054"
@@ -1274,7 +1274,7 @@
     "title": "Inland",
     "genre": "drama_romance",
     "country": "Schweiz",
-    "year": "01.01.2015",
+    "year": 2015,
     "director": "Piet Baumgartner",
     "length": 6,
     "eventid": "B054"

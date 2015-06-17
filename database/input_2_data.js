@@ -39,7 +39,7 @@ function transformData(){
     movie.title = m[2];
     movie.genre = m[3];
     movie.country = m[4];
-    movie.year = m[5];
+    movie.year = parseInt((m[5]).split(".")[2]);
     movie.director = m[6];
     movie.length = parseInt(m[7]);
     movie.eventid = m[0];
@@ -58,7 +58,7 @@ function transformData(){
     var event = {};
     event.id = e[0];
     event.type = e[2];
-    event.date = e[5];
+    event.date = (e[5]);
     event.series = e[3];
     event.topic = e[4];
     event.title = e[1];
