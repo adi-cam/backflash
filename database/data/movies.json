@@ -6,7 +6,8 @@
     "country": "Deutschland",
     "year": "01.01.1928",
     "director": "Joe May",
-    "length": ""
+    "length": 90,
+    "eventid": "A001"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "country": "Frankreich",
     "year": "01.01.1934",
     "director": "Jean Vigo",
-    "length": ""
+    "length": 89,
+    "eventid": "A002"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "country": "USA",
     "year": "01.01.1946",
     "director": "Charles Vidor",
-    "length": ""
+    "length": 110,
+    "eventid": "A003"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "country": "USA",
     "year": "01.01.1946",
     "director": "Tay Garnett",
-    "length": ""
+    "length": 122,
+    "eventid": "A004"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "country": "Italien",
     "year": "01.01.1943",
     "director": "Luchino Visconti",
-    "length": ""
+    "length": 140,
+    "eventid": "A005"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "country": "Schweden",
     "year": "01.01.1953",
     "director": "Ingmar Bergman",
-    "length": ""
+    "length": "",
+    "eventid": "A006"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "country": "Frankreich",
     "year": "01.01.1963",
     "director": "Jean-Luc Godard",
-    "length": ""
+    "length": 85,
+    "eventid": "A007"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "country": "Tschechoslowakei",
     "year": "01.01.1965",
     "director": "Milos Forman",
-    "length": ""
+    "length": "",
+    "eventid": "A008"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "country": "Japan",
     "year": "01.01.1962",
     "director": "Hiroshi Teshigahara",
-    "length": ""
+    "length": "",
+    "eventid": "A009"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "country": "Schweiz",
     "year": "01.01.1982",
     "director": "Daniel Schmid",
-    "length": ""
+    "length": 105,
+    "eventid": "A010"
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "country": "USA",
     "year": "01.01.2001",
     "director": "Baz Luhrman",
-    "length": ""
+    "length": 127,
+    "eventid": "A011"
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "country": "Schweiz",
     "year": "01.01.1994",
     "director": "Thomas Imbach",
-    "length": ""
+    "length": 75,
+    "eventid": "A012"
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "country": "Schweiz",
     "year": "01.01.1997",
     "director": "Thomas Imbach",
-    "length": ""
+    "length": 110,
+    "eventid": "A013"
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "country": "Schweiz",
     "year": "01.01.2002",
     "director": "Thomas Imbach",
-    "length": ""
+    "length": 60,
+    "eventid": "A014"
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "country": "Schweiz",
     "year": "01.01.2011",
     "director": "Thomas Imbach",
-    "length": ""
+    "length": 111,
+    "eventid": "A015"
   },
   {
     "id": 17,
@@ -141,7 +156,8 @@
     "country": "Schweiz",
     "year": "01.01.1993",
     "director": "Andres Veiel",
-    "length": ""
+    "length": 90,
+    "eventid": "A017"
   },
   {
     "id": 18,
@@ -150,7 +166,8 @@
     "country": "Schweiz",
     "year": "01.01.2004",
     "director": "Andres Veiel",
-    "length": ""
+    "length": "",
+    "eventid": "A018"
   },
   {
     "id": 19,
@@ -159,7 +176,8 @@
     "country": "Schweiz",
     "year": "01.01.1905",
     "director": "Jean-Stéphane Bron",
-    "length": ""
+    "length": 54,
+    "eventid": "A019"
   },
   {
     "id": 20,
@@ -168,7 +186,8 @@
     "country": "Schweiz",
     "year": "01.01.2003",
     "director": "Jean-Stéphane Bron",
-    "length": ""
+    "length": "",
+    "eventid": "A020"
   },
   {
     "id": 21,
@@ -177,7 +196,8 @@
     "country": "Schweiz",
     "year": "01.01.2006",
     "director": "Jean-Stéphane Bron",
-    "length": ""
+    "length": "",
+    "eventid": "A021"
   },
   {
     "id": 22,
@@ -186,7 +206,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Jean-Stéphane Bron",
-    "length": ""
+    "length": 100,
+    "eventid": "A022"
   },
   {
     "id": 23,
@@ -195,7 +216,8 @@
     "country": "x",
     "year": "x",
     "director": "x",
-    "length": ""
+    "length": "",
+    "eventid": "A025"
   },
   {
     "id": 24,
@@ -204,7 +226,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Norbert Kottmann, Oliver Rogers",
-    "length": ""
+    "length": "",
+    "eventid": "A026"
   },
   {
     "id": 25,
@@ -213,7 +236,8 @@
     "country": "Schweiz",
     "year": "01.01.1969",
     "director": "Thomas Isler",
-    "length": ""
+    "length": "",
+    "eventid": "A027"
   },
   {
     "id": 26,
@@ -222,7 +246,8 @@
     "country": "Schweiz",
     "year": "01.01.1969",
     "director": "Thomas Isler",
-    "length": ""
+    "length": "",
+    "eventid": "A027"
   },
   {
     "id": 28,
@@ -231,7 +256,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Anita Blumer",
-    "length": ""
+    "length": 17,
+    "eventid": "A030"
   },
   {
     "id": 29,
@@ -240,7 +266,8 @@
     "country": "Schweiz",
     "year": "01.01.1994",
     "director": "Stefan Meichtry; Felix Schaad, Katrin Oettli, Alexandra Papadopoulos; Pierre Mennel, Eveline Arnold; Aurelio Galfetti",
-    "length": ""
+    "length": "",
+    "eventid": "A031"
   },
   {
     "id": 30,
@@ -249,7 +276,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Feinheit GmbH",
-    "length": ""
+    "length": 90,
+    "eventid": "A032"
   },
   {
     "id": 31,
@@ -258,7 +286,8 @@
     "country": "USA",
     "year": "01.01.2000",
     "director": "Jonas Mekas",
-    "length": ""
+    "length": 320,
+    "eventid": "A033"
   },
   {
     "id": 32,
@@ -267,7 +296,8 @@
     "country": "USA",
     "year": "01.01.1990",
     "director": "Gregory Markopoulos",
-    "length": ""
+    "length": "",
+    "eventid": "A033"
   },
   {
     "id": 33,
@@ -276,7 +306,8 @@
     "country": "USA",
     "year": "01.01.1980",
     "director": "Hollis Frampton",
-    "length": ""
+    "length": 18,
+    "eventid": "A033"
   },
   {
     "id": 34,
@@ -285,7 +316,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Talkhon Hamzavi",
-    "length": ""
+    "length": 25,
+    "eventid": "A034"
   },
   {
     "id": 35,
@@ -294,7 +326,8 @@
     "country": "Schweiz",
     "year": "01.01.1968",
     "director": "Markus Imhoof",
-    "length": ""
+    "length": 95,
+    "eventid": "A035"
   },
   {
     "id": 36,
@@ -303,7 +336,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Aron Marty",
-    "length": ""
+    "length": "",
+    "eventid": "A035"
   },
   {
     "id": 37,
@@ -312,7 +346,8 @@
     "country": "USA",
     "year": "01.01.1956",
     "director": "Fred M. Wilcox",
-    "length": ""
+    "length": 98,
+    "eventid": "A036"
   },
   {
     "id": 38,
@@ -321,7 +356,8 @@
     "country": "USA",
     "year": "01.01.1977",
     "director": "Steven Spielberg",
-    "length": ""
+    "length": "",
+    "eventid": "A037"
   },
   {
     "id": 39,
@@ -330,7 +366,8 @@
     "country": "USA",
     "year": "01.01.1989",
     "director": "James Cameron",
-    "length": ""
+    "length": 43,
+    "eventid": "A038"
   },
   {
     "id": 40,
@@ -339,7 +376,8 @@
     "country": "USA",
     "year": "01.01.1997",
     "director": "Robert Zemeckis",
-    "length": ""
+    "length": 150,
+    "eventid": "A039"
   },
   {
     "id": 41,
@@ -348,7 +386,8 @@
     "country": "USA",
     "year": "01.01.2007",
     "director": "Neill Blomkamp",
-    "length": ""
+    "length": 112,
+    "eventid": "A040"
   },
   {
     "id": 42,
@@ -357,7 +396,8 @@
     "country": "USA",
     "year": "01.01.1967",
     "director": "Mike Nichols",
-    "length": ""
+    "length": 106,
+    "eventid": "A041"
   },
   {
     "id": 43,
@@ -366,7 +406,8 @@
     "country": "Deutschland",
     "year": "01.01.1978",
     "director": "Boaz Davidson",
-    "length": ""
+    "length": "",
+    "eventid": "A042"
   },
   {
     "id": 44,
@@ -375,7 +416,8 @@
     "country": "USA",
     "year": "01.01.1985",
     "director": "John Hughes",
-    "length": ""
+    "length": 97,
+    "eventid": "A043"
   },
   {
     "id": 45,
@@ -384,7 +426,8 @@
     "country": "Frankreich",
     "year": "01.01.1991",
     "director": "Gérard Lauzier",
-    "length": ""
+    "length": 105,
+    "eventid": "A044"
   },
   {
     "id": 46,
@@ -393,7 +436,8 @@
     "country": "USA",
     "year": "01.01.2007",
     "director": "Jason Reitman",
-    "length": ""
+    "length": 96,
+    "eventid": "A045"
   },
   {
     "id": 47,
@@ -402,7 +446,8 @@
     "country": "USA",
     "year": "01.01.1960",
     "director": "Alfred Hitchcock",
-    "length": ""
+    "length": 109,
+    "eventid": "A046"
   },
   {
     "id": 48,
@@ -411,7 +456,8 @@
     "country": "USA",
     "year": "01.01.1976",
     "director": "Roman Polanski",
-    "length": ""
+    "length": 25,
+    "eventid": "A047"
   },
   {
     "id": 49,
@@ -420,7 +466,8 @@
     "country": "USA",
     "year": "01.01.1981",
     "director": "Brian de Palma",
-    "length": ""
+    "length": 107,
+    "eventid": "A048"
   },
   {
     "id": 50,
@@ -429,7 +476,8 @@
     "country": "USA",
     "year": "01.01.1997",
     "director": "David Fincher",
-    "length": ""
+    "length": 129,
+    "eventid": "A049"
   },
   {
     "id": 51,
@@ -438,7 +486,8 @@
     "country": "Südkorea",
     "year": "01.01.2003",
     "director": "Park Chan-Wook",
-    "length": ""
+    "length": 120,
+    "eventid": "A050"
   },
   {
     "id": 52,
@@ -447,7 +496,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Lisa Gerig",
-    "length": ""
+    "length": "",
+    "eventid": "A051"
   },
   {
     "id": 53,
@@ -456,7 +506,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Moris Freiburghaus",
-    "length": ""
+    "length": null,
+    "eventid": "A051"
   },
   {
     "id": 54,
@@ -465,7 +516,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Jan-Eric Mack",
-    "length": ""
+    "length": "",
+    "eventid": "A051"
   },
   {
     "id": 55,
@@ -474,7 +526,8 @@
     "country": "USA",
     "year": "01.01.2011",
     "director": "Steven Spielberg",
-    "length": ""
+    "length": 107,
+    "eventid": "A052"
   },
   {
     "id": 56,
@@ -483,7 +536,8 @@
     "country": "Deutschland",
     "year": "01.01.2013",
     "director": "Jakob Lass",
-    "length": ""
+    "length": 89,
+    "eventid": "A053"
   },
   {
     "id": 58,
@@ -492,7 +546,8 @@
     "country": "Schweiz",
     "year": "0.01.2014",
     "director": "Lisa Gertsch, Gianni Keller",
-    "length": ""
+    "length": "",
+    "eventid": "A055"
   },
   {
     "id": 59,
@@ -501,7 +556,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Marco Arrigoni",
-    "length": ""
+    "length": "",
+    "eventid": "A055"
   },
   {
     "id": 60,
@@ -510,7 +566,8 @@
     "country": "USA",
     "year": "01.01.1932",
     "director": "Edmund Goulding",
-    "length": ""
+    "length": 112,
+    "eventid": "B001"
   },
   {
     "id": 61,
@@ -519,7 +576,8 @@
     "country": "USA",
     "year": "01.01.1989",
     "director": "Jim Jarmusch",
-    "length": ""
+    "length": "",
+    "eventid": "B002"
   },
   {
     "id": 62,
@@ -528,7 +586,8 @@
     "country": "Italien",
     "year": "01.01.1953",
     "director": "Michelangelo Antonioni et.al",
-    "length": ""
+    "length": "",
+    "eventid": "B003"
   },
   {
     "id": 63,
@@ -537,7 +596,8 @@
     "country": "Italien",
     "year": "01.01.1972",
     "director": "Frederico Fellini",
-    "length": ""
+    "length": 128,
+    "eventid": "B004"
   },
   {
     "id": 64,
@@ -546,7 +606,8 @@
     "country": "USA",
     "year": "01.01.2000",
     "director": "Steven Soderbergh",
-    "length": ""
+    "length": 147,
+    "eventid": "B005"
   },
   {
     "id": 65,
@@ -555,7 +616,8 @@
     "country": "USA",
     "year": "01.01.2002",
     "director": "Spike Jonze",
-    "length": ""
+    "length": null,
+    "eventid": "B006"
   },
   {
     "id": 66,
@@ -564,7 +626,8 @@
     "country": "USA",
     "year": "01.01.2012",
     "director": "Jeff Orlowski",
-    "length": ""
+    "length": 75,
+    "eventid": "B007"
   },
   {
     "id": 67,
@@ -573,7 +636,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Markus Imhoof",
-    "length": ""
+    "length": 95,
+    "eventid": "B008"
   },
   {
     "id": 68,
@@ -582,7 +646,8 @@
     "country": "USA",
     "year": "01.01.2008",
     "director": "Robert Kenner",
-    "length": ""
+    "length": 94,
+    "eventid": "B009"
   },
   {
     "id": 69,
@@ -591,7 +656,8 @@
     "country": "GB",
     "year": "01.01.2009",
     "director": "Rupert Murray",
-    "length": ""
+    "length": 95,
+    "eventid": "B010"
   },
   {
     "id": 70,
@@ -600,7 +666,8 @@
     "country": "USA",
     "year": "01.01.2010",
     "director": "Josh Fox",
-    "length": ""
+    "length": 107,
+    "eventid": "B011"
   },
   {
     "id": 71,
@@ -609,7 +676,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Thais Odermatt",
-    "length": ""
+    "length": 20,
+    "eventid": "B012"
   },
   {
     "id": 72,
@@ -618,7 +686,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Annie Gisler",
-    "length": ""
+    "length": "",
+    "eventid": "B013"
   },
   {
     "id": 73,
@@ -627,7 +696,8 @@
     "country": "Schweiz",
     "year": "01.01.2006",
     "director": "Heidi Specogna",
-    "length": ""
+    "length": "",
+    "eventid": "B014"
   },
   {
     "id": 74,
@@ -636,7 +706,8 @@
     "country": "Schweiz",
     "year": "01.01.2002",
     "director": "Gabriel Baur",
-    "length": ""
+    "length": 102,
+    "eventid": "B015"
   },
   {
     "id": 75,
@@ -645,7 +716,8 @@
     "country": "Schweiz",
     "year": "01.01.2011",
     "director": "Anka Schmid",
-    "length": ""
+    "length": "",
+    "eventid": "B016"
   },
   {
     "id": 76,
@@ -654,7 +726,8 @@
     "country": "Schweiz",
     "year": "01.01.2010",
     "director": "Gitta Gsell",
-    "length": ""
+    "length": 78,
+    "eventid": "B017"
   },
   {
     "id": 77,
@@ -663,7 +736,8 @@
     "country": "Schweiz",
     "year": "01.01.2010",
     "director": "Jacqueline Zünd",
-    "length": ""
+    "length": 76,
+    "eventid": "B018"
   },
   {
     "id": 78,
@@ -672,7 +746,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Sophie Huber",
-    "length": ""
+    "length": 77,
+    "eventid": "B019"
   },
   {
     "id": 79,
@@ -681,7 +756,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Mirjam von Arx",
-    "length": ""
+    "length": 87,
+    "eventid": "B020"
   },
   {
     "id": 80,
@@ -690,7 +766,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Barbara Miller",
-    "length": ""
+    "length": 95,
+    "eventid": "B021"
   },
   {
     "id": 81,
@@ -699,7 +776,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Irene Loebell",
-    "length": ""
+    "length": 99,
+    "eventid": "B022"
   },
   {
     "id": 82,
@@ -708,7 +786,8 @@
     "country": "x",
     "year": "x",
     "director": "x",
-    "length": ""
+    "length": "",
+    "eventid": "B023"
   },
   {
     "id": 83,
@@ -717,7 +796,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Michael Frei, Mario von Rickenbach",
-    "length": ""
+    "length": 6,
+    "eventid": "B024"
   },
   {
     "id": 84,
@@ -726,7 +806,8 @@
     "country": "x",
     "year": "x",
     "director": "x",
-    "length": ""
+    "length": "",
+    "eventid": "B026"
   },
   {
     "id": 86,
@@ -735,7 +816,8 @@
     "country": "Österreich",
     "year": "01.01.2014",
     "director": "Günther Friesinger",
-    "length": ""
+    "length": 72,
+    "eventid": "B027"
   },
   {
     "id": 87,
@@ -744,7 +826,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Simon Dietersdorf",
-    "length": "90"
+    "length": "90",
+    "eventid": "B028"
   },
   {
     "id": 88,
@@ -753,7 +836,8 @@
     "country": "USA",
     "year": "01.01.1977",
     "director": "Babette Mangolte",
-    "length": ""
+    "length": 88,
+    "eventid": "B030"
   },
   {
     "id": 89,
@@ -762,7 +846,8 @@
     "country": "Deutschland",
     "year": "01.01.12015",
     "director": "Elodie Pascal",
-    "length": "90"
+    "length": "90",
+    "eventid": "B031"
   },
   {
     "id": 90,
@@ -771,7 +856,8 @@
     "country": "Jordan",
     "year": "01.01.2008",
     "director": "Eileen Simpson and Ben White",
-    "length": ""
+    "length": "",
+    "eventid": "B032"
   },
   {
     "id": 91,
@@ -780,7 +866,8 @@
     "country": "x",
     "year": "x",
     "director": "x",
-    "length": ""
+    "length": "",
+    "eventid": "B033"
   },
   {
     "id": 100,
@@ -789,7 +876,8 @@
     "country": "x",
     "year": "x",
     "director": "x",
-    "length": ""
+    "length": "",
+    "eventid": "B034"
   },
   {
     "id": 102,
@@ -798,7 +886,8 @@
     "country": "Japan",
     "year": "01.01.2006",
     "director": "Michael Arias",
-    "length": ""
+    "length": 111,
+    "eventid": "B036"
   },
   {
     "id": 103,
@@ -807,7 +896,8 @@
     "country": "Japan",
     "year": "01.01.2001",
     "director": "Hayao Miyazaki",
-    "length": ""
+    "length": 125,
+    "eventid": "B037"
   },
   {
     "id": 104,
@@ -816,7 +906,8 @@
     "country": "Japan",
     "year": "01.01.1988",
     "director": "Katsuhiro Ôtomo",
-    "length": ""
+    "length": 124,
+    "eventid": "B038"
   },
   {
     "id": 105,
@@ -825,7 +916,8 @@
     "country": "Japan",
     "year": "01.01.2009",
     "director": "Mamoru Hosoda,",
-    "length": ""
+    "length": 114,
+    "eventid": "B039"
   },
   {
     "id": 106,
@@ -834,7 +926,8 @@
     "country": "Japan",
     "year": "01.01.1988",
     "director": "Isao Takahata",
-    "length": ""
+    "length": 89,
+    "eventid": "B040"
   },
   {
     "id": 107,
@@ -843,7 +936,8 @@
     "country": "Frankreich",
     "year": "01.01.1963",
     "director": "Jean-Luc Godard",
-    "length": ""
+    "length": 95,
+    "eventid": "B041"
   },
   {
     "id": 108,
@@ -852,7 +946,8 @@
     "country": "USA",
     "year": "01.01.1995",
     "director": "Tom DiCillo",
-    "length": ""
+    "length": 90,
+    "eventid": "B042"
   },
   {
     "id": 109,
@@ -861,7 +956,8 @@
     "country": "USA",
     "year": "01.01.2002",
     "director": "Woody Allen",
-    "length": ""
+    "length": 112,
+    "eventid": "B043"
   },
   {
     "id": 110,
@@ -870,7 +966,8 @@
     "country": "Spanien",
     "year": "01.01.2010",
     "director": "Icíar Bollaín",
-    "length": ""
+    "length": "",
+    "eventid": "B044"
   },
   {
     "id": 111,
@@ -879,7 +976,8 @@
     "country": "Schweiz",
     "year": "01.01.2012",
     "director": "Carlos Klein",
-    "length": ""
+    "length": 1,
+    "eventid": "B045"
   },
   {
     "id": 112,
@@ -888,7 +986,8 @@
     "country": "Dänemark",
     "year": "01.01.2009",
     "director": "Lars von Trier",
-    "length": ""
+    "length": 108,
+    "eventid": "B046"
   },
   {
     "id": 113,
@@ -897,7 +996,8 @@
     "country": "Belgien",
     "year": "01.01.1992",
     "director": "Rémy Belvaux",
-    "length": ""
+    "length": "",
+    "eventid": "B047"
   },
   {
     "id": 114,
@@ -906,7 +1006,8 @@
     "country": "Niederlande",
     "year": "01.01.2002",
     "director": "Larry Clark",
-    "length": ""
+    "length": 93,
+    "eventid": "B048"
   },
   {
     "id": 115,
@@ -915,7 +1016,8 @@
     "country": "Belgien",
     "year": "01.01.2007",
     "director": "Koen Mortier",
-    "length": ""
+    "length": 100,
+    "eventid": "B049"
   },
   {
     "id": 116,
@@ -924,7 +1026,8 @@
     "country": "Frankreich",
     "year": "01.01.2002",
     "director": "Gaspar Noé",
-    "length": ""
+    "length": "",
+    "eventid": "B050"
   },
   {
     "id": 117,
@@ -933,7 +1036,8 @@
     "country": "Frankreich",
     "year": "01.01.1913",
     "director": "Louis Feuillade",
-    "length": ""
+    "length": 86,
+    "eventid": "B051"
   },
   {
     "id": 118,
@@ -942,7 +1046,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Matthias Sahli",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 119,
@@ -951,7 +1056,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Marco Arrigoni",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 120,
@@ -960,7 +1066,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Cosima Frei",
-    "length": ""
+    "length": 17,
+    "eventid": "B052"
   },
   {
     "id": 121,
@@ -969,7 +1076,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Fabienne Andreoli",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 122,
@@ -978,7 +1086,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Manuela Rüegg",
-    "length": ""
+    "length": 71,
+    "eventid": "B052"
   },
   {
     "id": 123,
@@ -987,7 +1096,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Wendy Pillonel",
-    "length": ""
+    "length": 103,
+    "eventid": "B052"
   },
   {
     "id": 124,
@@ -996,7 +1106,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Pablo Callisaya",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 125,
@@ -1005,7 +1116,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Kim Allamand",
-    "length": "19"
+    "length": "19",
+    "eventid": "B052"
   },
   {
     "id": 126,
@@ -1014,7 +1126,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Luca Ribler",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 127,
@@ -1023,7 +1136,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Oliver Rogers",
-    "length": ""
+    "length": 16,
+    "eventid": "B052"
   },
   {
     "id": 128,
@@ -1032,7 +1146,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Pablo Callisaya",
-    "length": "14"
+    "length": "14",
+    "eventid": "B052"
   },
   {
     "id": 129,
@@ -1041,7 +1156,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Lisa Brühlmann",
-    "length": "21"
+    "length": "21",
+    "eventid": "B052"
   },
   {
     "id": 130,
@@ -1050,7 +1166,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Marco Arrigoni",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 131,
@@ -1059,7 +1176,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Johannes Bachmann",
-    "length": "10"
+    "length": "10",
+    "eventid": "B052"
   },
   {
     "id": 132,
@@ -1068,7 +1186,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Jan-Eric Mack",
-    "length": ""
+    "length": 87,
+    "eventid": "B052"
   },
   {
     "id": 133,
@@ -1077,7 +1196,8 @@
     "country": "Schweiz",
     "year": "01.01.2014",
     "director": "Diego Hauenstein",
-    "length": ""
+    "length": 8,
+    "eventid": "B052"
   },
   {
     "id": 134,
@@ -1086,7 +1206,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Anna Furrer",
-    "length": ""
+    "length": 105,
+    "eventid": "B052"
   },
   {
     "id": 135,
@@ -1095,7 +1216,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Johannes Bachmann",
-    "length": "9"
+    "length": "9",
+    "eventid": "B052"
   },
   {
     "id": 136,
@@ -1104,7 +1226,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Natascha Vavrina",
-    "length": ""
+    "length": "",
+    "eventid": "B052"
   },
   {
     "id": 137,
@@ -1113,7 +1236,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Yasmin Joerg",
-    "length": "15"
+    "length": "15",
+    "eventid": "B052"
   },
   {
     "id": 138,
@@ -1122,7 +1246,8 @@
     "country": "Schweiz",
     "year": "01.01.2013",
     "director": "Arash T. Riahi, Arman T. Riahi",
-    "length": ""
+    "length": 118,
+    "eventid": "B053"
   },
   {
     "id": 139,
@@ -1131,7 +1256,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "David Dufresne",
-    "length": ""
+    "length": "",
+    "eventid": "B053"
   },
   {
     "id": 140,
@@ -1140,7 +1266,8 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Moritz Willenegger",
-    "length": ""
+    "length": "",
+    "eventid": "B054"
   },
   {
     "id": 141,
@@ -1149,6 +1276,7 @@
     "country": "Schweiz",
     "year": "01.01.2015",
     "director": "Piet Baumgartner",
-    "length": ""
+    "length": 6,
+    "eventid": "B054"
   }
 ]

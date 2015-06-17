@@ -28,7 +28,11 @@ for (var i = 0; i < movies.length; i++) {
 
       if(!m.length && response.data.Runtime) {
         m.length = parseInt(response.data.Runtime.split(' ')[0]);
+
       }
+/*      else if (response.data.Runtime="undefined") {
+        console.log (movies.title);
+      }*/
 
       if(c == movies.length) {
         fs.writeFileSync('./data/movies.json', JSON.stringify(movies, null, 2));
