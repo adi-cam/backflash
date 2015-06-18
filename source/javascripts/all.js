@@ -1,7 +1,9 @@
 //= require_self
 
-d3.json('data.json', function(_, data) {
-  dataViz(data);
+$(function() {
+  d3.json('data.json', function(_, data) {
+    dataViz(data);
+  });
 });
 
 function dataViz(data) {
@@ -35,7 +37,6 @@ function dataViz(data) {
     countries.push(m.country);
   });
 
-
   var unique = function(d) {
     var uniqueArr= [],
         origLen = d.length,
@@ -61,17 +62,30 @@ function dataViz(data) {
   var uniqueCountries = unique(countries);
   console.log(uniqueCountries);
 
+  //find out how many movies there are in each month
+  var nestedEvents = d3.nest()
+      .key(function(e) {
+        return e._date.getMonth();
+      })
+      .entries(events);
+  console.log(nestedEvents);
 
+  nestedEvents.forEach(function(d){
+    console.log(d.values.length);
+  });
 
-  //create timescale
-  var xScale = d3.scale.linear().domain([1, 31]).range([0, 1000]);
-  var yScale = d3.scale.linear().domain([0, 8]).range([0, 1000]);
+  //create location scales
+  var yScale = d3.scale.linear().domain([0, 11]).range([0, 900]);
+  var radiusScale = d3.scale.sqrt().domain([0, 480]).range([0, 50]);
+
+  //create array for months (12x0)
+  var xCursors = d3.range(12).map(function() { return 0; });
 
   // create color scale
   var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
   var colorScaleCountry = d3.scale.category20([uniqueCountries]); //TODO: Define Larger Country Categories
 
-  var items = d3.select('.graph')
+  var items = d3.select('svg')
       .selectAll('g')
       .data(movies, function(m){
       return m.id;
@@ -82,29 +96,29 @@ function dataViz(data) {
         return d.id;
       })
       .attr("transform", function(d, i){
+        var m = d._event._date.getMonth();
+
+        var x = xCursors[m];
+        var r = radiusScale(d.length);
+        xCursors[m] += r * 2 + 20;
+
         return "translate(" +
-            xScale(d._event._date.getDate()) + "," + yScale(d._event._date.getMonth())
+              (x + r) + "," + ( (yScale(m)))
             + ")";
       });
-
 
   items.append('circle')
     .attr('class', 'movie')
     .attr('r', function(d){
-      return (d.length) / 3;
+      return radiusScale(d.length);
     })
-    //.style('fill', function (d) {return colorScaleGenre(d.genre)});
-    .style('fill', function (d) {return colorScaleCountry(d.country)});
+    .style('fill', function (d) {return colorScaleGenre(d.genre)});
+    //.style('fill', function (d) {return colorScaleCountry(d.country)});
 
   items.append('text')
       .text(function(d) {return d.title});
 
 }
 
-
-
-
-
-//TODO: Append g with text so I know which movie it is
 //TODO: make x scale a fix raster
 //TODO: fix yscale
