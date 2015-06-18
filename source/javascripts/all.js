@@ -24,7 +24,7 @@ function dataViz(data) {
   });
   console.log(movies);
 
-
+  //get genres and countries and define how many unique categories there are
   var genres = [];
   movies.forEach(function(m){
     genres.push(m.genre);
@@ -68,32 +68,43 @@ function dataViz(data) {
   var yScale = d3.scale.linear().domain([0, 8]).range([0, 1000]);
 
   // create color scale
-  var colorScaleGenre = d3.scale.category10([uniqueGenres]);
-  var colorScaleCountry = d3.scale.category10([uniqueCountries]);
+  var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
+  var colorScaleCountry = d3.scale.category20([uniqueCountries]); //TODO: Define Larger Country Categories
 
   var items = d3.select('.graph')
-    .selectAll('.movie')
-    .data(movies, function(m){
+      .selectAll('g')
+      .data(movies, function(m){
       return m.id;
-    });
+      })
+      .enter()
+      .append('g')
+      .attr('data-id', function(d){
+        return d.id;
+      })
+      .attr("transform", function(d, i){
+        return "translate(" +
+            xScale(d._event._date.getDate()) + "," + yScale(d._event._date.getMonth())
+            + ")";
+      });
 
-  items.enter().append('circle')
+
+  items.append('circle')
     .attr('class', 'movie')
     .attr('r', function(d){
       return (d.length) / 3;
     })
-    .attr('data-id', function(d){
-      return d.id;
-    })
-    .attr("cx", function(d, i){
-      return (xScale(d._event._date.getDate()));
-    })
-    .attr('cy', function(d, i) {
-        return (yScale(d._event._date.getMonth()));
-      })
-    //.style('fill', function (d) {return colorScaleCountry(d.genre)});
-    .style('fill', function (d) {return colorScaleGenre(d.country)});
+    //.style('fill', function (d) {return colorScaleGenre(d.genre)});
+    .style('fill', function (d) {return colorScaleCountry(d.country)});
 
-  items.exit().remove();
+  items.append('text')
+      .text(function(d) {return d.title});
+
 }
 
+
+
+
+
+//TODO: Append g with text so I know which movie it is
+//TODO: make x scale a fix raster
+//TODO: fix yscale
