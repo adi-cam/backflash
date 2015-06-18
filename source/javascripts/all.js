@@ -4,74 +4,62 @@ d3.json('data.json', function(_, data) {
   dataViz(data);
 });
 
-
 function dataViz(data) {
-  var m = data.movies;
-  var e = data.events;
+  var movies = data.movies;
+  var events = data.events;
 
-  //format dates
-  var date = [];
-
-  e.forEach(function (d, i) {
+  // convert string date to date objet and save as _date on event object
+  // extract month from previously created date object and save as _month on object
+  events.forEach(function(e) {
     var timeFormat = d3.time.format('%d.%m.%Y');
-    d.date = timeFormat.parse(d.date);
-    date.push(d.date);
+    e._date = timeFormat.parse(e.date);
+    e._month = e._date.getMonth();
   });
-  console.log(date);
 
-
-  //get month
-  var month = [];
-  e.forEach(function (d, i) {
-    d.date = date[i].getMonth();
-    month.push(d.date + 1)
+  // map movies to events using the eventid and id properties
+  movies.forEach(function(m){
+    m._event = events.filter(function(e){
+      return e.id == m.eventid;
+    })[0];
   });
-  console.log(month);
 
+  // map evnts to movies using the id and and eventid properties
+  events.forEach(function(e){
+    e._movies = movies.filter(function(m){
+      return m.eventid == e.id;
+    });
+  });
 
-  //consolidate datapoints under eventid
-  var key = e.id;
-  var keyMovies = m.eventid;
-  var group = [];
-
-  if (key==keyMovies) {
-    //group.push(d3.merge([m, e]))
-    var nest = d3.nest()
-        .key(function (d) {
-           return key
-        })
-        .key (function(d){
-          return keyMovies
-        })
-        .entries(data);
-
-    }
-   console.log(nest);
+  console.log(events);
 
   //create timescale
-  var timeScale =  d3.time.scale().domain([date[0], date[date.length-1]]).range([0, 1000]);
-  console.log(timeScale(date[6]));
+  var timeScale = d3.time.scale().domain([events[0]._date, events[events.length-1]._date]).range([0, 400]);
 
+  //create objects nested after months
+  var nestedMonths
 
-  var tenColorScale = d3.scale.category10(['documentary', 'sci.fi_fiction', 'drama_romance']);
+  // create color scale
+  var tenColorScale = d3.scale.category10([movies.genre]);
 
-  var items = d3.select('.graph').selectAll('.movie').data(m, function(d){
-    return d.id;
-  });
+  var items = d3.select('.graph')
+    .selectAll('.movie')
+    .data(movies, function(m){
+      return m.id;
+    });
 
   items.enter().append('circle')
     .attr('class', 'movie')
     .attr('r', function(d){
-      return (d.length || 5) / 5;
+      return (d.length) / 3;
     })
     .attr('data-id', function(d){
       return d.id;
     })
-      .attr("cx", function(_, i){
-        return (i/2)* (timeScale(date[i]));
-      })
-      .attr('cy', 200)
-      .style('fill', function (d) {return tenColorScale(d.genre)});
+    .attr("cx", function(d, i){
+      return i * (timeScale(d._event._date));
+    })
+    .attr('cy', 200)
+    .style('fill', function (d) {return tenColorScale(d.genre)});
 
   items.exit().remove();
 }
