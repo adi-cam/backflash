@@ -13,7 +13,6 @@ function dataViz(data) {
   events.forEach(function(e) {
     var timeFormat = d3.time.format('%d.%m.%Y');
     e._date = timeFormat.parse(e.date);
-    e._month = e._date.getMonth();
   });
 
   // map movies to events using the eventid and id properties
@@ -21,30 +20,56 @@ function dataViz(data) {
     m._event = events.filter(function(e){
       return e.id == m.eventid;
     })[0];
+
+  });
+  console.log(movies);
+
+
+  var genres = [];
+  movies.forEach(function(m){
+    genres.push(m.genre);
   });
 
-  // map events to movies using the id and and eventid properties
-  events.forEach(function(e){
-    e._movies = movies.filter(function(m){
-      return m.eventid == e.id;
-    });
+  var countries =[]
+  movies.forEach(function(m){
+    countries.push(m.country);
   });
-  console.log(events);
 
-  var nestedEvents = d3.nest()
-      .key(function(e) {
-        return e._month
-      })
-      .entries(events);
-  console.log(nestedEvents);
+
+  var unique = function(d) {
+    var uniqueArr= [],
+        origLen = d.length,
+        found, x, y;
+
+    for (x = 0; x < origLen; x++) {
+      found = undefined;
+      for (y = 0; y < uniqueArr.length; y++) {
+        if (d[x] === uniqueArr[y]) {
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        uniqueArr.push(d[x]);
+      }
+    }
+    return uniqueArr;
+  }
+  var uniqueGenres = unique(genres);
+  console.log(uniqueGenres);
+
+  var uniqueCountries = unique(countries);
+  console.log(uniqueCountries);
+
 
 
   //create timescale
-  var timeScale = d3.time.scale().domain([events[0]._date, events[events.length-1]._date]).range([0, 400]);
+  var xScale = d3.scale.linear().domain([1, 31]).range([0, 1000]);
+  var yScale = d3.scale.linear().domain([0, 8]).range([0, 1000]);
 
   // create color scale
-  var tenColorScale = d3.scale.category10([movies.genre]);
-
+  var colorScaleGenre = d3.scale.category10([uniqueGenres]);
+  var colorScaleCountry = d3.scale.category10([uniqueCountries]);
 
   var items = d3.select('.graph')
     .selectAll('.movie')
@@ -61,10 +86,13 @@ function dataViz(data) {
       return d.id;
     })
     .attr("cx", function(d, i){
-      return i * (timeScale(d._event._date));
+      return (xScale(d._event._date.getDate()));
     })
-    .attr('cy', 200)
-    .style('fill', function (d) {return tenColorScale(d.genre)});
+    .attr('cy', function(d, i) {
+        return (yScale(d._event._date.getMonth()));
+      })
+    //.style('fill', function (d) {return colorScaleCountry(d.genre)});
+    .style('fill', function (d) {return colorScaleGenre(d.country)});
 
   items.exit().remove();
 }
