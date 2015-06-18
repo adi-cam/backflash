@@ -23,23 +23,28 @@ function dataViz(data) {
     })[0];
   });
 
-  // map evnts to movies using the id and and eventid properties
+  // map events to movies using the id and and eventid properties
   events.forEach(function(e){
     e._movies = movies.filter(function(m){
       return m.eventid == e.id;
     });
   });
-
   console.log(events);
+
+  var nestedEvents = d3.nest()
+      .key(function(e) {
+        return e._month
+      })
+      .entries(events);
+  console.log(nestedEvents);
+
 
   //create timescale
   var timeScale = d3.time.scale().domain([events[0]._date, events[events.length-1]._date]).range([0, 400]);
 
-  //create objects nested after months
-  var nestedMonths
-
   // create color scale
   var tenColorScale = d3.scale.category10([movies.genre]);
+
 
   var items = d3.select('.graph')
     .selectAll('.movie')
