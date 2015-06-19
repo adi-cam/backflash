@@ -113,16 +113,21 @@ function dataViz(data) {
   var colorScaleGenre = d3.scale.category20([uniqueGenres]);
   var colorScaleCountry = d3.scale.category20([movies._region]);
 
+  //get min and max from year
+  var extentYear = d3.extent(movies, function(m) {
+    return m.year;});
+
   //create opacity scale
   var opacityScale = d3.scale.linear().domain([1928, 2015]).range([0, 1]);
+  console.log(extentYear);
+  //create blur scale
+  var yearScale = d3.scale.log().domain(extentYear).range([20, 0]);
 
   //prepare the tooltip div
   var div = d3.select("body")
       .append("div")
       .attr("class", "tooltip")
       .style("opacity", 50);
-
-
 
 // Databinding & Visualization
 // –––––––––––––––––––––––––––––––––––––
@@ -142,19 +147,37 @@ function dataViz(data) {
         var x = xCursors[m2];
         var r = radiusScale(d.length);
         xCursors[m2] += r * 2 + 20;
-
         return "translate (" + ((x + r)+50) + "," +((yScale(m2))+50) + ")";
-
       });
 
-  items.append('circle')
+  var filter = items.append("defs")
+      .append("filter")
+      .attr("id", "feGaussianBlur")
+      .append("feGaussianBlur")
+      .attr("in", "SourceAlpha")
+      .attr("stdDeviation", function(d){
+        return yearScale(d.year);
+      })
+      .attr("result", "blur");
+
+  var feMerge = filter.append("feMerge");
+
+  feMerge.append("feMergeNode")
+      .attr("in", "offsetBlur")
+  feMerge.append("feMergeNode")
+      .attr("in", "SourceGraphic");
+
+
+
+ items.append('circle')
     .attr('class', 'movie')
     .attr('r', function(d){
-      return radiusScale(d.length);
-    })
+      return radiusScale(d.length)
+      })
     //.style('fill', function (d) {return colorScaleGenre(d.genre)})
     .style('fill', function (d) {return colorScaleCountry(d._region)})
-      .style('fill-opacity', function (d) {return opacityScale(d.year)})
+      //.style('fill-opacity', function (d) {return opacityScale(d.year)})
+      .style("filter", "url(#feGaussianBlur)")
     .on("mouseover", function(d) {
       div.transition()
         .duration(500)
@@ -163,19 +186,18 @@ function dataViz(data) {
         .duration(200)
         .style("opacity", .9);
       div.html(d.title + ' ' + d._region + ' ' + d.genre  + ' ' + d.year)
-        .style("left", (d3.event.pageX)-20+ "px")
+        .style("left", (d3.event.pageX-20) + "px")
         .style("top", (d3.event.pageY-40) + "px");
+
+
   });
-
-  //items.append('text')
-  //    .text(function(d) {return d.title})
-  //    .attr("dy", ".3em")
-  //    .style("text-anchor", "middle")
-  //    .style('fill', 'white');
-
 }
 
 
+//TODO: Turn around months
+//TODO: Clean out dataset of xs
+//TODO: Put in Months
+//TODO: Automate number of months in scale
 //TODO: take widow size instead of fixed dimensions
 //TODO: Define own colors!
 //TODO: Apply Blur
@@ -191,3 +213,10 @@ console.log(nestedEvents);
 nestedEvents.forEach(function(d){
   console.log(d.values.length);
 });*/
+
+
+//items.append('text')
+//    .text(function(d) {return d.title})
+//    .attr("dy", ".3em")
+//    .style("text-anchor", "middle")
+//    .style('fill', 'white');
