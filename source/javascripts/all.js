@@ -25,6 +25,49 @@ function dataViz(data) {
 
   });
 
+
+  //organizing the countries after regions
+  var countriesCat= {};
+  countriesCat.westEurope = ["Deutschland", 'Frankreich', 'Österreich', 'Belgien', 'Niederlande'];
+  countriesCat.eastEurope = ["Tschechoslowakei"];
+  countriesCat.southEurope =['Spanien', 'Italien'];
+  countriesCat.northEurope =['Dänemark', 'Schweden', 'GB'];
+  countriesCat.home = ['Schweiz'];
+  countriesCat.southAsia = ["Japan", "Südkorea"];
+  countriesCat.westAsia = ['Jordan'];
+  countriesCat.northAmerica =['USA'];
+
+  console.log(countriesCat);
+
+  movies.forEach(function (m){
+    m._region = movies.filter(function(m){
+      for (var i = 0; i<=countriesCat.westEurope.length; i++) {
+        if (m.country == countriesCat.westEurope[i]) {
+          return m._region = 'WestEurope';
+        } else if (m.country == countriesCat.eastEurope[i]){
+          return m._region = 'Eastern Europe';
+        } else if (m.country == countriesCat.southEurope[i]){
+          return m._region = 'Southern Europe';
+        } else if (m.country == countriesCat.northEurope[i]){
+          return m._region = 'Northern Europe';
+        } else if (m.country == countriesCat.eastEurope[i]){
+          return m._region = 'Eastern Europe';
+        } else if (m.country == countriesCat.northAmerica[i]) {
+          return m._region = 'North America';
+        } else if (m.country == countriesCat.southAsia[i]) {
+          return m._region = 'South Asia';
+        } else if (m.country == countriesCat.westAsia[i]) {
+          return m._region = 'West Asia';
+        } else if (m.country == 'Schweiz') {
+          return m._region = 'Switzerland';
+        }
+        //last movie object gives back array in _region, why???
+      }});
+  });
+  console.log(movies);
+
+
+
   //get genres and countries and define how many unique categories there are
   var genres = [];
   movies.forEach(function(m){
@@ -54,33 +97,30 @@ function dataViz(data) {
       }
     }
     return uniqueArr;
-  }
+  };
   var uniqueGenres = unique(genres);
   var uniqueCountries = unique(countries);
 
 
   //create location scales
   var yScale = d3.scale.linear().domain([1, 8]).range([0, 900]);
-  console.log(yScale(9));
   var yScaleRange = d3.scale.ordinal().domain([1, 2, 3, 4, 8, 9, 10, 11]).rangeRoundPoints([1, 8]);
-  console.log(yScaleRange(11));
   var radiusScale = d3.scale.sqrt().domain([0, 480]).range([0, 50]);
-
 
   //create array for months (9x0)
   var xCursors = d3.range(9).map(function() { return 1; });
-  console.log(xCursors);
 
   // create color scale
   var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
-  var colorScaleCountry = d3.scale.category20([uniqueCountries]); //T ODO: Define Larger Country Categories
+  var colorScaleCountry = d3.scale.category20([uniqueCountries]); //TODO: Define Larger Country Categories
+  console.log(uniqueCountries);
+
 
   //prepare the tooltip div
   var div = d3.select("body")
       .append("div")
       .attr("class", "tooltip")
-      .style("opacity", 0);
-
+      .style("opacity", 50);
 
 
   var items = d3.select('svg')
@@ -94,14 +134,8 @@ function dataViz(data) {
         return d.id;
       })
       .attr("transform", function(d, i){
-        var m1 = d._event._date.getMonth();
-        console.log(d._event._date);
         var m2 = yScaleRange(d._event._date.getMonth());
-        console.log('Orig', m1);
-        console.log('Hi', m2);
-        console.log('Test', yScale(m2));
         var x = xCursors[m2];
-        console.log('Test', x);
         var r = radiusScale(d.length);
         xCursors[m2] += r * 2 + 20;
 
@@ -134,7 +168,7 @@ function dataViz(data) {
   //    .style("text-anchor", "middle")
   //    .style('fill', 'white');
 
-}
+};
 
 //TODO: Apply Blur
 //find out how many movies there are in each month
