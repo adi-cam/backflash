@@ -112,9 +112,10 @@ function dataViz(data) {
 
   // create color scale
   var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
-  var colorScaleCountry = d3.scale.category20([uniqueCountries]); //TODO: Define Larger Country Categories
-  console.log(uniqueCountries);
+  var colorScaleCountry = d3.scale.category20([movies._region]);
 
+  //create opacity scale
+  var opacityScale = d3.scale.linear().domain([1928, 2015]).range([0, 1]);
 
   //prepare the tooltip div
   var div = d3.select("body")
@@ -148,8 +149,9 @@ function dataViz(data) {
     .attr('r', function(d){
       return radiusScale(d.length);
     })
-    .style('fill', function (d) {return colorScaleGenre(d.genre)})
-    //.style('fill', function (d) {return colorScaleCountry(d.country)})
+    //.style('fill', function (d) {return colorScaleGenre(d.genre)})
+    .style('fill', function (d) {return colorScaleCountry(d._region)})
+      .style('fill-opacity', function (d) {return opacityScale(d.year)})
     .on("mouseover", function(d) {
       div.transition()
         .duration(500)
@@ -157,7 +159,7 @@ function dataViz(data) {
       div.transition()
         .duration(200)
         .style("opacity", .9);
-      div.html(d.title)
+      div.html(d.title + ' ' + d._region + ' ' + d.genre)
         .style("left", (d3.event.pageX)-20+ "px")
         .style("top", (d3.event.pageY-40) + "px");
   });
