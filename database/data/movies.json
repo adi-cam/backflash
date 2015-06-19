@@ -76,7 +76,7 @@
     "country": "Tschechoslowakei",
     "year": 1965,
     "director": "Milos Forman",
-    "length": null,
+    "length": 88,
     "eventid": "A008"
   },
   {
@@ -208,16 +208,6 @@
     "director": "Jean-Stéphane Bron",
     "length": 100,
     "eventid": "A022"
-  },
-  {
-    "id": 23,
-    "title": "",
-    "genre": "x",
-    "country": "x",
-    "year": null,
-    "director": "x",
-    "length": null,
-    "eventid": "A025"
   },
   {
     "id": 24,
@@ -356,7 +346,7 @@
     "country": "USA",
     "year": 1977,
     "director": "Steven Spielberg",
-    "length": null,
+    "length": 137,
     "eventid": "A037"
   },
   {
@@ -506,7 +496,7 @@
     "country": "Schweiz",
     "year": 2014,
     "director": "Moris Freiburghaus",
-    "length": null,
+    "length": 10,
     "eventid": "A051"
   },
   {
@@ -516,7 +506,7 @@
     "country": "Schweiz",
     "year": 2015,
     "director": "Jan-Eric Mack",
-    "length": null,
+    "length": 10,
     "eventid": "A051"
   },
   {
@@ -546,7 +536,7 @@
     "country": "Schweiz",
     "year": 2014,
     "director": "Lisa Gertsch, Gianni Keller",
-    "length": null,
+    "length": 10,
     "eventid": "A055"
   },
   {
@@ -780,16 +770,6 @@
     "eventid": "B022"
   },
   {
-    "id": 82,
-    "title": "x",
-    "genre": "x",
-    "country": "x",
-    "year": null,
-    "director": "x",
-    "length": null,
-    "eventid": "B023"
-  },
-  {
     "id": 83,
     "title": "Plug & Play",
     "genre": "animation",
@@ -798,16 +778,6 @@
     "director": "Michael Frei, Mario von Rickenbach",
     "length": 6,
     "eventid": "B024"
-  },
-  {
-    "id": 84,
-    "title": "x",
-    "genre": "x",
-    "country": "x",
-    "year": null,
-    "director": "x",
-    "length": null,
-    "eventid": "B026"
   },
   {
     "id": 86,
@@ -858,26 +828,6 @@
     "director": "Eileen Simpson and Ben White",
     "length": 62,
     "eventid": "B032"
-  },
-  {
-    "id": 91,
-    "title": "x",
-    "genre": "x",
-    "country": "x",
-    "year": null,
-    "director": "x",
-    "length": null,
-    "eventid": "B033"
-  },
-  {
-    "id": 100,
-    "title": "x",
-    "genre": "x",
-    "country": "x",
-    "year": null,
-    "director": "x",
-    "length": null,
-    "eventid": "B034"
   },
   {
     "id": 102,
@@ -1166,7 +1116,7 @@
     "country": "Schweiz",
     "year": 2014,
     "director": "Marco Arrigoni",
-    "length": null,
+    "length": 10,
     "eventid": "B052"
   },
   {
@@ -1226,7 +1176,7 @@
     "country": "Schweiz",
     "year": 2015,
     "director": "Natascha Vavrina",
-    "length": null,
+    "length": 10,
     "eventid": "B052"
   },
   {
@@ -1266,7 +1216,7 @@
     "country": "Schweiz",
     "year": 2015,
     "director": "Moritz Willenegger",
-    "length": null,
+    "length": 10,
     "eventid": "B054"
   },
   {
