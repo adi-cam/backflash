@@ -10,8 +10,11 @@ function dataViz(data) {
   var movies = data.movies;
   var events = data.events;
 
+
+// Data manipulation and formatting
+// –––––––––––––––––––––––––––––––––––––
+
   // convert string date to date objet and save as _date on event object
-  // extract month from previously created date object and save as _month on object
   events.forEach(function(e) {
     var timeFormat = d3.time.format('%d.%m.%Y');
     e._date = timeFormat.parse(e.date);
@@ -22,9 +25,7 @@ function dataViz(data) {
     m._event = events.filter(function(e){
       return e.id == m.eventid;
     })[0];
-
   });
-
 
   //organizing the countries after regions
   var countriesCat= {};
@@ -36,8 +37,6 @@ function dataViz(data) {
   countriesCat.southAsia = ["Japan", "Südkorea"];
   countriesCat.westAsia = ['Jordan'];
   countriesCat.northAmerica =['USA'];
-
-  console.log(countriesCat);
 
   movies.forEach(function (m){
     m._region = movies.filter(function(m){
@@ -64,9 +63,6 @@ function dataViz(data) {
         //last movie object gives back array in _region, why???
       }});
   });
-  console.log(movies);
-
-
 
   //get genres and countries and define how many unique categories there are
   var genres = [];
@@ -102,6 +98,9 @@ function dataViz(data) {
   var uniqueCountries = unique(countries);
 
 
+// Scales
+// –––––––––––––––––––––––––––––––––––––
+
   //create location scales
   var yScale = d3.scale.linear().domain([1, 8]).range([0, 900]);
   var yScaleRange = d3.scale.ordinal().domain([1, 2, 3, 4, 8, 9, 10, 11]).rangeRoundPoints([1, 8]);
@@ -111,7 +110,7 @@ function dataViz(data) {
   var xCursors = d3.range(9).map(function() { return 1; });
 
   // create color scale
-  var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
+  var colorScaleGenre = d3.scale.category20([uniqueGenres]);
   var colorScaleCountry = d3.scale.category20([movies._region]);
 
   //create opacity scale
@@ -123,6 +122,10 @@ function dataViz(data) {
       .attr("class", "tooltip")
       .style("opacity", 50);
 
+
+
+// Databinding & Visualization
+// –––––––––––––––––––––––––––––––––––––
 
   var items = d3.select('svg')
       .selectAll('g')
@@ -159,7 +162,7 @@ function dataViz(data) {
       div.transition()
         .duration(200)
         .style("opacity", .9);
-      div.html(d.title + ' ' + d._region + ' ' + d.genre)
+      div.html(d.title + ' ' + d._region + ' ' + d.genre  + ' ' + d.year)
         .style("left", (d3.event.pageX)-20+ "px")
         .style("top", (d3.event.pageY-40) + "px");
   });
@@ -170,8 +173,11 @@ function dataViz(data) {
   //    .style("text-anchor", "middle")
   //    .style('fill', 'white');
 
-};
+}
 
+
+//TODO: take widow size instead of fixed dimensions
+//TODO: Define own colors!
 //TODO: Apply Blur
 //find out how many movies there are in each month
 /*
