@@ -70,9 +70,18 @@ function dataViz(data) {
   //create array for months (9x0)
   var xCursors = d3.range(9).map(function() { return 1; });
   console.log(xCursors);
+
   // create color scale
   var colorScaleGenre = d3.scale.category20([uniqueGenres]); //TODO: Define own colors!
   var colorScaleCountry = d3.scale.category20([uniqueCountries]); //T ODO: Define Larger Country Categories
+
+  //prepare the tooltip div
+  var div = d3.select("body")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+
+
 
   var items = d3.select('svg')
       .selectAll('g')
@@ -105,17 +114,29 @@ function dataViz(data) {
     .attr('r', function(d){
       return radiusScale(d.length);
     })
-    .style('fill', function (d) {return colorScaleGenre(d.genre)});
-    //.style('fill', function (d) {return colorScaleCountry(d.country)});
+    .style('fill', function (d) {return colorScaleGenre(d.genre)})
+    //.style('fill', function (d) {return colorScaleCountry(d.country)})
+    .on("mouseover", function(d) {
+      div.transition()
+        .duration(500)
+        .style("opacity", 0);
+      div.transition()
+        .duration(200)
+        .style("opacity", .9);
+      div.html(d.title)
+        .style("left", (d3.event.pageX)-20+ "px")
+        .style("top", (d3.event.pageY-40) + "px");
+  });
 
-  items.append('text')
-      .text(function(d) {return d.title})
-      .style('fill', 'white');
+  //items.append('text')
+  //    .text(function(d) {return d.title})
+  //    .attr("dy", ".3em")
+  //    .style("text-anchor", "middle")
+  //    .style('fill', 'white');
 
 }
 
 //TODO: Apply Blur
-//TODO: fix yscale
 //find out how many movies there are in each month
 /*
 var nestedEvents = d3.nest()
