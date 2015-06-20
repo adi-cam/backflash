@@ -112,12 +112,13 @@ function dataViz(data) {
 // –––––––––––––––––––––––––––––––––––––
 
   var items = d3.select('svg')
-    .selectAll('g')
+    .selectAll('.movie')
     .data(movies, function (m) {
       return m.id;
     })
     .enter()
     .append('g')
+    .attr('class', 'movie')
     .attr('data-id', function (d) {
       return d.id;
     })
