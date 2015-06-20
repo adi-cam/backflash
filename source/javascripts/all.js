@@ -58,14 +58,20 @@ function dataViz(data) {
     countries.push(m.country);
   });
 
-  var months = [];
+  // generte yKeys
   events.forEach(function(e){
-    months.push(e._date.getMonth());
+    var paddedMonth = ('0' + e._date.getMonth()).slice(-2);
+    e._yKey = parseInt(e._date.getFullYear() + '' + paddedMonth);
+  });
+
+  var yKeys = [];
+  movies.forEach(function(m){
+    yKeys.push(m._event._yKey);
   });
 
   var uniqueGenres = _.uniq(genres);
   var uniqueCountries = _.uniq(countries);
-  var uniqueMonths = _.uniq(months);
+  var uniqueYKeys = _.uniq(yKeys).sort().reverse();
 
 // Scales
 // –––––––––––––––––––––––––––––––––––––
@@ -74,16 +80,13 @@ function dataViz(data) {
   var maxRuntime = d3.max(movies, function (m) {
     return m.length
   });
-  var amountOfMonths = uniqueMonths.length - 2; //TODO: -1 after data set has been cleaned as june is missing
-
-  var yScale = d3.scale.linear().domain([0, amountOfMonths]).range([0, 900]);
-  var yScaleRange = d3.scale.ordinal().domain([8, 9, 10, 11, 1, 2, 3, 4]).rangeRoundPoints([0, amountOfMonths]);
   var radiusScale = d3.scale.sqrt().domain([0, maxRuntime]).range([0, 50]);
 
+  var yScaleRange = d3.scale.ordinal().domain(uniqueYKeys).rangeRoundPoints([0, uniqueYKeys.length-1]);
+  var yScale = d3.scale.linear().domain([0, uniqueYKeys.length-1]).range([0, 900]);
+
   //create array for months (9x0)
-  var xCursors = d3.range(9).map(function () {
-    return 1;
-  });
+  var xCursors = d3.range(uniqueYKeys.length).map(function(){ return 1; });
 
   // create color scale
   var colorScaleGenre = d3.scale.category20([uniqueGenres]);
@@ -96,7 +99,7 @@ function dataViz(data) {
 
   //create opacity scale
   var opacityScale = d3.scale.linear().domain(extentYear).range([0, 1]);
-  console.log(extentYear);
+  //console.log(extentYear);
   //create blur scale
   var yearScale = d3.scale.linear().domain(extentYear).range([15, 0]);
 
@@ -121,7 +124,7 @@ function dataViz(data) {
         return d.id;
       })
       .attr("transform", function (d, i) {
-        var m2 = yScaleRange(d._event._date.getMonth());
+        var m2 = yScaleRange(d._event._yKey);
         var x = xCursors[m2];
         var r = radiusScale(d.length);
         xCursors[m2] += r * 2 + 20;
