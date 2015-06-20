@@ -27,6 +27,8 @@ function dataViz(data) {
     })[0];
   });
 
+  movies = _.sortBy(movies, function(m){ return m._event._date; });
+
   // organizing the countries after regions
   var countriesMatrix = {
     westEurope: ['Deutschland', 'Frankreich', 'Österreich', 'Belgien', 'Niederlande'],
