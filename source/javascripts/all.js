@@ -175,6 +175,19 @@ function dataViz(data) {
         .style("left", (d3.event.pageX - 20) + "px")
         .style("top", (d3.event.pageY - 40) + "px");
     });
+
+  var labels = d3.select('svg')
+    .selectAll('.label')
+    .data(uniqueYKeys)
+    .enter()
+    .append('text')
+    .html(function(d){ return d; })
+    .attr('class', 'label')
+    .attr('x', 0)
+    .attr('y', function(d){
+      return yScale(yScaleRange(d));
+    });
+
 }
 
 //TODO: put movies in right order in month
