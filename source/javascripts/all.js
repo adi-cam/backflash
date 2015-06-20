@@ -174,26 +174,12 @@ function dataViz(data) {
         .style("left", (d3.event.pageX - 20) + "px")
         .style("top", (d3.event.pageY - 40) + "px");
     });
-  var text = d3.select('body')
-    .selectAll('p')
-    .data(movies)
-    .enter()
-    .append('p')
-    .attr('class', 'months')
-    .html(function (d){
-      return d._event._date.toString().split(' ')[1];
-    })
-    .attr('x', 10)
-    .attr('y', function (d) {
-      return yScale(yScaleRange(d._event._date.getMonth()));
-    });
 }
 
 //TODO: put movies in right order in month
 //TODO: Put in Months
 //TODO: take widow size instead of fixed dimensions
 //TODO: Define own colors!
-//TODO: Apply Blur
 //TODO: Clean out dataset of xs
 
 //find out how many movies there are in each month
