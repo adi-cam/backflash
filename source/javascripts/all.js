@@ -27,42 +27,27 @@ function dataViz(data) {
     })[0];
   });
 
-  //organizing the countries after regions
-  var countriesCat = {};
-  countriesCat.westEurope = ["Deutschland", 'Frankreich', 'Österreich', 'Belgien', 'Niederlande'];
-  countriesCat.eastEurope = ["Tschechoslowakei"];
-  countriesCat.southEurope = ['Spanien', 'Italien'];
-  countriesCat.northEurope = ['Dänemark', 'Schweden', 'GB'];
-  countriesCat.home = ['Schweiz'];
-  countriesCat.southAsia = ["Japan", "Südkorea"];
-  countriesCat.westAsia = ['Jordan'];
-  countriesCat.northAmerica = ['USA'];
+  // organizing the countries after regions
+  var countriesMatrix = {
+    westEurope: ['Deutschland', 'Frankreich', 'Österreich', 'Belgien', 'Niederlande'],
+    eastEurope: ['Tschechoslowakei'],
+    southEurope: ['Spanien', 'Italien'],
+    northEurope: ['Dänemark', 'Schweden', 'GB'],
+    home: ['Schweiz'],
+    southAsia: ['Japan', 'Südkorea'],
+    westAsia: ['Jordan'],
+    northAmerica: ['USA']
+  };
+
+  var countriesInverseMatrix = {};
+  Object.keys(countriesMatrix).forEach(function(region){
+    countriesMatrix[region].forEach(function(country){
+      countriesInverseMatrix[country] = region;
+    });
+  });
 
   movies.forEach(function (m) {
-    m._region = movies.filter(function (m) {
-      for (var i = 0; i <= countriesCat.westEurope.length; i++) {
-        if (m.country == countriesCat.westEurope[i]) {
-          return m._region = 'WestEurope';
-        } else if (m.country == countriesCat.eastEurope[i]) {
-          return m._region = 'Eastern Europe';
-        } else if (m.country == countriesCat.southEurope[i]) {
-          return m._region = 'Southern Europe';
-        } else if (m.country == countriesCat.northEurope[i]) {
-          return m._region = 'Northern Europe';
-        } else if (m.country == countriesCat.eastEurope[i]) {
-          return m._region = 'Eastern Europe';
-        } else if (m.country == countriesCat.northAmerica[i]) {
-          return m._region = 'North America';
-        } else if (m.country == countriesCat.southAsia[i]) {
-          return m._region = 'South Asia';
-        } else if (m.country == countriesCat.westAsia[i]) {
-          return m._region = 'West Asia';
-        } else if (m.country == 'Schweiz') {
-          return m._region = 'Switzerland';
-        }
-        //last movie object gives back array in _region, why???
-      }
-    });
+    m._region = countriesInverseMatrix[m.country];
   });
 
   //get genres and countries and define how many unique categories there are
