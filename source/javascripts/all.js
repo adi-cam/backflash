@@ -190,11 +190,12 @@ function dataViz(data) {
 
 }
 
-//TODO: put movies in right order in month
-//TODO: Put in Months
+//TODO: Parse numbers to names in labels
 //TODO: take widow size instead of fixed dimensions
 //TODO: Define own colors!
-//TODO: Clean out dataset of xs
+//TODO: Try saturation instead of opacity or blur
+//TODO: Clean out dataset of x's (optional)
+//TODO: Make tooltip better (optional)
 
 //find out how many movies there are in each month
 /*
