@@ -50,44 +50,22 @@ function dataViz(data) {
     m._region = countriesInverseMatrix[m.country];
   });
 
-  //get genres and countries and define how many unique categories there are
+  // get genres and countries and define how many unique categories there are
   var genres = [];
-  movies.forEach(function (m) {
-    genres.push(m.genre);
-  });
-
   var countries = [];
   movies.forEach(function (m) {
+    genres.push(m.genre);
     countries.push(m.country);
   });
 
   var months = [];
-  events.forEach(function (e) {
+  events.forEach(function(e){
     months.push(e._date.getMonth());
   });
 
-  var unique = function (d) {
-    var uniqueArr = [],
-        origLen = d.length,
-        found, x, y;
-
-    for (x = 0; x < origLen; x++) {
-      found = undefined;
-      for (y = 0; y < uniqueArr.length; y++) {
-        if (d[x] === uniqueArr[y]) {
-          found = true;
-          break;
-        }
-      }
-      if (!found) {
-        uniqueArr.push(d[x]);
-      }
-    }
-    return uniqueArr;
-  };
-  var uniqueGenres = unique(genres);
-  var uniqueCountries = unique(countries);
-  var uniqueMonths = unique(months);
+  var uniqueGenres = _.uniq(genres);
+  var uniqueCountries = _.uniq(countries);
+  var uniqueMonths = _.uniq(months);
 
 // Scales
 // –––––––––––––––––––––––––––––––––––––
