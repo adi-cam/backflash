@@ -35,6 +35,7 @@ bf.timeView.prepare = function(){
     yks.push(m._event._tv_yKey);
   });
 
+  //get all unique yKeys from the array, sort the yKeys and reverse their order
   bf.timeView.yKeys = _.uniq(yks).sort().reverse();
 
   //create location scales
@@ -106,6 +107,7 @@ bf.timeView.draw = function(){
     .attr('r', function (d) {
       return bf.timeView.radiusScale(d.length);
     })
+    
     // .style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       return bf.timeView.colorScaleCountry(d._region);
