@@ -64,7 +64,7 @@ bf.timeView.prepare = function(){
   bf.timeView.radiusScale = d3.scale.linear().domain([0, maxRuntime]).range([0, 300]);
 
   bf.timeView.yRangeScale = d3.scale.ordinal().domain(bf.timeView.yKeys).rangeRoundPoints([0, bf.timeView.yKeys.length-1]);
-  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 350]);
+  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 525]);
 
   //Prepare RGB and HSL color matrix
   bf.timeView.colorsRGB = ['#DC1F26', '#00A89B', '#EE5325', '#EC1263', '#00B04E', '#FFED2B', '#009AD7', '#17479E'];
@@ -84,14 +84,14 @@ bf.timeView.prepare = function(){
   bf.timeView.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l,
     hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
 
-  bf.timeView.Sminus = d3.scale.ordinal().domain(bf.years).range([43, 0]);
+  bf.timeView.Sminus = d3.scale.ordinal().domain(bf.years).range([70, 0]); //maybe make year categories as well!
 
   // create opacity scale for year
   var extentYear = d3.extent(bf.movies, function(m){ return m.year; });
   bf.timeView.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
 
   // create blur scale for year
-  bf.timeView.yearScale = d3.scale.linear().domain(extentYear).range([15, 0]);
+  bf.timeView.yearScale = d3.scale.linear().domain(extentYear).range([9, 0]);
   bf.timeView.yearScaleDegree = d3.scale.linear().domain(extentYear).range([45, 0]);
 
 };
@@ -139,7 +139,7 @@ bf.timeView.draw = function() {
     var x = xPositions[m2];
     var l = bf.timeView.radiusScale(d.length);
     xPositions[m2] += l + 5;
-    return "translate (" + (x + 20) + "," + ((bf.timeView.yScale(m2)) + 60) + ")";
+    return "translate (" + (x + 20) + "," + ((bf.timeView.yScale(m2)) + 22) + ")";
   });
 
 
@@ -176,26 +176,23 @@ bf.timeView.draw = function() {
     //.style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       //return bf.timeView.colorScaleCountry(d._region);
-      return bf.timeView.colorScaleGenre(d.genre);
-      //return 'hsl('+(bf.timeView.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
-    })
-    .style('fill', function (d) {
-      return bf.timeView.colorScaleS(d.year)
+      //return bf.timeView.colorScaleGenre(d.genre);
+      return 'hsl('+(bf.timeView.colorScaleH(d.genre))+','+(100 - (bf.timeView.Sminus(d.year)))+'%, 60%)'
     });
-
-  var line = d3.svg.line()
-    .x(function(d){
-      return x(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-200);
-    })
-    .y(function(d){
-      return y(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-500);
-    })
-    .style('fill', 'white');
-
-  items.append("path")
-    .attr("class", "line")
-    .attr('x', 200)
-    .attr('y', 300);
+  //
+  //var line = d3.svg.line()
+  //  .x(function(d){
+  //    return x(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-200);
+  //  })
+  //  .y(function(d){
+  //    return y(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-500);
+  //  })
+  //  .style('fill', 'white');
+  //
+  //items.append("path")
+  //  .attr("class", "line")
+  //  .attr('x', 200)
+  //  .attr('y', 300);
 
   var labels = d3.select('svg')
     .selectAll('.label')
@@ -205,6 +202,7 @@ bf.timeView.draw = function() {
     .html(function(d){ return bf.timeView.labels(d); })
     .attr('class', 'label')
     .attr('x', 20)
+    .attr('font-size', '10px')
     .attr('y', function(d){
       return (bf.timeView.yScale(bf.timeView.yRangeScale(d)))+15;
     });
