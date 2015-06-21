@@ -103,11 +103,34 @@ bf.timeView.draw = function(){
     return "translate (" + ((x + r) + 50) + "," + ((bf.timeView.yScale(m2)) + 50) + ")";
   });
 
+  //Blur Filter
+  var filter = items.append("defs")
+    .append("filter")
+    .attr("id", "feGaussianBlur")
+    .attr('x', "-200%")
+    .attr('y', "-200%")
+    .attr('width', "500%")
+    .attr('height', "500%")
+    .append("feGaussianBlur")
+    .attr("stdDeviation", function (d) {
+      return bf.timeView.yearScale(d.year);
+    })
+    .attr("result", "blur");
+
+  var feMerge = filter.append("feMerge");
+
+  feMerge.append("feMergeNode")
+    .attr("in", "blur");
+  feMerge.append("feMergeNode")
+    .attr("in", "SourceGraphic");
+
+
+
   items.select('circle')
     .attr('r', function (d) {
       return bf.timeView.radiusScale(d.length);
     })
-    
+    .style("filter", "url(#feGaussianBlur)")
     // .style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       return bf.timeView.colorScaleCountry(d._region);
