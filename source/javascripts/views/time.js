@@ -54,7 +54,7 @@ bf.timeView.prepare = function(){
   //get all unique yKeys from the array, sort the yKeys and reverse their order
   bf.timeView.yKeys = _.uniq(yks).sort().reverse();
 
-  //map keys to words for labels
+  //map yKeys to words for labels
   bf.timeView.labels = d3.scale.ordinal().domain(bf.timeView.yKeys).range(['Mai, 2015', 'April, 2015', 'März, 2015', 'February, 2015',
     'Dezember, 2014', 'November, 2014', 'Oktober, 2014', 'September, 2014']);
 
@@ -139,7 +139,7 @@ bf.timeView.draw = function(){
   });
 
   //Blur Filter
-/*  var filter = items.append("defs")
+  var filter = items.append("defs")
     .append("filter")
     .attr("id", "feGaussianBlur")
     .attr('x', "-200%")
@@ -157,14 +157,14 @@ bf.timeView.draw = function(){
   feMerge.append("feMergeNode")
     .attr("in", "blur");
   feMerge.append("feMergeNode")
-    .attr("in", "SourceGraphic");*/
+    .attr("in", "SourceGraphic");
 
   items.select('circle')
     .attr('r', function (d) {
       return bf.timeView.radiusScale(d.length);
     })
-    //.style("filter", "url(#feGaussianBlur)")
-    .style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
+    .style("filter", "url(#feGaussianBlur)")
+    //.style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       //return bf.timeView.colorScaleCountry(d._region);
       return bf.timeView.colorScaleGenre(d.genre);
