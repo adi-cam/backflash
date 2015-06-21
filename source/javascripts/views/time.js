@@ -33,6 +33,7 @@ bf.timeView.colorScaleS = undefined;
 bf.timeView.colorScaleL = undefined;
 bf.timeView.Sminus = undefined;
 hsl = undefined;
+bf.timeView.yearScaleDegree = undefined;
 
 
 /**
@@ -60,10 +61,10 @@ bf.timeView.prepare = function(){
 
   //create location scales
   var maxRuntime = d3.max(bf.movies, function(m){ return m.length });
-  bf.timeView.radiusScale = d3.scale.sqrt().domain([0, maxRuntime]).range([0, 50]);
+  bf.timeView.radiusScale = d3.scale.linear().domain([0, maxRuntime]).range([0, 300]);
 
   bf.timeView.yRangeScale = d3.scale.ordinal().domain(bf.timeView.yKeys).rangeRoundPoints([0, bf.timeView.yKeys.length-1]);
-  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 900]);
+  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 350]);
 
   //Prepare RGB and HSL color matrix
   bf.timeView.colorsRGB = ['#DC1F26', '#00A89B', '#EE5325', '#EC1263', '#00B04E', '#FFED2B', '#009AD7', '#17479E'];
@@ -91,10 +92,11 @@ bf.timeView.prepare = function(){
 
   // create blur scale for year
   bf.timeView.yearScale = d3.scale.linear().domain(extentYear).range([15, 0]);
+  bf.timeView.yearScaleDegree = d3.scale.linear().domain(extentYear).range([45, 0]);
 
 };
 
-bf.timeView.draw = function(){
+bf.timeView.draw = function() {
   // prepare the tooltip div
   var div = d3.select("body")
     .append("div")
@@ -103,40 +105,43 @@ bf.timeView.draw = function(){
 
   var items = d3.select('svg')
     .selectAll('.movie')
-    .data(bf.movies, function(m) {
+    .data(bf.movies, function (m) {
       return m.id;
     });
 
   items.enter()
     .append('g')
     .attr('class', 'movie')
-    .attr('data-id', function(d) {
+    .attr('data-id', function (d) {
       return d.id;
     })
-    .append('circle')
-      .attr('class', 'movie')
-      .on('mouseover', function (d) {
-        div.transition()
-          .duration(500)
-          .style('opacity', 0);
-        div.transition()
-          .duration(200)
-          .style('opacity', .9);
-        div.html(d.title + ' ' + d._region + ' ' + d.genre + ' ' + d.year)
-          .style('left', (d3.event.pageX - 20) + "px")
-          .style('top', (d3.event.pageY - 40) + "px");
-      });
+    .append('rect')
+    .attr('class', 'movie')
+    .on('mouseover', function (d) {
+      div.transition()
+        .duration(500)
+        .style('opacity', 0);
+      div.transition()
+        .duration(200)
+        .style('opacity', .9);
+      div.html(d.title + ' ' + d._region + ' ' + d.genre + ' ' + d.year)
+        .style('left', (d3.event.pageX - 20) + "px")
+        .style('top', (d3.event.pageY - 40) + "px");
+    });
 
   // create array for months (9x0)
-  var xPositions = d3.range(bf.timeView.yKeys.length).map(function(){ return 1; });
+  var xPositions = d3.range(bf.timeView.yKeys.length).map(function () {
+    return 1;
+  });
 
-  items.attr("transform", function(d) {
+  items.attr("transform", function (d) {
     var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
     var x = xPositions[m2];
-    var r = bf.timeView.radiusScale(d.length);
-    xPositions[m2] += r * 2 + 20;
-    return "translate (" + ((x + r) + 50) + "," + ((bf.timeView.yScale(m2)) + 60) + ")";
+    var l = bf.timeView.radiusScale(d.length);
+    xPositions[m2] += l + 5;
+    return "translate (" + (x + 20) + "," + ((bf.timeView.yScale(m2)) + 60) + ")";
   });
+
 
   //Blur Filter
   var filter = items.append("defs")
@@ -159,20 +164,38 @@ bf.timeView.draw = function(){
   feMerge.append("feMergeNode")
     .attr("in", "SourceGraphic");
 
-  items.select('circle')
-    .attr('r', function (d) {
+  items.select('rect')
+    /*.attr('transform', function(d) {
+     return 'skewX('+bf.timeView.yearScaleDegree(d.year)+')'
+     })*/
+    .attr('width', function (d) {
       return bf.timeView.radiusScale(d.length);
     })
-    .style("filter", "url(#feGaussianBlur)")
+    .attr('height', '40')
+    //.style("filter", "url(#feGaussianBlur)")
     //.style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       //return bf.timeView.colorScaleCountry(d._region);
       return bf.timeView.colorScaleGenre(d.genre);
       //return 'hsl('+(bf.timeView.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
     })
-    .style('fill', function(d){
-    return bf.timeView.colorScaleS(d.year)
+    .style('fill', function (d) {
+      return bf.timeView.colorScaleS(d.year)
     });
+
+  var line = d3.svg.line()
+    .x(function(d){
+      return x(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-200);
+    })
+    .y(function(d){
+      return y(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-500);
+    })
+    .style('fill', 'white');
+
+  items.append("path")
+    .attr("class", "line")
+    .attr('x', 200)
+    .attr('y', 300);
 
   var labels = d3.select('svg')
     .selectAll('.label')
