@@ -272,7 +272,7 @@
   {
     "id": 31,
     "title": "As I Was Moving Ahead, Occasionally I Saw Brief Glimpses of Beauty",
-    "genre": "experimental",
+    "genre": "documentary",
     "country": "USA",
     "year": 2000,
     "director": "Jonas Mekas",
@@ -282,7 +282,7 @@
   {
     "id": 32,
     "title": "Eniaios",
-    "genre": "experimental",
+    "genre": "documentary",
     "country": "USA",
     "year": 1990,
     "director": "Gregory Markopoulos",
@@ -292,7 +292,7 @@
   {
     "id": 33,
     "title": "Magellan",
-    "genre": "experimental",
+    "genre": "documentary",
     "country": "USA",
     "year": 1980,
     "director": "Hollis Frampton",
@@ -552,7 +552,7 @@
   {
     "id": 60,
     "title": "Grand Hotel",
-    "genre": "documentary ",
+    "genre": "documentary",
     "country": "USA",
     "year": 1932,
     "director": "Edmund Goulding",
@@ -1082,7 +1082,7 @@
   {
     "id": 127,
     "title": "Was bleibt",
-    "genre": "x",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": 2014,
     "director": "Oliver Rogers",
@@ -1112,7 +1112,7 @@
   {
     "id": 130,
     "title": "Die guten Schweizers",
-    "genre": "x",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": 2014,
     "director": "Marco Arrigoni",
@@ -1132,7 +1132,7 @@
   {
     "id": 132,
     "title": "Jing",
-    "genre": "x",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": 2015,
     "director": "Jan-Eric Mack",
@@ -1152,7 +1152,7 @@
   {
     "id": 134,
     "title": "Invincible",
-    "genre": "x",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": 2015,
     "director": "Anna Furrer",
@@ -1172,7 +1172,7 @@
   {
     "id": 136,
     "title": "Chum guet hei",
-    "genre": "x",
+    "genre": "drama_romance",
     "country": "Schweiz",
     "year": 2015,
     "director": "Natascha Vavrina",
