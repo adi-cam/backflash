@@ -63,8 +63,8 @@ bf.timeView.prepare = function(){
   var maxRuntime = d3.max(bf.movies, function(m){ return m.length });
   bf.timeView.radiusScale = d3.scale.linear().domain([0, maxRuntime]).range([0, 300]);
 
-  bf.timeView.yRangeScale = d3.scale.ordinal().domain(bf.timeView.yKeys).rangeRoundPoints([0, bf.timeView.yKeys.length-1]);
-  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 525]);
+  bf.timeView.yRangeScale = d3.scale.ordinal().domain(bf.timeView.yKeys).rangeRoundPoints([0, bf.timeView.yKeys.length-1]); //maps the sorted months to a number between 0 and 9
+  bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 525]); //maps the numbers 0 to 9 to a yScale
 
   //Prepare RGB and HSL color matrix
   bf.timeView.colorsRGB = ['#DC1F26', '#00A89B', '#EE5325', '#EC1263', '#00B04E', '#FFED2B', '#009AD7', '#17479E'];
@@ -76,13 +76,10 @@ bf.timeView.prepare = function(){
   bf.timeView.colorScaleGenre = d3.scale.ordinal().domain(bf.genres).range(bf.timeView.colorsRGB);
   bf.timeView.colorScaleCountry = d3.scale.ordinal().domain(bf.regions).range(bf.timeView.colorsRGB);
 
-  //create color scale for genre and year
-  bf.timeView.colorScaleH = d3.scale.ordinal().domain(bf.genres).range([hsl[0].h, hsl[1].h, hsl[2].h, hsl[3].h,
-    hsl[4].h, hsl[5].h, hsl[6].h, hsl[7].h]);
-  bf.timeView.colorScaleS = d3.scale.ordinal().domain(bf.genres).range([hsl[0].s, hsl[1].s, hsl[2].s, hsl[3].s,
-    hsl[4].s, hsl[5].s, hsl[6].s, hsl[7].s]);
-  bf.timeView.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l,
-    hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
+  //create hsl color scale (for genre)
+  bf.timeView.colorScaleH = d3.scale.ordinal().domain(bf.genres).range([hsl[0].h, hsl[1].h, hsl[2].h, hsl[3].h, hsl[4].h, hsl[5].h, hsl[6].h, hsl[7].h]);
+  bf.timeView.colorScaleS = d3.scale.ordinal().domain(bf.genres).range([hsl[0].s, hsl[1].s, hsl[2].s, hsl[3].s, hsl[4].s, hsl[5].s, hsl[6].s, hsl[7].s]);
+  bf.timeView.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l, hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
 
   bf.timeView.Sminus = d3.scale.ordinal().domain(bf.years).range([70, 0]); //maybe make year categories as well!
 
@@ -92,6 +89,8 @@ bf.timeView.prepare = function(){
 
   // create blur scale for year
   bf.timeView.yearScale = d3.scale.linear().domain(extentYear).range([9, 0]);
+
+  //create degree scale for year
   bf.timeView.yearScaleDegree = d3.scale.linear().domain(extentYear).range([45, 0]);
 
 };
@@ -129,19 +128,48 @@ bf.timeView.draw = function() {
         .style('top', (d3.event.pageY - 40) + "px");
     });
 
-  // create array for months (9x0)
+  // create array for the x Position (9x0)
   var xPositions = d3.range(bf.timeView.yKeys.length).map(function () {
     return 1;
   });
 
   items.attr("transform", function (d) {
     var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
+    console.log('yScaleRang', m2);
     var x = xPositions[m2];
     var l = bf.timeView.radiusScale(d.length);
     xPositions[m2] += l + 5;
+    console.log('xPositionNew', x)
     return "translate (" + (x + 20) + "," + ((bf.timeView.yScale(m2)) + 22) + ")";
-  });
-
+    })
+    .append("line")
+    .attr("class", "line")
+    .attr("x0", function(d){
+      var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
+      var l = bf.timeView.radiusScale(d.length);
+      var x = xPositions[m2];
+      xPositions[m2] += l + 5;
+      return l +5
+    })
+    .attr("y0", 60)
+    .attr("x1", 0)
+    .attr("y1", 40)
+    .attr("x2", function(d){
+      var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
+      var l = bf.timeView.radiusScale(d.length);
+      var x = xPositions[m2];
+      xPositions[m2] += l + 5;
+      return l +5; })
+    .attr("y2", 60)
+    .attr("x3", function(d){
+      var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
+      var l = bf.timeView.radiusScale(d.length);
+      var x = xPositions[m2];
+      xPositions[m2] += l + 5;
+      return l +20; })
+    .attr("y3", 80)
+    .style("stroke", "white")
+    .style("stroke-width", "2px");
 
   //Blur Filter
   var filter = items.append("defs")
@@ -176,23 +204,11 @@ bf.timeView.draw = function() {
     //.style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       //return bf.timeView.colorScaleCountry(d._region);
-      //return bf.timeView.colorScaleGenre(d.genre);
-      return 'hsl('+(bf.timeView.colorScaleH(d.genre))+','+(100 - (bf.timeView.Sminus(d.year)))+'%, 60%)'
+      return bf.timeView.colorScaleGenre(d.genre);
+      //return 'hsl('+(bf.timeView.colorScaleH(d.genre))+','+(100 - (bf.timeView.Sminus(d.year)))+'%, 60%)'
     });
-  //
-  //var line = d3.svg.line()
-  //  .x(function(d){
-  //    return x(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-200);
-  //  })
-  //  .y(function(d){
-  //    return y(bf.timeView.yScale(bf.timeView.yRangeScale(d._event._tv_yKey))-500);
-  //  })
-  //  .style('fill', 'white');
-  //
-  //items.append("path")
-  //  .attr("class", "line")
-  //  .attr('x', 200)
-  //  .attr('y', 300);
+
+
 
   var labels = d3.select('svg')
     .selectAll('.label')

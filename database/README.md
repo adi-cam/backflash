@@ -38,3 +38,18 @@ Turns the input data into more usable data files.
 Gets information from an api and adds it to the json files.
 
 
+all.js -> Creates global namespace, loads all relevant files
+
+application.js -> runs the application logic. This includes
+- sets the current view,
+- the button logic to change and update the view,
+- loads the data (loadData), prepares the view (do all views get prepared here?) and updates the view
+- updates the view with a switch/case that draws the current view (view.draw)
+
+load_data.js ->
+- loads the data and calls the process data function (what is with cb?)
+- processes the data
+
+time.js ->
+- prepares the data
+- draws the visualization
