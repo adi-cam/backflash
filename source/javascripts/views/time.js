@@ -25,7 +25,6 @@ bf.timeView.colorScale = undefined;
 /**
  * colors
  */
-
 bf.timeView.colorsRGB = undefined;
 hsl = undefined;
 bf.timeView.colorScaleH = undefined;

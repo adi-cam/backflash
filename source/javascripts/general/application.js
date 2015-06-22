@@ -1,4 +1,4 @@
-bf.currentView = 'time';
+bf.currentView = 'whatever';
 
 $(function() {
   $('.button').click(function(){
@@ -9,7 +9,7 @@ $(function() {
   bf.loadData(function(){
     // prepare views
     bf.timeView.prepare();
-
+    bf.whateverView.prepare();
     bf.updateView();
   });
 });

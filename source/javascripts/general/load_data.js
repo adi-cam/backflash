@@ -119,6 +119,5 @@ bf.processData = function(data) {
   bf.genres = _.uniq(genres);
   bf.regions = _.uniq(regions);
   bf.count = _.uniq(countries);
-  console.log(bf.years);
 
 };
