@@ -18,21 +18,21 @@ bf.timeView.yScale = undefined;
 bf.timeView.colorScaleGenre = undefined;
 bf.timeView.colorScaleCountry = undefined;
 bf.timeView.opacityScale = undefined;
-bf.timeView.yearScale = undefined;
+bf.timeView.blurScale = undefined;
 bf.timeView.color = undefined;
 bf.timeView.colorScale = undefined;
-bf.timeView.yearScaleSmall = undefined;
 
 /**
  * colors
  */
-bf.timeView.colorsHSL = undefined;
+
 bf.timeView.colorsRGB = undefined;
+hsl = undefined;
 bf.timeView.colorScaleH = undefined;
 bf.timeView.colorScaleS = undefined;
 bf.timeView.colorScaleL = undefined;
 bf.timeView.Sminus = undefined;
-hsl = undefined;
+
 
 
 /**
@@ -90,7 +90,7 @@ bf.timeView.prepare = function(){
   bf.timeView.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
 
   // create blur scale for year
-  bf.timeView.yearScale = d3.scale.linear().domain(extentYear).range([15, 0]);
+  bf.timeView.blurScale = d3.scale.linear().domain(extentYear).range([15, 0]);
 
 };
 
@@ -148,7 +148,7 @@ bf.timeView.draw = function(){
     .attr('height', "500%")
     .append("feGaussianBlur")
     .attr("stdDeviation", function (d) {
-      return bf.timeView.yearScale(d.year);
+      return bf.timeView.blurScale(d.year);
     })
     .attr("result", "blur");
 
