@@ -57,6 +57,7 @@ bf.whateverView.prepare = function(){
   //create location scales
   var maxRuntime = d3.max(bf.movies, function(m){ return m.length });
   bf.timeView.radiusScale = d3.scale.sqrt().domain([0, maxRuntime]).range([0, 50]);
+  bf.timeView.radiusScaleForce = d3.scale.linear().domain([0, maxRuntime]).range([-1500, -50]);
 
   bf.timeView.yRangeScale = d3.scale.ordinal().domain(bf.timeView.yKeys).rangeRoundPoints([0, bf.timeView.yKeys.length-1]);
   bf.timeView.yScale = d3.scale.linear().domain([0, bf.timeView.yKeys.length-1]).range([0, 900]);
@@ -89,14 +90,13 @@ bf.whateverView.prepare = function(){
 
 
 bf.whateverView.draw = function() {
+  var foci = [{x: 150, y: 150}, {x: 350, y: 250}, {x: 700, y: 400}];
+  var movies = bf.movies;
 
   var topics = _.unique(bf.events.map(function(event){return event.topic})) //returns an array of unique topics
     .map(function(topic) {return {id: topic, title: topic}}); //for each topic in the topic array return an object with an id and a title. Both of which give back the topic title as a string
 
-  console.log(topics);
-
   nodes = bf.movies.concat(topics); //combines the objects of topics and movies into one array of objects (nacheinander). Those are my nodes.
-  console.log(nodes);
   edges = _.flatten(topics.map(function(topic) { //for each topic in the topics array
     return bf.movies
       .filter(function(movie) {
@@ -108,21 +108,35 @@ bf.whateverView.draw = function() {
           target: movie //set their source to the topic and the target to movie.
         };
       });
-    }));
-  console.log(edges); //edges is an array of objects with a source property and a target property. The target contains the movie object. The source contains the corresponding event.
+    })); //edges is an array of objects with a source property and a target property. The target contains the movie object. The source contains the corresponding event.
 
+/*
+  var n_movies = nodes.splice(0, 121);
+  var n_topics = nodes.splice(121, 17);
+  var nodes = n_movies.concat(n_topics);
+
+  console.log(nodes);
+  console.log(n_movies);
+  console.log(n_topics);*/
 
   var force = d3.layout.force()
-    .charge(function(nodes) {
-      return nodes.length >= 20 ? -300 : -30;
-    })
-    .size([1000,1000])
+    .size([2000,800])
+    .charge(function(d) {
+        if (d.length > 1) {
+          return -bf.timeView.radiusScale(d.length) * 200;
+        } else {
+          return -20;
+        };
+      })
+    .chargeDistance(2000)
     .nodes(nodes)
     .links(edges)
-    .linkDistance(50)
+    .friction(0.6)
+    .linkDistance(-60)
+    .gravity(0.8)
     .on("tick", forceTick);
 
-  d3.select("body").append("svg").attr({width:1000, height: 1000});
+  d3.select("body").append("svg").attr({width:2000, height: 2000});
 
 
   var nodeEnter = d3.select("svg").selectAll("g.node")
@@ -136,31 +150,71 @@ bf.whateverView.draw = function() {
     .style("fill", function(d){
       return bf.timeView.colorScaleGenre(d.genre);
     });
-  nodeEnter.append("text")
-    .style("text-anchor", "middle")
-    .attr("y", 15)
-    .text(function(d) {return d.title;});
+
+  seriesEnt = bf.series.map(function(series, i){
+    return {
+      title: series,
+      y: 1000*i,
+      x: 1000*i
+    }
+  });
+
+  setInterval(function() {
+    nodes.push({id: ~~(Math.random() * seriesEnt.length)});
+  });
+
   force.start();
-
-  var middleNode = d3.select('svg').selectAll('g.middleNode')
-    .data(topics, function (d){return d.id})
-    .enter()
-    .append('g')
-    .attr('class', 'node');
-  middleNode.append("circle")
-    .attr('r', 5)
-    .attr('fill', 'black');
-  middleNode.append("text")
-    .style("text-anchor", "middle")
-    .attr("y", 15)
-    .text(function(d) {return d.title;});
+  console.log(bf.series);
+ console.log(nodes[5]._event.series);
 
 
+  function forceTick(e) {
 
-  function forceTick() {
+/*    var k = .1 * e.alpha;
+
+    // Push nodes toward their designated focus.
+    nodes.forEach(function(d, i) {
+        d.y += (d._event.series[d.id] * d.y) * k;
+        d.x += (d._event.series[d.id] * d.x) * k;
+    });*/
+
     d3.selectAll("g.node")
       .attr("transform", function (d) {
-        return "translate("+d.x+","+d.y+")";
+       return "translate("+(d.x-300)+","+(d.y+250)+")";
       })
-  };
+
+
+
+
+  }
+
 };
+
+/*
+ d3.selectAll("g.node")
+ .attr("cx", function(d) {
+ return d.x})
+ .attr("cy", function(d) {
+ return d.y;});
+ */
+
+
+/*  nodeEnter.append("text")
+ .style("text-anchor", "middle")
+ .attr("y", 15)
+ .text(function(d) {return d.title;});*/
+
+
+/*  var middleNode = d3.select('svg').selectAll('g.middleNode')
+ .data(topics, function (d){return d.id})
+ .enter()
+ .append('g')
+ .attr('class', 'node');
+ middleNode.append("circle")
+ .attr('r', 5)
+ .attr('fill', 'black');*/
+//middleNode.append("text")
+//  .style("text-anchor", "middle")
+//  .attr("y", 15)
+//  .text(function(d) {return d.title;});
+

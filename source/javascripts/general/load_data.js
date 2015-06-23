@@ -48,6 +48,12 @@ bf.countries = undefined;
 bf.years = undefined;
 
 /**
+ * List of series
+ */
+bf.series = undefined;
+
+
+/**
  * Loads data from JSON file.
  * @param cb Callback
  */
@@ -104,6 +110,7 @@ bf.processData = function(data) {
   var regions = [];
   var countries = [];
   var years = [];
+  var series  = [];
 
   bf.movies.forEach(function (m) {
     genres.push(m.genre);
@@ -112,6 +119,12 @@ bf.processData = function(data) {
     years.push(m.year);
   });
 
+
+  bf.events.forEach(function (e) {
+    series.push(e.series);
+  });
+
+
   bf.yearsAll = _.uniq(years)
   bf.years = _.sortBy(bf.yearsAll, function(d){
     return d
@@ -119,5 +132,6 @@ bf.processData = function(data) {
   bf.genres = _.uniq(genres);
   bf.regions = _.uniq(regions);
   bf.count = _.uniq(countries);
+  bf.series = _.uniq(series);
 
 };
