@@ -90,16 +90,13 @@ bf.whateverView.prepare = function(){
 
 
   //Turn series into numbers
-  bf.timeView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 12]);
-  bf.timeView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 12]);
+  bf.timeView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 8]);
+  bf.timeView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
 };
 
 
 
 bf.whateverView.draw = function() {
-  var foci = [{x: 150, y: 150}, {x: 350, y: 250}, {x: 700, y: 400}];
-  var movies = bf.movies;
-
   var topics = _.unique(bf.events.map(function(event){return event.topic})) //returns an array of unique topics
     .map(function(topic) {return {id: topic, title: topic}}); //for each topic in the topic array return an object with an id and a title. Both of which give back the topic title as a string
 
@@ -117,14 +114,10 @@ bf.whateverView.draw = function() {
       });
     })); //edges is an array of objects with a source property and a target property. The target contains the movie object. The source contains the corresponding event.
 
-/*
-  var n_movies = nodes.splice(0, 121);
-  var n_topics = nodes.splice(121, 17);
-  var nodes = n_movies.concat(n_topics);
-
-  console.log(nodes);
-  console.log(n_movies);
-  console.log(n_topics);*/
+  var div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 50);
 
   var force = d3.layout.force()
     .size([2000,800])
@@ -139,7 +132,7 @@ bf.whateverView.draw = function() {
     .links(edges)
     .friction(0.6)
     .linkDistance(-60)
-    .gravity(1.5)
+    .gravity(1)
     .on("tick", forceTick);
 
   d3.select("body").append("svg").attr({width:2000, height: 2000});
@@ -155,6 +148,18 @@ bf.whateverView.draw = function() {
       return bf.timeView.radiusScale(d.length); })
     .style("fill", function(d){
       return bf.timeView.colorScaleGenre(d.genre);
+    })
+    .attr('class', 'movie')
+      .on('mouseover', function (d) {
+      div.transition()
+        .duration(500)
+        .style('opacity', 0);
+      div.transition()
+        .duration(200)
+        .style('opacity', .9);
+      div.html(d.title + ' ' + d._event.topic + ' ' + d._event.series)
+        .style('left', (d3.event.pageX - 20) + "px")
+        .style('top', (d3.event.pageY - 40) + "px");
     });
 
 /*  var middleNode = d3.select('svg').selectAll('g.middleNode')
@@ -181,8 +186,8 @@ bf.whateverView.draw = function() {
     });
 
     d3.selectAll("circle")
-      .attr("cx", function(d) { return d.x-350 ; })
-      .attr("cy", function(d) { return d.y+100; });
+      .attr("cx", function(d) { return d.x-600 ; })
+      .attr("cy", function(d) { return d.y; });
 }
 
   force.start();
