@@ -21,6 +21,8 @@ bf.timeView.opacityScale = undefined;
 bf.timeView.blurScale = undefined;
 bf.timeView.color = undefined;
 bf.timeView.colorScale = undefined;
+bf.timeView.seriesScaleX = undefined;
+bf.timeView.seriesScaleY = undefined;
 
 /**
  * colors
@@ -85,6 +87,11 @@ bf.whateverView.prepare = function(){
 
   // create blur scale for year
   bf.timeView.blurScale = d3.scale.linear().domain(extentYear).range([15, 0]);
+
+
+  //Turn series into numbers
+  bf.timeView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 12]);
+  bf.timeView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 12]);
 };
 
 
@@ -128,12 +135,11 @@ bf.whateverView.draw = function() {
           return -20;
         };
       })
-    .chargeDistance(2000)
     .nodes(nodes)
     .links(edges)
     .friction(0.6)
     .linkDistance(-60)
-    .gravity(0.8)
+    .gravity(1.5)
     .on("tick", forceTick);
 
   d3.select("body").append("svg").attr({width:2000, height: 2000});
@@ -151,42 +157,35 @@ bf.whateverView.draw = function() {
       return bf.timeView.colorScaleGenre(d.genre);
     });
 
-  seriesEnt = bf.series.map(function(series, i){
-    return {
-      title: series,
-      y: 1000*i,
-      x: 1000*i
-    }
-  });
-
-  setInterval(function() {
-    nodes.push({id: ~~(Math.random() * seriesEnt.length)});
-  });
-
-  force.start();
-  console.log(bf.series);
- console.log(nodes[5]._event.series);
-
+/*  var middleNode = d3.select('svg').selectAll('g.middleNode')
+     .data(topics, function (d){return d.id})
+     .enter()
+     .append('g')
+     .attr('class', 'node');
+     middleNode.append("circle")
+     .attr('r', 5)
+     .attr('fill', 'black');
+  middleNode.append("text")
+    .style("text-anchor", "middle")
+    .text(function(d) {return d.title;});*/
 
   function forceTick(e) {
-
-/*    var k = .1 * e.alpha;
+    var k = .1 * e.alpha;
 
     // Push nodes toward their designated focus.
-    nodes.forEach(function(d, i) {
-        d.y += (d._event.series[d.id] * d.y) * k;
-        d.x += (d._event.series[d.id] * d.x) * k;
-    });*/
+    nodes.forEach(function(o, i) {
+      if (o.hasOwnProperty('_event')) {
+        o.y += ((bf.timeView.seriesScaleY(o._event.series))* o.y) * k;
+        o.x += ((bf.timeView.seriesScaleX(o._event.series))* o.x) * k;
+      };
+    });
 
-    d3.selectAll("g.node")
-      .attr("transform", function (d) {
-       return "translate("+(d.x-300)+","+(d.y+250)+")";
-      })
+    d3.selectAll("circle")
+      .attr("cx", function(d) { return d.x-350 ; })
+      .attr("cy", function(d) { return d.y+100; });
+}
 
-
-
-
-  }
+  force.start();
 
 };
 
@@ -205,16 +204,5 @@ bf.whateverView.draw = function() {
  .text(function(d) {return d.title;});*/
 
 
-/*  var middleNode = d3.select('svg').selectAll('g.middleNode')
- .data(topics, function (d){return d.id})
- .enter()
- .append('g')
- .attr('class', 'node');
- middleNode.append("circle")
- .attr('r', 5)
- .attr('fill', 'black');*/
-//middleNode.append("text")
-//  .style("text-anchor", "middle")
-//  .attr("y", 15)
-//  .text(function(d) {return d.title;});
+
 

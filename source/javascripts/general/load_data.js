@@ -134,4 +134,5 @@ bf.processData = function(data) {
   bf.count = _.uniq(countries);
   bf.series = _.uniq(series);
 
+
 };
