@@ -9,23 +9,30 @@ bf.loadView.gui = function(){
   console.log(dropdownArray);
 
   dropdownArray.forEach(function(el){
-    var button = el.querySelector('a[data-toggle="dropdown"]'),
-      menu = el.querySelector('.dropdown-menu');
+    var button = el.querySelector('a[data-toggle="dropdown"]'), //sortieren nach…
+      menu = el.querySelector('.dropdown-menu'), //ul with class "dropdown menu"
+      menupoints = el.querySelectorAll('.menupoint'), //all li's of dropdown menu
+      entireMenu = el.querySelectorAll('.dropdown');
 
-    button.onclick = function(event) {
+
+
+    button.onmouseover = function(event) {
       if(!menu.hasClass('show')) {
         menu.classList.add('show');
         menu.classList.remove('hide');
         event.preventDefault();
       }
-      else {
+
+     entireMenu.onmouseout = function(event) {
         menu.classList.remove('show');
         menu.classList.add('hide');
-        button.classList.remove('open');
-        button.classList.add('close');
         event.preventDefault();
       }
     };
+/*      menu.onclick = function(event) {
+      this.menu == this.menu-1
+    }*/
+
   });
 
   Element.prototype.hasClass = function(className) {
