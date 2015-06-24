@@ -25,6 +25,7 @@ bf.timeView.colorScale = undefined;
 /**
  * colors
  */
+
 bf.timeView.colorsRGB = undefined;
 hsl = undefined;
 bf.timeView.colorScaleH = undefined;
@@ -94,11 +95,16 @@ bf.timeView.prepare = function(){
 };
 
 bf.timeView.draw = function(){
+  var width = $(window).width();
+  var height = $(window).height();
+
   // prepare the tooltip div
   var div = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
     .style("opacity", 50);
+
+  d3.select("body").append("svg").attr({width:width, height: height});
 
   var items = d3.select('svg')
     .selectAll('.movie')

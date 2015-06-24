@@ -90,13 +90,16 @@ bf.whateverView.prepare = function(){
 
 
   //Turn series into numbers
-  bf.timeView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 8]);
-  bf.timeView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
+  bf.timeView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
+  bf.timeView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 1.2]);
 };
 
 
 
 bf.whateverView.draw = function() {
+  var width = $(window).width();
+  var height = $(window).height();
+
   var topics = _.unique(bf.events.map(function(event){return event.topic})) //returns an array of unique topics
     .map(function(topic) {return {id: topic, title: topic}}); //for each topic in the topic array return an object with an id and a title. Both of which give back the topic title as a string
 
@@ -120,22 +123,18 @@ bf.whateverView.draw = function() {
     .style("opacity", 50);
 
   var force = d3.layout.force()
-    .size([2000,800])
+    .size([width, height])
     .charge(function(d) {
-        if (d.length > 1) {
-          return -bf.timeView.radiusScale(d.length) * 200;
-        } else {
-          return -20;
-        };
+        return -Math.pow(bf.timeView.radiusScale(d.length || 0), 2.0) * 7;
       })
     .nodes(nodes)
     .links(edges)
-    .friction(0.6)
-    .linkDistance(-60)
+    .friction(0.45)
     .gravity(1)
     .on("tick", forceTick);
 
-  d3.select("body").append("svg").attr({width:2000, height: 2000});
+
+  d3.select("body").append("svg").attr({width:width, height: height});
 
 
   var nodeEnter = d3.select("svg").selectAll("g.node")
@@ -175,19 +174,20 @@ bf.whateverView.draw = function() {
     .text(function(d) {return d.title;});*/
 
   function forceTick(e) {
-    var k = .1 * e.alpha;
+    var k = .3 * e.alpha;
+    console.log(bf.timeView.seriesScaleY('Special'));
 
     // Push nodes toward their designated focus.
     nodes.forEach(function(o, i) {
       if (o.hasOwnProperty('_event')) {
-        o.y += ((bf.timeView.seriesScaleY(o._event.series))* o.y) * k;
-        o.x += ((bf.timeView.seriesScaleX(o._event.series))* o.x) * k;
+        //o.y += ((bf.timeView.seriesScaleY(o._event.series))* o.y) * k;
+        o.x += (((bf.timeView.seriesScaleX(o._event.series)/2.5)* o.x)) * k;
       };
     });
 
     d3.selectAll("circle")
-      .attr("cx", function(d) { return d.x-600 ; })
-      .attr("cy", function(d) { return d.y; });
+      .attr("cx", function(d) { return d.x-(width/4); })
+      .attr("cy", function(d) { return d.y-(height/8);});
 }
 
   force.start();
