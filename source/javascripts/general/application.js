@@ -10,6 +10,7 @@ $(function() {
     // prepare views
     bf.timeView.prepare();
     bf.whateverView.prepare();
+    bf.loadView.gui();
     bf.updateView();
     $(window).on('resize', function() {
       bf.updateView();

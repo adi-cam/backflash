@@ -192,6 +192,9 @@ bf.timeView.draw = function(){
     });
 };
 
+
+
+
 //TODO: Try saturation instead of opacity or blur
 //TODO: Parse numbers to names in labels
 //TODO: take widow size instead of fixed dimensions
