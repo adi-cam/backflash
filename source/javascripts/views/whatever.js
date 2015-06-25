@@ -34,7 +34,7 @@ bf.timeView.colorScaleS = undefined;
 bf.timeView.colorScaleL = undefined;
 bf.timeView.Sminus = undefined;
 
-
+bf.whateverView.forceLayout = undefined;
 
 bf.whateverView.prepare = function(){
   // generate yKeys
@@ -117,48 +117,22 @@ bf.whateverView.draw = function() {
       });
     })); //edges is an array of objects with a source property and a target property. The target contains the movie object. The source contains the corresponding event.
 
-  var div = d3.select("body")
-    .append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 50);
-
-  var force = d3.layout.force()
+  bf.whateverView.forceLayout = d3.layout.force()
     .size([width, height])
     .charge(function(d) {
-        return -Math.pow(bf.timeView.radiusScale(d.length || 0), 2.0) * 7;
-      })
+      return -Math.pow(bf.timeView.radiusScale(d.length || 0), 2.0) * 7;
+    })
     .nodes(nodes)
     .links(edges)
     .friction(0.45)
     .gravity(1)
     .on("tick", forceTick);
 
-
-  d3.select("body").append("svg").attr({width:width, height: height});
-
-
-  var nodeEnter = d3.select("svg").selectAll("g.node")
-    .data(bf.movies, function (d) {return d.id})
-    .enter()
-    .append("g")
-    .attr("class", "node");
-  nodeEnter.append("circle")
+  bf.nodes.select('circle')
     .attr("r", function(d) {
       return bf.timeView.radiusScale(d.length); })
     .style("fill", function(d){
       return bf.timeView.colorScaleGenre(d.genre);
-    })
-    .attr('class', 'movie')
-      .on('mouseover', function (d) {
-      div.transition()
-        .duration(500)
-        .style('opacity', 0);
-      div.transition()
-        .duration(200)
-        .style('opacity', .9);
-      div.html(d.title + ' ' + d._event.topic + ' ' + d._event.series)
-        .style('left', (d3.event.pageX - 20) + "px")
-        .style('top', (d3.event.pageY - 40) + "px");
     });
 
 /*  var middleNode = d3.select('svg').selectAll('g.middleNode')
@@ -175,23 +149,25 @@ bf.whateverView.draw = function() {
 
   function forceTick(e) {
     var k = .3 * e.alpha;
-    console.log(bf.timeView.seriesScaleY('Special'));
 
     // Push nodes toward their designated focus.
     nodes.forEach(function(o, i) {
       if (o.hasOwnProperty('_event')) {
         //o.y += ((bf.timeView.seriesScaleY(o._event.series))* o.y) * k;
         o.x += (((bf.timeView.seriesScaleX(o._event.series)/2.5)* o.x)) * k;
-      };
+      }
     });
 
-    d3.selectAll("circle")
-      .attr("cx", function(d) { return d.x-(width/4); })
-      .attr("cy", function(d) { return d.y-(height/8);});
-}
+    bf.nodes.attr('transform', function(d) {
+      return "translate (" + (d.x - (width/4)) + "," + (d.y - (height/8)) + ")";
+    });
+  }
 
-  force.start();
+  bf.whateverView.forceLayout.start();
+};
 
+bf.whateverView.clear = function(){
+  bf.whateverView.forceLayout.stop();
 };
 
 /*

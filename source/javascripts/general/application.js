@@ -1,29 +1,46 @@
+bf.lastView = undefined;
 bf.currentView = 'time';
+
+bf.viewFinder = function(view){
+  switch(view) {
+    case 'time':
+      return bf.timeView;
+      break;
+    case 'whatever':
+      return bf.whateverView;
+      break;
+  }
+
+  return undefined;
+};
 
 $(function() {
   $('.button').click(function(){
-    bf.currentView = 'whatever';
-    bf.updateView();
-  });
-
-  $(window).on('resize', function() {
-    bf.updateView();
+    if(bf.currentView == 'time') {
+      bf.changeToView('whatever');
+    } else {
+      bf.changeToView('time');
+    }
   });
 
   bf.loadData(function(){
+    bf.prepare();
     bf.timeView.prepare();
     bf.whateverView.prepare();
     bf.updateView();
   });
 });
 
+bf.changeToView = function(view) {
+  bf.lastView = bf.currentView;
+  bf.currentView = view;
+  bf.updateView();
+};
+
 bf.updateView = function(){
-  switch(bf.currentView) {
-    case 'time':
-      bf.timeView.draw();
-      break;
-    case 'whatever':
-      bf.whateverView.draw();
-      break;
+  if(bf.lastView) {
+    bf.viewFinder(bf.lastView).clear();
   }
+
+  bf.viewFinder(bf.currentView).draw();
 };

@@ -27,13 +27,10 @@ bf.timeView.colorScale = undefined;
  */
 
 bf.timeView.colorsRGB = undefined;
-hsl = undefined;
 bf.timeView.colorScaleH = undefined;
 bf.timeView.colorScaleS = undefined;
 bf.timeView.colorScaleL = undefined;
 bf.timeView.Sminus = undefined;
-
-
 
 /**
  * Prepare stuff needed for this view.
@@ -95,47 +92,10 @@ bf.timeView.prepare = function(){
 };
 
 bf.timeView.draw = function(){
-  var width = $(window).width();
-  var height = $(window).height();
-
-  // prepare the tooltip div
-  var div = d3.select("body")
-    .append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 50);
-
-  d3.select("body").append("svg").attr({width:width, height: height});
-
-  var items = d3.select('svg')
-    .selectAll('.movie')
-    .data(bf.movies, function(m) {
-      return m.id;
-    });
-
-  items.enter()
-    .append('g')
-    .attr('class', 'movie')
-    .attr('data-id', function(d) {
-      return d.id;
-    })
-    .append('circle')
-      .attr('class', 'movie')
-      .on('mouseover', function (d) {
-        div.transition()
-          .duration(500)
-          .style('opacity', 0);
-        div.transition()
-          .duration(200)
-          .style('opacity', .9);
-        div.html(d.title + ' ' + d._region + ' ' + d.genre + ' ' + d.year)
-          .style('left', (d3.event.pageX - 20) + "px")
-          .style('top', (d3.event.pageY - 40) + "px");
-      });
-
   // create array for months (9x0)
   var xPositions = d3.range(bf.timeView.yKeys.length).map(function(){ return 1; });
 
-  items.attr("transform", function(d) {
+  bf.nodes.attr('transform', function(d) {
     var m2 = bf.timeView.yRangeScale(d._event._tv_yKey);
     var x = xPositions[m2];
     var r = bf.timeView.radiusScale(d.length);
@@ -143,32 +103,16 @@ bf.timeView.draw = function(){
     return "translate (" + ((x + r) + 50) + "," + ((bf.timeView.yScale(m2)) + 60) + ")";
   });
 
-  //Blur Filter
-  var filter = items.append("defs")
-    .append("filter")
-    .attr("id", "feGaussianBlur")
-    .attr('x', "-200%")
-    .attr('y', "-200%")
-    .attr('width', "500%")
-    .attr('height', "500%")
-    .append("feGaussianBlur")
-    .attr("stdDeviation", function (d) {
+  bf.nodes.select('.blur')
+    .attr('stdDeviation', function (d) {
       return bf.timeView.blurScale(d.year);
-    })
-    .attr("result", "blur");
+    });
 
-  var feMerge = filter.append("feMerge");
-
-  feMerge.append("feMergeNode")
-    .attr("in", "blur");
-  feMerge.append("feMergeNode")
-    .attr("in", "SourceGraphic");
-
-  items.select('circle')
+  bf.nodes.select('circle')
     .attr('r', function (d) {
       return bf.timeView.radiusScale(d.length);
     })
-    .style("filter", "url(#feGaussianBlur)")
+
     //.style('fill-opacity', function (d) {return bf.timeView.opacityScale(d.year)})
     .style('fill', function (d) {
       //return bf.timeView.colorScaleCountry(d._region);
@@ -176,23 +120,24 @@ bf.timeView.draw = function(){
       //return 'hsl('+(bf.timeView.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
     })
     .style('fill', function(d){
-    return bf.timeView.colorScaleS(d.year)
+      return bf.timeView.colorScaleS(d.year)
     });
 
-  var labels = d3.select('svg')
-    .selectAll('.label')
+  bf.svg.selectAll('.label')
     .data(bf.timeView.yKeys)
     .enter()
-    .append('text')
-    .html(function(d){ return bf.timeView.labels(d); })
-    .attr('class', 'label')
-    .attr('x', 20)
-    .attr('y', function(d){
-      return (bf.timeView.yScale(bf.timeView.yRangeScale(d)))+15;
-    });
+      .append('text')
+        .html(function(d){ return bf.timeView.labels(d); })
+        .attr('class', 'label')
+        .attr('x', 20)
+        .attr('y', function(d){
+          return (bf.timeView.yScale(bf.timeView.yRangeScale(d)))+15;
+        });
 };
 
-
+bf.timeView.clear = function(){
+  bf.svg.selectAll('.label').remove();
+};
 
 
 //TODO: Try saturation instead of opacity or blur
