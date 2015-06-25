@@ -15,19 +15,18 @@ bf.viewFinder = function(view){
 };
 
 $(function() {
+  bf.loadData(function(){
+    bf.prepare();
+    bf.timeView.prepare();
+    bf.seriesView.prepare();
+    bf.updateView();
+  });
   $('.button').click(function(){
     if(bf.currentView == 'time') {
       bf.changeToView('whatever');
     } else {
       bf.changeToView('time');
     }
-  });
-
-  bf.loadData(function(){
-    bf.prepare();
-    bf.timeView.prepare();
-    bf.seriesView.prepare();
-    bf.updateView();
   });
 });
 

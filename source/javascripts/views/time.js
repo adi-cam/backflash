@@ -9,12 +9,8 @@ bf.timeView.prepare = function(){
 
 
 bf.timeView.draw = function(){
-  bf.nodes.select('.gaussianblur')
-    .attr('stdDeviation', function (d) {
-      return bf.blurScale(d.year);
-    });
 
-  bf.nodes.select('circle')
+  bf.nodes.transition().duration(1000).select('circle')
     .attr('r', function (d) {
       return bf.radiusScale(d.length); })
     //.style('fill-opacity', function (d) {return bf.opacityScale(d.year)})
@@ -22,6 +18,11 @@ bf.timeView.draw = function(){
       return bf.colorScaleGenre(d.genre);
       //return 'hsl('+(bf.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
       //return bf.colorScaleCountry(d._region);
+    });
+
+  bf.nodes.select('.gaussianblur')
+    .attr('stdDeviation', function (d) {
+      return bf.blurScale(d.year);
     });
 
   bf.svg.selectAll('.label')
@@ -43,4 +44,4 @@ bf.timeView.clear = function(){
 
 
 //TODO: Clean out dataset of x's (optional)
-//TODO: Make tooltip better (optional)
+//TODO: Call tooltip better
