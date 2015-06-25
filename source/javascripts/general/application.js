@@ -15,14 +15,10 @@ bf.viewFinder = function(view){
 };
 
 $(function() {
-  bf.loadData(function () {
-    bf.prepare();
-    bf.timeView.prepare();
-    bf.seriesView.prepare();
-    bf.updateView();
+  var select = $("select").selectOrDie({
+    cycle: true
   });
-
-  $('#select').on('change', function () {
+  select.on('change', function () {
     var e = document.getElementById("select");
     var strUser1 = e.options[e.selectedIndex].text;
     console.log(strUser1);
@@ -33,6 +29,18 @@ $(function() {
       bf.changeToView('series');
     }
   });
+
+  bf.loadData(function () {
+    bf.prepare();
+    bf.timeView.prepare();
+    bf.seriesView.prepare();
+    bf.updateView();
+  });
+
+
+
+
+
 });
 
 

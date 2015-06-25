@@ -154,7 +154,7 @@ bf.prepare = function(){
     .attr('height', '500%')
     .append('feGaussianBlur')
     .attr('class', 'gaussianblur')
-    .attr('stdDeviation', 5)
+    .attr('stdDeviation', 20)
     .attr('result', 'blur');
 
   var feMerge = newNodes.select('defs filter')
