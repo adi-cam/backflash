@@ -136,33 +136,26 @@ bf.prepare = function(){
         .style('top', (d3.event.pageY - 40) + 'px');
     });
 
-  /*
-   Draw Circles with filter
-   */
-  //Append circles to g element
-  newNodes.append('circle')
-    .attr('class', 'movie')
-    .style('filter', 'url(#feGaussianBlur)');
 
-  //Blur Filter
-  newNodes.append('defs')
-    .append('filter')
-    .attr('id', 'feGaussianBlur')
-    .attr('x', '-200%')
-    .attr('y', '-200%')
-    .attr('width', '500%')
-    .attr('height', '500%')
-    .append('feGaussianBlur')
-    .attr('class', 'gaussianblur')
-    .attr('stdDeviation', 20)
-    .attr('result', 'blur');
-
-  var feMerge = newNodes.select('defs filter')
-    .append('feMerge');
-
-  feMerge.append('feMergeNode')
-    .attr('in', 'blur');
-
-  feMerge.append('feMergeNode')
-    .attr('in', 'SourceGraphic');
+  ////Blur Filter
+  //newNodes.append('defs')
+  //  .append('filter')
+  //  .attr('id', 'feGaussianBlur')
+  //  .attr('x', '-200%')
+  //  .attr('y', '-200%')
+  //  .attr('width', '500%')
+  //  .attr('height', '500%')
+  //  .append('feGaussianBlur')
+  //  .attr('class', 'gaussianblur')
+  //  .attr('stdDeviation', 10)
+  //  .attr('result', 'blur');
+  //
+  //var feMerge = newNodes.select('defs filter')
+  //  .append('feMerge');
+  //
+  //feMerge.append('feMergeNode')
+  //  .attr('in', 'blur');
+  //
+  //feMerge.append('feMergeNode')
+  //  .attr('in', 'SourceGraphic');
 };

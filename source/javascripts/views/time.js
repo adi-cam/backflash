@@ -11,6 +11,29 @@ bf.timeView.prepare = function(){
 
 
 bf.timeView.draw = function(){
+  bf.nodes.append('defs')
+    .append('filter')
+    .attr('id', 'feGaussianBlur')
+    .attr('x', '-200%')
+    .attr('y', '-200%')
+    .attr('width', '500%')
+    .attr('height', '500%')
+    .append('feGaussianBlur')
+    .attr('class', 'gaussianblur')
+    .attr('stdDeviation', 10)
+    .attr('result', 'blur');
+
+  var feMerge = bf.nodes.select('defs filter')
+    .append('feMerge');
+
+  feMerge.append('feMergeNode')
+    .attr('in', 'blur');
+
+  feMerge.append('feMergeNode')
+    .attr('in', 'SourceGraphic');
+
+  bf.nodes.append('circle')
+    .style('filter', 'url(#feGaussianBlur)');
 
   bf.nodes.transition().duration(1000).select('circle')
     .attr('r', function (d) {
@@ -35,10 +58,11 @@ bf.timeView.draw = function(){
     return "translate (" + d.x + "," + d.y + ")";
   });
 
-  bf.nodes.select('.gaussianblur')
-    .attr('stdDeviation', function (d) {
-      return bf.blurScale(d.year);
-    });
+  //bf.nodes.select('.gaussianblur')
+  //  .attr('stdDeviation', function (d) {
+  //    return bf.blurScale(d.year);
+  //  })
+
 
   bf.svg.selectAll('.label')
     .data(bf.yKeys)
