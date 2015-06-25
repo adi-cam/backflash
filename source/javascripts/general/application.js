@@ -1,4 +1,4 @@
-bf.currentView = 'whatever';
+bf.currentView = 'time';
 
 $(function() {
   $('.button').click(function(){
@@ -6,15 +6,14 @@ $(function() {
     bf.updateView();
   });
 
+  $(window).on('resize', function() {
+    bf.updateView();
+  });
+
   bf.loadData(function(){
-    // prepare views
     bf.timeView.prepare();
     bf.whateverView.prepare();
     bf.updateView();
-    $(window).on('resize', function() {
-      bf.updateView();
-    });
-
   });
 });
 
