@@ -18,7 +18,8 @@ bf.timeView.draw = function(){
       return bf.colorScaleGenre(d.genre);
       //return 'hsl('+(bf.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
       //return bf.colorScaleCountry(d._region);
-    });
+    })
+
 
   bf.nodes.select('.gaussianblur')
     .attr('stdDeviation', function (d) {

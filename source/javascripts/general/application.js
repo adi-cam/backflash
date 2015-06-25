@@ -6,7 +6,7 @@ bf.viewFinder = function(view){
     case 'time':
       return bf.timeView;
       break;
-    case 'whatever':
+    case 'series':
       return bf.seriesView;
       break;
   }
@@ -15,20 +15,26 @@ bf.viewFinder = function(view){
 };
 
 $(function() {
-  bf.loadData(function(){
+  bf.loadData(function () {
     bf.prepare();
     bf.timeView.prepare();
     bf.seriesView.prepare();
     bf.updateView();
   });
-  $('.button').click(function(){
-    if(bf.currentView == 'time') {
-      bf.changeToView('whatever');
-    } else {
+
+  $('#select').on('change', function () {
+    var e = document.getElementById("select");
+    var strUser1 = e.options[e.selectedIndex].text;
+    console.log(strUser1);
+    if (strUser1 == 'Programm') {
       bf.changeToView('time');
+    }
+    else if (strUser1 == 'Serie') {
+      bf.changeToView('series');
     }
   });
 });
+
 
 bf.changeToView = function(view) {
   bf.lastView = bf.currentView;
@@ -42,4 +48,5 @@ bf.updateView = function(){
   }
 
   bf.viewFinder(bf.currentView).draw();
+
 };
