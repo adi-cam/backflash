@@ -116,7 +116,7 @@ bf.prepare = function(){
     d.x = x + r + 50;
     d.y = bf.yScale(m2) + 60;
     return "translate (" + d.x + "," + d.y + ")";
-  })
+  });
 
   /*
    Prepare Tooltip
