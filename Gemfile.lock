@@ -129,3 +129,6 @@ DEPENDENCIES
   middleman
   middleman-livereload
   slim
+
+BUNDLED WITH
+   1.10.3

@@ -7,7 +7,7 @@ bf.viewFinder = function(view){
       return bf.timeView;
       break;
     case 'whatever':
-      return bf.whateverView;
+      return bf.seriesView;
       break;
   }
 
@@ -26,7 +26,7 @@ $(function() {
   bf.loadData(function(){
     bf.prepare();
     bf.timeView.prepare();
-    bf.whateverView.prepare();
+    bf.seriesView.prepare();
     bf.updateView();
   });
 });
