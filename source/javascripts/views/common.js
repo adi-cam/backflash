@@ -139,27 +139,29 @@ bf.prepare = function(){
 
 
   //Blur Filter
-  //newNodes.append('defs')
-  //  .append('filter')
-  //  .attr('id', 'feGaussianBlur')
-  //  .attr('x', '-200%')
-  //  .attr('y', '-200%')
-  //  .attr('width', '500%')
-  //  .attr('height', '500%')
-  //  .append('feGaussianBlur')
-  //  .attr('class', 'gaussianblur')
-  //  .attr('result', 'blur');
-  //
-  //var feMerge = newNodes.select('defs filter')
-  //  .append('feMerge');
-  //
-  //feMerge.append('feMergeNode')
-  //  .attr('in', 'blur');
-  //
-  //feMerge.append('feMergeNode')
-  //  .attr('in', 'SourceGraphic');
-  //
-  //bf.nodes.append('circle')
-  //  .style('filter', 'url(#feGaussianBlur)')
+  var filter = newNodes.append('defs')
+    .append('filter')
+    .attr('id', 'feGaussianBlur')
+    .attr('x', '-200%')
+    .attr('y', '-200%')
+    .attr('width', '500%')
+    .attr('height', '500%')
+    .append('feGaussianBlur')
+    .attr('class', 'gaussianblur')
+    .attr('stdDeviation', function (d) {
+    return bf.blurScale(d.year); })
+    .attr('result', 'blur');
+
+  var feMerge = newNodes.select('defs filter')
+    .append('feMerge');
+
+  feMerge.append('feMergeNode')
+    .attr('in', 'blur');
+
+  feMerge.append('feMergeNode')
+    .attr('in', 'SourceGraphic');
+
+  bf.nodes.append('circle')
+    .style('filter', 'url(#feGaussianBlur)');
 
 };
