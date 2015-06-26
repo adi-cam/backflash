@@ -85,6 +85,7 @@ bf.prepare = function(){
   //find svg
   bf.svg = d3.select('svg.main');
 
+
   //set initial size
   bf.svg.attr({
     width:width,
@@ -120,23 +121,29 @@ bf.prepare = function(){
   });
 
   /*
-   Prepare Tooltip
+  Prepare Tooltip
    */
-  var tooltip = d3.select(".tooltip");
+  var tooltip = d3.select('.tooltip');
+  var tarrow = d3.select('.tooltip.arrow');
 
   //call tooltip
-  newNodes
+  bf.nodes
     .on('mouseover', function (d) {
-      tooltip.transition()
-        .duration(500)
-        .style('opacity', 0);
-      tooltip.transition()
-        .duration(200)
-        .style('opacity', .9);
-      tooltip.html(d.title + ' ' + d._region + ' ' + d.genre + ' ' + d.year)
-        .style('left', (d3.event.pageX - 20) + 'px')
-        .style('top', (d3.event.pageY - 40) + 'px');
+      tooltip.style('visibility', 'visible');
+      tooltip.html('<strong>' + d.title +'</strong>' + '</br> ' + d.director + ', ' + d.year)
+        .style('line-height', 1.3)
+        .style('left', (d.x-60) + 'px')
+        .style('top', (d.y+40) + 'px');
+      tarrow.style('top', -60+'px');
+      return d3.select(this).style({opacity:'0.8'})
+    .on('mouseout', function(d){
+      return d3.select(this).style({opacity:'1'})
+    })
     });
+  bf.svg.on('mouseleave', function(d){
+    tooltip.style('visibility', 'hidden');
+  });
+
 
 
   //Blur Filter
