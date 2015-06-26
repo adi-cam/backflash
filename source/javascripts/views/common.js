@@ -53,9 +53,10 @@ bf.prepare = function(){
   //opacity scale for year
   var extentYear = d3.extent(bf.movies, function(m){ return m.year; });
   bf.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
+  console.log(extentYear);
 
   //blur scale for year
-  bf.blurScale = d3.scale.linear().domain(extentYear).range([15, 0]);
+  bf.blurScale = d3.scale.linear().domain(extentYear).range([30, 0]);
 
   /*
    Global Scales Position
@@ -137,7 +138,7 @@ bf.prepare = function(){
     });
 
 
-  ////Blur Filter
+  //Blur Filter
   //newNodes.append('defs')
   //  .append('filter')
   //  .attr('id', 'feGaussianBlur')
@@ -147,7 +148,6 @@ bf.prepare = function(){
   //  .attr('height', '500%')
   //  .append('feGaussianBlur')
   //  .attr('class', 'gaussianblur')
-  //  .attr('stdDeviation', 10)
   //  .attr('result', 'blur');
   //
   //var feMerge = newNodes.select('defs filter')
@@ -158,4 +158,8 @@ bf.prepare = function(){
   //
   //feMerge.append('feMergeNode')
   //  .attr('in', 'SourceGraphic');
+  //
+  //bf.nodes.append('circle')
+  //  .style('filter', 'url(#feGaussianBlur)')
+
 };

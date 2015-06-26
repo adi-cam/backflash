@@ -11,6 +11,9 @@ bf.timeView.prepare = function(){
 
 
 bf.timeView.draw = function(){
+  var extentYear = d3.extent(bf.movies, function(m){ return m.year; });
+  bf.blurScale = d3.scale.linear().domain(extentYear).range([30, 0]);
+
   bf.nodes.append('defs')
     .append('filter')
     .attr('id', 'feGaussianBlur')
@@ -20,7 +23,8 @@ bf.timeView.draw = function(){
     .attr('height', '500%')
     .append('feGaussianBlur')
     .attr('class', 'gaussianblur')
-    .attr('stdDeviation', 10)
+    .attr('stdDeviation', function (d) {
+          return bf.blurScale(d.year); })
     .attr('result', 'blur');
 
   var feMerge = bf.nodes.select('defs filter')
@@ -43,7 +47,7 @@ bf.timeView.draw = function(){
       return bf.colorScaleGenre(d.genre);
       //return 'hsl('+(bf.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
       //return bf.colorScaleCountry(d._region);
-    })
+    });
   bf.yRangeScale = d3.scale.ordinal().domain(bf.yKeys).rangeRoundPoints([0, bf.yKeys.length-1]);
   bf.yScale = d3.scale.linear().domain([0, bf.yKeys.length-1]).range([0, 900]);
   bf.xPositions = d3.range(bf.yKeys.length).map(function(){ return 1; });
@@ -58,12 +62,6 @@ bf.timeView.draw = function(){
     return "translate (" + d.x + "," + d.y + ")";
   });
 
-  //bf.nodes.select('.gaussianblur')
-  //  .attr('stdDeviation', function (d) {
-  //    return bf.blurScale(d.year);
-  //  })
-
-
   bf.svg.selectAll('.label')
     .data(bf.yKeys)
     .enter()
@@ -73,6 +71,8 @@ bf.timeView.draw = function(){
         .attr('x', 20)
         .attr('y', function(d){
           return (bf.yScale(bf.yRangeScale(d)))+15; });
+
+
 };
 
 bf.timeView.clear = function(){
