@@ -45,6 +45,7 @@
         border-radius: 4px ;
         outline-offset: -2px; /* Opera */
         cursor: default;
+        z-index: 1000;
     }
 
     /* Up/Down arrows */
@@ -81,11 +82,11 @@
     .sod_select .sod_label
         {
             display: block;
-            overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
 
             padding-right: 15px;
+            font-size: inherit;
         }
         .sod_select .sod_placeholder { /* Use this if you're using a placeholder and want to style it */ }
 
