@@ -122,9 +122,10 @@ bf.prepare = function(){
   /*
    Prepare Tooltip
    */
-  var tooltip = bf.nodes.selectAll('g.div');
+  var tooltip = d3.select(".tooltip");
+
   //call tooltip
-  tooltip
+  newNodes
     .on('mouseover', function (d) {
       tooltip.transition()
         .duration(500)
@@ -161,7 +162,7 @@ bf.prepare = function(){
   feMerge.append('feMergeNode')
     .attr('in', 'SourceGraphic');
 
-  bf.nodes.append('circle')
+  newNodes.append('circle')
     .style('filter', 'url(#feGaussianBlur)');
 
 };
