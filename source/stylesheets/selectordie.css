@@ -33,13 +33,11 @@
         display: inline-block;
         position: relative;
         line-height: 1;
-
-        width: 100px;
-        padding: 15px 10px;
+        width: 230px;
+        height: 60px;
+        padding: 7px 10px;
         border: 2px solid white;
         color: white;
-        font-size: 12px;
-        font-weight: 400;
         text-align: left;
         outline: 0;
         border-radius: 4px ;
@@ -55,11 +53,11 @@
         /* Down arrow */
         .sod_select:after
             {
+            font-size: 20px;
             content: "\25BC";
             position: absolute;
-            right: 10px;
-            top: 12px;
-            font-size: 7px;
+            right: 13px;
+            top: 22px;
             }
 
     /* Change the border color on hover, focus and when open */
@@ -100,12 +98,12 @@
             left: 0;
             display: none;
             height: auto;
-            width: 200px;
-            margin: 0 0 0 -3px;
-            background: #ffffff;
-            border: 3px solid #000000;
+            width: 231px;
+            margin: -3px 0px 0 -2px;
+            background: black;
+            border: 2px solid #999999;
             border-top: none;
-            color: #444444;
+            color: white;
             font-weight: 300;
             z-index: 1;
         }

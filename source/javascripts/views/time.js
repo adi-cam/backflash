@@ -35,7 +35,7 @@ bf.timeView.draw = function(){
     var r = bf.radiusScale(d.length);
     bf.xPositions[m2] += r * 2 + 20;
     d.x = x + r + 50;
-    d.y = bf.yScale(m2) + 60;
+    d.y = bf.yScale(m2) + 210;
     return "translate (" + d.x + "," + d.y + ")";
   });
 
@@ -47,7 +47,7 @@ bf.timeView.draw = function(){
         .attr('class', 'label')
         .attr('x', 20)
         .attr('y', function(d){
-          return (bf.yScale(bf.yRangeScale(d)))+15; });
+          return (bf.yScale(bf.yRangeScale(d)))+ 160; });
 
 
 };

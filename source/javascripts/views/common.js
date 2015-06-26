@@ -111,7 +111,7 @@ bf.prepare = function(){
     var r = bf.radiusScale(d.length);
     bf.xPositions[m2] += r * 2 + 20;
     d.x = x + r + 50;
-    d.y = bf.yScale(m2) + 60;
+    d.y = bf.yScale(m2) + 210;
     return "translate (" + d.x + "," + d.y + ")";
   });
 
@@ -127,6 +127,8 @@ bf.prepare = function(){
       tooltip.style('visibility', 'visible')
       .style('opacity', 0.9);
       tooltip.html('<strong>' + d.title +'</strong>' + '</br> ' + d.director + ', ' + d.year)
+        .style('text-align', 'center')
+        .style('font-size', '11px')
         .style('line-height', 1.3)
         .style('left', (d.x-60) + 'px')
         .style('top', (d.y-60) + 'px');
