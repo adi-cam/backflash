@@ -129,7 +129,7 @@ bf.prepare = function(){
       tooltip.html('<strong>' + d.title +'</strong>' + '</br> ' + d.director + ', ' + d.year)
         .style('line-height', 1.3)
         .style('left', (d.x-60) + 'px')
-        .style('top', (d.y+40) + 'px')
+        .style('top', (d.y-40) + 'px')
       //tarrow.style('top', (d.y-60)+'px');
       return d3.select(this).style({opacity:'0.8'})
     .on('mouseout', function(d){
@@ -146,7 +146,8 @@ bf.prepare = function(){
    Prepare Filter
    */
   //Blur Filter
-  var filter = newNodes.append('defs')
+  var defs = bf.svg.append('defs');
+  var filter = defs
     .append('filter')
     .attr('id', 'feGaussianBlur')
     .attr('x', '-200%')
@@ -155,11 +156,10 @@ bf.prepare = function(){
     .attr('height', '500%')
     .append('feGaussianBlur')
     .attr('class', 'gaussianblur')
-    .attr('stdDeviation', function (d) {
-    return bf.blurScale(d.year); })
+    .attr('stdDeviation', 10)
     .attr('result', 'blur');
 
-  var feMerge = newNodes.select('defs filter')
+  var feMerge = filter
     .append('feMerge');
 
   feMerge.append('feMergeNode')
@@ -168,7 +168,9 @@ bf.prepare = function(){
   feMerge.append('feMergeNode')
     .attr('in', 'SourceGraphic');
 
-  newNodes.append('circle')
-    .style('filter', 'url(#feGaussianBlur)');
+  newNodes.append('circle');
+    //.style('filter', function(d) {
+    //  return 'url(#feGaussianBlur' + scale(d.year) + ')';
+    //});
 
 };
