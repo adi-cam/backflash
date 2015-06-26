@@ -85,7 +85,6 @@ bf.prepare = function(){
   //find svg
   bf.svg = d3.select('svg.main');
 
-
   //set initial size
   bf.svg.attr({
     width:width,
@@ -99,15 +98,11 @@ bf.prepare = function(){
     });
 
   //create g Elements
-  var newNodes = bf.nodes.enter().append('g');
-
-  //with the class 'movie' and a unique id. set initial position
-  newNodes
+  var newNodes = bf.nodes.enter().append('g')
     .attr('class', 'movie')
     .attr('data-id', function(d) {
       return d.id;
     });
-
 
   //set position
   bf.nodes.attr('transform', function(d) {
@@ -124,28 +119,32 @@ bf.prepare = function(){
   Prepare Tooltip
    */
   var tooltip = d3.select('.tooltip');
-  var tarrow = d3.select('.tooltip.arrow');
+  //var tarrow = d3.select('.tooltip.arrow');
 
   //call tooltip
   bf.nodes
     .on('mouseover', function (d) {
-      tooltip.style('visibility', 'visible');
+      tooltip.style('visibility', 'visible')
+      .style('opacity', 0.9);
       tooltip.html('<strong>' + d.title +'</strong>' + '</br> ' + d.director + ', ' + d.year)
         .style('line-height', 1.3)
         .style('left', (d.x-60) + 'px')
-        .style('top', (d.y+40) + 'px');
-      tarrow.style('top', -60+'px');
+        .style('top', (d.y+40) + 'px')
+      //tarrow.style('top', (d.y-60)+'px');
       return d3.select(this).style({opacity:'0.8'})
     .on('mouseout', function(d){
       return d3.select(this).style({opacity:'1'})
-    })
+        })
     });
+
   bf.svg.on('mouseleave', function(d){
     tooltip.style('visibility', 'hidden');
   });
 
 
-
+  /*
+   Prepare Filter
+   */
   //Blur Filter
   var filter = newNodes.append('defs')
     .append('filter')

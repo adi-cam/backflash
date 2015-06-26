@@ -21,7 +21,11 @@ bf.timeView.draw = function(){
       //return 'hsl('+(bf.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
       //return bf.colorScaleCountry(d._region);
     });
+
+
   bf.yRangeScale = d3.scale.ordinal().domain(bf.yKeys).rangeRoundPoints([0, bf.yKeys.length-1]);
+  
+
   bf.yScale = d3.scale.linear().domain([0, bf.yKeys.length-1]).range([0, 900]);
   bf.xPositions = d3.range(bf.yKeys.length).map(function(){ return 1; });
 

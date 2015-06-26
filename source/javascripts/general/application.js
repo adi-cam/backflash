@@ -21,7 +21,6 @@ $(function() {
   select.on('change', function () {
     var e = document.getElementById("select");
     var strUser1 = e.options[e.selectedIndex].text;
-    console.log(strUser1);
     if (strUser1 == 'Programm') {
       bf.changeToView('time');
     }
