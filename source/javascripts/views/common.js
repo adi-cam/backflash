@@ -119,7 +119,7 @@ bf.prepare = function(){
   Prepare Tooltip
    */
   var tooltip = d3.select('.tooltip');
-  //var tarrow = d3.select('.tooltip.arrow');
+  var header = d3.select('h1');
 
   //call tooltip
   bf.nodes
@@ -129,15 +129,14 @@ bf.prepare = function(){
       tooltip.html('<strong>' + d.title +'</strong>' + '</br> ' + d.director + ', ' + d.year)
         .style('line-height', 1.3)
         .style('left', (d.x-60) + 'px')
-        .style('top', (d.y-40) + 'px')
-      //tarrow.style('top', (d.y-60)+'px');
+        .style('top', (d.y-60) + 'px');
       return d3.select(this).style({opacity:'0.8'})
     .on('mouseout', function(d){
       return d3.select(this).style({opacity:'1'})
         })
     });
 
-  bf.svg.on('mouseleave', function(d){
+  header.on('mouseover', function(d){
     tooltip.style('visibility', 'hidden');
   });
 
