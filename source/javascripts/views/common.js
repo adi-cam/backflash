@@ -107,7 +107,7 @@ bf.prepare = function(){
     });
 
   // add a circle to each g element
-  bf.elements.append('circle');
+  bf.circles = bf.elements.append('circle');
 
   //set initial position
   bf.elements.attr('transform', function(d) {
