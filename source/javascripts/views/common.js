@@ -1,5 +1,5 @@
 bf.svg = undefined;
-bf.nodes = undefined;
+bf.elements = undefined;
 
 // YKeys for the vertical distribution of months.
 bf.yKeys = undefined;
@@ -92,20 +92,20 @@ bf.prepare = function(){
   });
 
   //link to data
-  bf.nodes = bf.svg.selectAll('.movie')
+  bf.elements = bf.svg.selectAll('.movie')
     .data(bf.movies, function(m) {
       return m.id;
     });
 
   //create g Elements
-  var newNodes = bf.nodes.enter().append('g')
+  var newNodes = bf.elements.enter().append('g')
     .attr('class', 'movie')
     .attr('data-id', function(d) {
       return d.id;
     });
 
   //set position
-  bf.nodes.attr('transform', function(d) {
+  bf.elements.attr('transform', function(d) {
     var m2 = bf.yRangeScale(d._event._tv_yKey);
     var x = bf.xPositions[m2];
     var r = bf.radiusScale(d.length);
@@ -122,7 +122,7 @@ bf.prepare = function(){
   var header = d3.select('h1');
 
   //call tooltip
-  bf.nodes
+  bf.elements
     .on('mouseover', function (d) {
       tooltip.style('visibility', 'visible')
       .style('opacity', 0.9);
@@ -169,7 +169,7 @@ bf.prepare = function(){
   feMerge.append('feMergeNode')
     .attr('in', 'SourceGraphic');
 
-  newNodes.append('circle');
+ bf.circles = bf.elements.append('circle');
     //.style('filter', function(d) {
     //  return 'url(#feGaussianBlur' + scale(d.year) + ')';
     //});

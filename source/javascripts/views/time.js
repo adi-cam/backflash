@@ -12,7 +12,7 @@ bf.timeView.prepare = function(){
 
 bf.timeView.draw = function(){
 
-  bf.nodes.transition().duration(1000).select('circle')
+  bf.elements.transition().duration(1000).select('circle')
     .attr('r', function (d) {
       return bf.radiusScale(d.length); })
     //.style('fill-opacity', function (d) {return bf.opacityScale(d.year)})
@@ -29,7 +29,7 @@ bf.timeView.draw = function(){
   bf.yScale = d3.scale.linear().domain([0, bf.yKeys.length-1]).range([0, 900]);
   bf.xPositions = d3.range(bf.yKeys.length).map(function(){ return 1; });
 
-  bf.nodes.transition().duration(1000).attr('transform', function(d) {
+  bf.elements.transition().duration(1000).attr('transform', function(d) {
     var m2 = bf.yRangeScale(d._event._tv_yKey);
     var x = bf.xPositions[m2];
     var r = bf.radiusScale(d.length);

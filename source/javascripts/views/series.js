@@ -44,7 +44,7 @@ bf.seriesView.draw = function() {
     .gravity(0)
     .on("tick", forceTick);
 
-  bf.nodes.select('circle')
+  bf.elements.select('circle')
     .attr('class', 'nodeCircle')
     .attr("r", function(d) {
       return bf.radiusScale(d.length); })
@@ -71,7 +71,7 @@ bf.seriesView.draw = function() {
       }
     });
 
-    bf.nodes.attr('transform', function(d) {
+    bf.elements.attr('transform', function(d) {
       return "translate (" + (d.x) + "," + (d.y) + ")";
     });
   }
