@@ -19,7 +19,7 @@ bf.seriesView.draw = function() {
     };
   });
 
-  var nodes = bf.movies.concat(bf.topics).concat(bf.series).concat(anchorNodes); //combines the objects of topics and movies into one array of objects (nacheinander)
+  var nodes = bf.movies.concat(bf.topics).concat(bf.series).concat(anchorNodes);
 
   // create edges for mappings
   var edges = [];
@@ -62,6 +62,9 @@ bf.seriesView.draw = function() {
       }
     });
 
+
+console.log(bf.elements);
+
   bf.elements.select('circle')
     .attr('class', 'nodeCircle')
     .attr("r", function(d) {
@@ -70,16 +73,26 @@ bf.seriesView.draw = function() {
       return bf.colorScaleGenre(d.genre);
     });
 
-  d3.select('svg').select('.nodeCircle')
-  .data(bf.topics)
-  .enter()
-  .append("text")
-    .style("text-anchor", "middle")
-    .style('fill', 'white')
-    .text(function(d) {return d.title;});
+  var middleNode = bf.svg.selectAll('.topicNode')
+   .data(bf.topics)
+   .enter()
+   .append('g')
+   .attr('class', 'node');
+
+  middleNode.append("text")
+  .style("text-anchor", "middle")
+  .attr("y", 15)
+  .style('fill', 'white')
+  .text(function(d) {return d.name;});
+
+
 
   function forceTick(e) {
     bf.elements.attr('transform', function(d) {
+      return "translate (" + (d.x) + "," + (d.y) + ")";
+    });
+
+    middleNode.attr('transform', function(d) {
       return "translate (" + (d.x) + "," + (d.y) + ")";
     });
 
