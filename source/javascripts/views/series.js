@@ -16,22 +16,19 @@ bf.seriesView.draw = function() {
   var width = $(window).width();
   var height = $(window).height();
 
-  var topics = _.unique(bf.events.map(function(event){return event.topic})) //returns an array of unique topics
-    .map(function(topic) {return {id: topic, title: topic}}); //for each topic in the topic array return an object with an id and a title. Both of which give back the topic title as a string
+  var nodes = bf.movies.concat(bf.topics).concat(bf.series); //combines the objects of topics and movies into one array of objects (nacheinander)
 
-  nodes = bf.movies.concat(topics); //combines the objects of topics and movies into one array of objects (nacheinander)
-  edges = _.flatten(topics.map(function(topic) { //for each topic in the topics array
-    return bf.movies
-      .filter(function(movie) {
-        return movie._event.topic === topic.title;  // go through bf.movies and filter after those movies where movie._event.topic matches the topic.title in the topic object
-      })
-      .map(function(movie) { //for each of those movies set their source to the topic and the target to movie.
-        return {
-          source: topic,
-          target: movie
-        };
+  // create edges for mappings
+  var edges = [];
+  bf.topics.forEach(function(t){
+    t.events.forEach(function(e){
+      e._movies.forEach(function(m){
+        edges.push({ type: 'mt', source: m, target: t })
       });
-    })); //edges is an array of objects with a source property and a target property. The target contains the movie object. The source contains the corresponding event.
+    });
+
+    edges.push({ type: 'ts', source: t, target: t.series });
+  });
 
   bf.seriesView.forceLayout = d3.layout.force()
     .size([width, height])
@@ -42,7 +39,13 @@ bf.seriesView.draw = function() {
     .links(edges)
     .friction(0.4)
     .gravity(0.3)
-    .on("tick", forceTick);
+    .on("tick", forceTick)
+    .linkStrength(function(l){
+      switch(l.type) {
+        case 'mt': return 1; break;
+        case 'ts': return 3; break;
+      }
+    });
 
   bf.elements.select('circle')
     .attr('class', 'nodeCircle')
@@ -53,7 +56,7 @@ bf.seriesView.draw = function() {
     });
 
   d3.select('svg').select('.nodeCircle')
-  .data(topics)
+  .data(bf.topics)
   .enter()
   .append("text")
     .style("text-anchor", "middle")
