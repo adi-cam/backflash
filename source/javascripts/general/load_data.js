@@ -9,6 +9,16 @@ bf.movies = undefined;
 bf.events = undefined;
 
 /**
+ * All the series
+ */
+bf.series = undefined;
+
+/**
+ * All the topics
+ */
+bf.topics = undefined;
+
+/**
  * Mapping from countries to regions.
  */
 bf.countriesMatrix = {
@@ -48,12 +58,6 @@ bf.countries = undefined;
 bf.years = undefined;
 
 /**
- * List of series
- */
-bf.series = undefined;
-
-
-/**
  * Loads data from JSON file.
  * @param cb Callback
  */
@@ -79,11 +83,17 @@ bf.processData = function(data) {
     e._date = timeFormat.parse(e.date);
   });
 
+  // add empty movies array to events
+  bf.events.forEach(function(e){
+    e._movies = [];
+  });
+
   // map movies to events using the eventid and id properties
   bf.movies.forEach(function(m) {
     m._event = bf.events.filter(function (e) {
       return e.id == m.eventid;
     })[0];
+    m._event._movies.push(m);
   });
 
   // sort movies by realated event date
@@ -105,22 +115,72 @@ bf.processData = function(data) {
     m._region = bf.countriesInverseMatrix[m.country];
   });
 
+  // create series objects
+  bf.series = _.uniq(bf.events.map(function(e){
+    return e.series;
+  })).map(function(s){
+    return {
+      name: s,
+      events: [],
+      topics: []
+    };
+  });
+
+  // create topic objects
+  bf.topics = _.uniq(bf.events.map(function(e){
+    return e.topic;
+  })).map(function(t){
+    return {
+      name: t,
+      events: []
+    };
+  });
+
+  // map events to series and topics and vice versa
+  bf.events.forEach(function(e){
+    var series = bf.series.filter(function(s){
+      return s.name == e.series;
+    })[0];
+
+    var topic = bf.topics.filter(function(t){
+      return t.name == e.topic;
+    })[0];
+
+    e._topic = topic;
+    e._series = series;
+
+    series.events.push(e);
+    topic.events.push(e);
+  });
+
+  bf.topics.forEach(function(t){
+    var series = bf.series.filter(function(s){
+      return s.name == t.events[0].series;
+    })[0];
+
+    t.series = series;
+    series.topics.push(t);
+  });
+
+  // cleanup series and topics
+  //bf.series.forEach(function(s){
+  //  s.events = _.uniq(s.events);
+  //});
+  //bf.topics.forEach(function(t){
+  //  t.events = _.uniq(t.events);
+  //});
+
   // get all available genres, countries and regions
   var genres = [];
   var regions = [];
   var countries = [];
   var years = [];
-  var series  = [];
 
   bf.movies.forEach(function (m) {
     genres.push(m.genre);
     regions.push(m._region);
     countries.push(m.country);
     years.push(m.year);
-  });
-
-  bf.events.forEach(function (e) {
-    series.push(e.series);
   });
 
   bf.yearsAll = _.uniq(years);
@@ -131,5 +191,4 @@ bf.processData = function(data) {
   bf.genres = _.uniq(genres);
   bf.regions = _.uniq(regions);
   bf.count = _.uniq(countries);
-  bf.series = _.uniq(series);
 };
