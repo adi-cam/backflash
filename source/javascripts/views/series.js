@@ -7,8 +7,8 @@ bf.seriesView.forceLayout = undefined;
 
 bf.seriesView.prepare = function() {
   //Turn series into numbers
-  bf.seriesView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 1000]);
-  bf.seriesView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 1000]);
+  bf.seriesView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
+  bf.seriesView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
 };
 
 
@@ -36,12 +36,12 @@ bf.seriesView.draw = function() {
   bf.seriesView.forceLayout = d3.layout.force()
     .size([width, height])
     .charge(function(d) {
-      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) * 6;
+      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *7;
     })
     .nodes(nodes)
     .links(edges)
-    .friction(0.2)
-    .gravity(0)
+    .friction(0.4)
+    .gravity(0.3)
     .on("tick", forceTick);
 
   bf.elements.select('circle')
@@ -61,16 +61,6 @@ bf.seriesView.draw = function() {
     .text(function(d) {return d.title;});
 
   function forceTick(e) {
-    var k = .3 * e.alpha;
-
-    // Push nodes toward their designated focus.
-    nodes.forEach(function(o, i) {
-      if (o.hasOwnProperty('_event')) {
-        o.y += (bf.seriesView.seriesScaleY(o._event.series) - o.y) * k;
-        o.x += (bf.seriesView.seriesScaleX(o._event.series) - o.x) * k;
-      }
-    });
-
     bf.elements.attr('transform', function(d) {
       return "translate (" + (d.x) + "," + (d.y) + ")";
     });
