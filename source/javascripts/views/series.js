@@ -6,17 +6,20 @@ bf.seriesView.forceLayout = undefined;
 
 
 bf.seriesView.prepare = function() {
-  //Turn series into numbers
-  bf.seriesView.seriesScaleX = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
-  bf.seriesView.seriesScaleY = d3.scale.ordinal().domain(bf.series).rangePoints([1, 5]);
 };
 
 
 bf.seriesView.draw = function() {
-  var width = $(window).width();
-  var height = $(window).height();
+  var anchorNodes = bf.series.map(function(s, i){
+    console.log(i);
+    return {
+      fixed: true,
+      x: i * bf.width / (bf.series.length - 1),
+      y: bf.height / 2
+    };
+  });
 
-  var nodes = bf.movies.concat(bf.topics).concat(bf.series); //combines the objects of topics and movies into one array of objects (nacheinander)
+  var nodes = bf.movies.concat(bf.topics).concat(bf.series).concat(anchorNodes); //combines the objects of topics and movies into one array of objects (nacheinander)
 
   // create edges for mappings
   var edges = [];
@@ -30,20 +33,32 @@ bf.seriesView.draw = function() {
     edges.push({ type: 'ts', source: t, target: t.series });
   });
 
+  // anchor series
+  bf.series.forEach(function(s, i){
+    s.topics.forEach(function(t){
+      edges.push({type: 'as', source: t, target: anchorNodes[i] });
+    });
+  });
+
+  //var lines = bf.svg.selectAll('.edge').data(edges)
+  //  .enter().append('line').style('stroke', 'white');
+
   bf.seriesView.forceLayout = d3.layout.force()
-    .size([width, height])
+    .size([bf.width, bf.height - 300])
     .charge(function(d) {
-      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *7;
+      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *6;
     })
     .nodes(nodes)
     .links(edges)
     .friction(0.4)
-    .gravity(0.3)
+    .gravity(0.6)
+
     .on("tick", forceTick)
     .linkStrength(function(l){
       switch(l.type) {
         case 'mt': return 1; break;
-        case 'ts': return 3; break;
+        case 'ts': return 1; break;
+        case 'as': return 4; break;
       }
     });
 
@@ -67,6 +82,11 @@ bf.seriesView.draw = function() {
     bf.elements.attr('transform', function(d) {
       return "translate (" + (d.x) + "," + (d.y) + ")";
     });
+
+    //lines.attr("x1", function(d) { return d.source.x; })
+    //  .attr("y1", function(d) { return d.source.y; })
+    //  .attr("x2", function(d) { return d.target.x; })
+    //  .attr("y2", function(d) { return d.target.y; });
   }
 
   bf.seriesView.forceLayout.start();

@@ -1,3 +1,6 @@
+bf.width = 1500;
+bf.height = 1200;
+
 bf.svg = undefined;
 bf.elements = undefined;
 
@@ -24,9 +27,6 @@ bf.Sminus = undefined;
 
 
 bf.prepare = function(){
-  var width = $(window).width();
-  var height = $(window).height();
-
   /*
    * Global Scales Color and Size
    */
@@ -89,8 +89,8 @@ bf.prepare = function(){
 
   //set initial size
   bf.svg.attr({
-    width:width,
-    height: height
+    width: bf.width,
+    height: bf.height
   });
 
   //link to data
@@ -147,32 +147,4 @@ bf.prepare = function(){
   header.on('mouseover', function(d){
     tooltip.style('visibility', 'hidden');
   });
-
-  /*
-   * Prepare Filter
-   */
-
-  // Blur Filter
-  //var defs = bf.svg.append('defs');
-  //
-  //var filter = defs
-  //  .append('filter')
-  //  .attr('id', 'feGaussianBlur')
-  //  .attr('x', '-200%')
-  //  .attr('y', '-200%')
-  //  .attr('width', '500%')
-  //  .attr('height', '500%')
-  //  .append('feGaussianBlur')
-  //  .attr('class', 'gaussianblur')
-  //  .attr('stdDeviation', 10)
-  //  .attr('result', 'blur');
-  //
-  //var feMerge = filter
-  //  .append('feMerge');
-  //
-  //feMerge.append('feMergeNode')
-  //  .attr('in', 'blur');
-  //
-  //feMerge.append('feMergeNode')
-  //  .attr('in', 'SourceGraphic');
 };

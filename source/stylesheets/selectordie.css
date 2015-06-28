@@ -33,9 +33,9 @@
         display: inline-block;
         position: relative;
         line-height: 1;
-        width: 230px;
-        height: 60px;
-        padding: 7px 10px;
+        width: auto
+        height: 56px;
+        padding: 4px 20px 4px 10px;
         border: 2px solid white;
         color: white;
         text-align: left;
@@ -53,11 +53,11 @@
         /* Down arrow */
         .sod_select:after
             {
-            font-size: 20px;
+            font-size: 18px;
             content: "\25BC";
             position: absolute;
-            right: 13px;
-            top: 22px;
+            right: 10px;
+            top: 18px;
             }
 
     /* Change the border color on hover, focus and when open */
@@ -98,13 +98,13 @@
             left: 0;
             display: none;
             height: auto;
-            width: 231px;
-            margin: -3px 0px 0 -2px;
+            width: auto;
+            margin: 0px 0px 0 -2px;
             background: black;
             border: 2px solid #999999;
             border-top: none;
             color: white;
-            font-weight: 300;
+            font-weight: 200;
             z-index: 1;
         }
 
