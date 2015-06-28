@@ -17,15 +17,13 @@ bf.timeView.draw = function(){
       return bf.radiusScale(d.length); })
     //.style('fill-opacity', function (d) {return bf.opacityScale(d.year)})
     .style('fill', function (d) {
-      return bf.colorScaleGenre(d.genre);
-      //return 'hsl('+(bf.colorScaleH(d.genre))+', 80%, '+ (60 - (bf.timeView.Sminus(d.year))) +'%)'
+      //return bf.colorScaleGenre(d.genre);
+      return 'hsl('+(bf.colorScaleH(d.genre))+', 100%, '+ (60 - (bf.Sminus(d.year))) +'%)';
       //return bf.colorScaleCountry(d._region);
     });
 
 
   bf.yRangeScale = d3.scale.ordinal().domain(bf.yKeys).rangeRoundPoints([0, bf.yKeys.length-1]);
-  
-
   bf.yScale = d3.scale.linear().domain([0, bf.yKeys.length-1]).range([0, 900]);
   bf.xPositions = d3.range(bf.yKeys.length).map(function(){ return 1; });
 

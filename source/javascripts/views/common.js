@@ -45,7 +45,9 @@ bf.prepare = function(){
   bf.colorScaleS = d3.scale.ordinal().domain(bf.genres).range([hsl[0].s, hsl[1].s, hsl[2].s, hsl[3].s, hsl[4].s, hsl[5].s, hsl[6].s, hsl[7].s]);
   bf.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l, hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
 
-  bf.Sminus = d3.scale.ordinal().domain(bf.years).range([43, 0]);
+  bf.Sminus = d3.scale.ordinal().domain(bf.years).rangePoints([55, 0]);
+  console.log(bf.Sminus(2012));
+  console.log(bf.Sminus(1997));
 
   //color scale for genre or country
   bf.colorScaleGenre = d3.scale.ordinal().domain(bf.genres).range(bf.colorsRGB);
@@ -56,7 +58,7 @@ bf.prepare = function(){
   bf.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
 
   //blur scale for year
-  bf.blurScale = d3.scale.linear().domain(extentYear).range([30, 0]);
+  bf.blurScale = d3.scale.linear().domain(extentYear).range([50, 100]);
 
   /*
    * Global Scales Position
