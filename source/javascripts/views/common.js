@@ -27,19 +27,20 @@ bf.prepare = function(){
   var width = $(window).width();
   var height = $(window).height();
 
-   /*
-   Global Scales Color and Size
+  /*
+   * Global Scales Color and Size
    */
-  //Size scale
+
+  // size scale
   var maxRuntime = d3.max(bf.movies, function(m){ return m.length });
   bf.radiusScale = d3.scale.sqrt().domain([0, maxRuntime]).range([0, 50]);
 
-  //RGB and HSL color matrix
+  // RGB and HSL color matrix
   bf.colorsRGB = ['#DC1F26', '#00A89B', '#EE5325', '#EC1263', '#00B04E', '#FFED2B', '#009AD7', '#17479E'];
   var hsl =[];
   for (i= 0; i<=bf.colorsRGB.length; i++){hsl.push(d3.rgb(bf.colorsRGB[i]).hsl());};
 
-  //color scale for genre and year
+  // color scale for genre and year
   bf.colorScaleH = d3.scale.ordinal().domain(bf.genres).range([hsl[0].h, hsl[1].h, hsl[2].h, hsl[3].h, hsl[4].h, hsl[5].h, hsl[6].h, hsl[7].h]);
   bf.colorScaleS = d3.scale.ordinal().domain(bf.genres).range([hsl[0].s, hsl[1].s, hsl[2].s, hsl[3].s, hsl[4].s, hsl[5].s, hsl[6].s, hsl[7].s]);
   bf.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l, hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
@@ -53,14 +54,14 @@ bf.prepare = function(){
   //opacity scale for year
   var extentYear = d3.extent(bf.movies, function(m){ return m.year; });
   bf.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
-  console.log(extentYear);
 
   //blur scale for year
   bf.blurScale = d3.scale.linear().domain(extentYear).range([30, 0]);
 
   /*
-   Global Scales Position
+   * Global Scales Position
    */
+
   //generate yKeys
   bf.events.forEach(function(e){
     var paddedMonth = ('0' + e._date.getMonth()).slice(-2);
@@ -80,8 +81,9 @@ bf.prepare = function(){
   bf.xPositions = d3.range(bf.yKeys.length).map(function(){ return 1; });
 
   /*
-   Prepare SVG and data
+   * Prepare SVG and data
    */
+
   //find svg
   bf.svg = d3.select('svg.main');
 
@@ -98,13 +100,16 @@ bf.prepare = function(){
     });
 
   //create g Elements
-  var newNodes = bf.elements.enter().append('g')
+  bf.elements.enter().append('g')
     .attr('class', 'movie')
     .attr('data-id', function(d) {
       return d.id;
     });
 
-  //set position
+  // add a circle to each g element
+  bf.elements.append('circle');
+
+  //set initial position
   bf.elements.attr('transform', function(d) {
     var m2 = bf.yRangeScale(d._event._tv_yKey);
     var x = bf.xPositions[m2];
@@ -116,12 +121,13 @@ bf.prepare = function(){
   });
 
   /*
-  Prepare Tooltip
+   * Prepare Tooltip
    */
+
   var tooltip = d3.select('.tooltip');
   var header = d3.select('h1');
 
-  //call tooltip
+  // call tooltip
   bf.elements
     .on('mouseover', function (d) {
       tooltip.style('visibility', 'visible')
@@ -142,36 +148,31 @@ bf.prepare = function(){
     tooltip.style('visibility', 'hidden');
   });
 
-
   /*
-   Prepare Filter
+   * Prepare Filter
    */
-  //Blur Filter
-  var defs = bf.svg.append('defs');
-  var filter = defs
-    .append('filter')
-    .attr('id', 'feGaussianBlur')
-    .attr('x', '-200%')
-    .attr('y', '-200%')
-    .attr('width', '500%')
-    .attr('height', '500%')
-    .append('feGaussianBlur')
-    .attr('class', 'gaussianblur')
-    .attr('stdDeviation', 10)
-    .attr('result', 'blur');
 
-  var feMerge = filter
-    .append('feMerge');
-
-  feMerge.append('feMergeNode')
-    .attr('in', 'blur');
-
-  feMerge.append('feMergeNode')
-    .attr('in', 'SourceGraphic');
-
- bf.circles = bf.elements.append('circle');
-    //.style('filter', function(d) {
-    //  return 'url(#feGaussianBlur' + scale(d.year) + ')';
-    //});
-
+  // Blur Filter
+  //var defs = bf.svg.append('defs');
+  //
+  //var filter = defs
+  //  .append('filter')
+  //  .attr('id', 'feGaussianBlur')
+  //  .attr('x', '-200%')
+  //  .attr('y', '-200%')
+  //  .attr('width', '500%')
+  //  .attr('height', '500%')
+  //  .append('feGaussianBlur')
+  //  .attr('class', 'gaussianblur')
+  //  .attr('stdDeviation', 10)
+  //  .attr('result', 'blur');
+  //
+  //var feMerge = filter
+  //  .append('feMerge');
+  //
+  //feMerge.append('feMergeNode')
+  //  .attr('in', 'blur');
+  //
+  //feMerge.append('feMergeNode')
+  //  .attr('in', 'SourceGraphic');
 };
