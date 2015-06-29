@@ -24,7 +24,7 @@ $(function() {
     if (strUser1 == 'Programm') {
       bf.changeToView('time');
     }
-    else if (strUser1 == 'Filmserie') {
+    else if (strUser1 == 'Filmreihen') {
       bf.changeToView('series');
     }
   });

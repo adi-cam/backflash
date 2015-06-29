@@ -53,8 +53,3 @@ bf.timeView.draw = function(){
 bf.timeView.clear = function(){
   bf.svg.selectAll('.label').remove();
 };
-
-
-
-//TODO: Clean out dataset of x's (optional)
-//TODO: Call tooltip better

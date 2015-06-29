@@ -33,7 +33,7 @@
         display: inline-block;
         position: relative;
         line-height: 1;
-        width: auto
+        width: 224px;
         height: 56px;
         padding: 4px 20px 4px 10px;
         border: 2px solid white;
@@ -98,8 +98,8 @@
             left: 0;
             display: none;
             height: auto;
-            width: auto;
-            margin: 0px 0px 0 -2px;
+            width: 224px;
+            margin: -3px 0 0 -2px;
             background: black;
             border: 2px solid #999999;
             border-top: none;
