@@ -46,7 +46,7 @@ bf.seriesView.draw = function() {
   bf.seriesView.forceLayout = d3.layout.force()
     .size([bf.width, bf.height - 350])
     .charge(function(d) {
-      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *9;
+      return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *9.5;
     })
     .nodes(nodes)
     .links(edges)
