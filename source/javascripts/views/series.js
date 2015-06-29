@@ -44,14 +44,14 @@ bf.seriesView.draw = function() {
   //  .enter().append('line').style('stroke', 'white');
 
   bf.seriesView.forceLayout = d3.layout.force()
-    .size([bf.width, bf.height - 350])
+    .size([bf.width, bf.height - 100])
     .charge(function(d) {
       return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *9.5;
     })
     .nodes(nodes)
     .links(edges)
     .friction(0.4)
-    .gravity(0.6)
+    .gravity(0.7)
 
     .on("tick", forceTick)
     .linkStrength(function(l){

@@ -29,6 +29,14 @@ $(function() {
     }
   });
 
+  $('img').hide();
+
+  $('.info').mouseenter(function(){
+    $('img').show();
+  }).mouseleave(function(){
+    $('img').hide();
+  });
+
   bf.loadData(function () {
     bf.prepare();
     bf.timeView.prepare();
