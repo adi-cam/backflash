@@ -12,15 +12,24 @@ bf.timeView.prepare = function(){
 
 bf.timeView.draw = function(){
 
+  bf.button = d3.select('.button');
+
   bf.elements.transition().duration(1000).select('circle')
     .attr('r', function (d) {
       return bf.radiusScale(d.length); })
-    //.style('fill-opacity', function (d) {return bf.opacityScale(d.year)})
-    .style('fill', function (d) {
-      //return bf.colorScaleGenre(d.genre);
-      return 'hsl('+(bf.colorScaleH(d.genre))+', 100%, '+ (60 - (bf.Sminus(d.year))) +'%)';
-      //return bf.colorScaleCountry(d._region);
+  .style('fill', function (d) { return 'hsl('+(bf.colorScaleH(d.genre))+', 100%, '+ (60 - (bf.Sminus(d.year))) +'%)';});
+
+  bf.button
+    .on('mouseenter', function(d){
+          bf.elements.select('circle').style('fill', function (d) { return 'hsl('+(bf.colorScaleH2(d._region))+', 100%, '+ (60 - (bf.Sminus(d.year))) +'%)';});
+      })
+        .on('mouseout', function(d){
+      bf.elements.select('circle').style('fill', function (d) { return 'hsl('+(bf.colorScaleH(d.genre))+', 100%, '+ (60 - (bf.Sminus(d.year))) +'%)';});
     });
+
+console.log(bf.colorScaleH2('home'));
+  console.log(bf.colorScaleH2('westEurope'));
+  console.log(bf.elements)
 
 
   bf.yRangeScale = d3.scale.ordinal().domain(bf.yKeys).rangeRoundPoints([0, bf.yKeys.length-1]);

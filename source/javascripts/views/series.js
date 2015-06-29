@@ -44,7 +44,7 @@ bf.seriesView.draw = function() {
   //  .enter().append('line').style('stroke', 'white');
 
   bf.seriesView.forceLayout = d3.layout.force()
-    .size([bf.width, bf.height - 100])
+    .size([bf.width, bf.height - 150])
     .charge(function(d) {
       return -Math.pow(bf.radiusScale(d.length || 0), 2.0) *9.5;
     })

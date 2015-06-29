@@ -40,9 +40,10 @@ bf.prepare = function(){
   bf.colorsRGB = ['#DC1F26', '#00A89B', '#EE5325', '#EC1263', '#00B04E', '#FFED2B', '#009AD7', '#17479E'];
   var hsl =[];
   for (i= 0; i<=bf.colorsRGB.length; i++){hsl.push(d3.rgb(bf.colorsRGB[i]).hsl());};
-console.log(hsl);
   // color scale for genre and year
   bf.colorScaleH = d3.scale.ordinal().domain(bf.genres).range([hsl[0].h, hsl[1].h, hsl[2].h, hsl[3].h, hsl[4].h, hsl[5].h, hsl[6].h, hsl[7].h]);
+  bf.colorScaleH2 = d3.scale.ordinal().domain(bf.regions).range([hsl[0].h, hsl[1].h, hsl[2].h, hsl[3].h, hsl[4].h, hsl[5].h, hsl[6].h, hsl[7].h]);
+
   bf.colorScaleS = d3.scale.ordinal().domain(bf.genres).range([hsl[0].s, hsl[1].s, hsl[2].s, hsl[3].s, hsl[4].s, hsl[5].s, hsl[6].s, hsl[7].s]);
   bf.colorScaleL = d3.scale.ordinal().domain(bf.genres).range([hsl[0].l, hsl[1].l, hsl[2].l, hsl[3].l, hsl[4].l, hsl[5].l, hsl[6].l, hsl[7].l]);
 
@@ -51,7 +52,6 @@ console.log(hsl);
   //color scale for genre or country
   bf.colorScaleGenre = d3.scale.ordinal().domain(bf.genres).range(bf.colorsRGB);
   bf.colorScaleCountry = d3.scale.ordinal().domain(bf.regions).range(bf.colorsRGB);
-console.log(bf.genres);
   //opacity scale for year
   var extentYear = d3.extent(bf.movies, function(m){ return m.year; });
   bf.opacityScale = d3.scale.linear().domain(extentYear).range([0.2, 1]);
